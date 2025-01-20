@@ -15,33 +15,23 @@
         header {
             background-color: #007D86;
             color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            position: relative;
             text-align: center;
+            padding: 20px 0;
+            position: relative;
         }
         .avatar-container {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        .avatar.left {
-            position: absolute;
-            left: 5%;
-            max-width: 150px;
-        }
-        .avatar.right {
-            position: absolute;
-            right: 5%;
-            max-width: 150px;
+        .avatar {
+            max-width: 120px;
         }
         .text-content {
-            z-index: 1;
+            margin: 10px auto;
             max-width: 60%;
-            margin: auto;
         }
         header h1 {
             margin: 10px 0;
@@ -51,9 +41,9 @@
             margin: 5px 0 0;
             font-size: 1.2em;
         }
+
         nav {
             text-align: center;
-            margin: 10px 0;
             padding: 10px 0;
             background-color: #393939;
         }
@@ -69,6 +59,7 @@
             font-weight: bold;
             color: #00CED1;
         }
+
         main {
             max-width: 800px;
             margin: 20px auto;
@@ -78,50 +69,23 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
         footer {
             text-align: center;
             padding: 10px;
             background-color: #007D86;
             color: white;
         }
-        .button {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #007D86;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .button:hover {
-            background-color: #00666F;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .section {
-            display: none;
-        }
-        .section.active {
-            display: block;
-        }
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
             .avatar-container {
-                position: static;
-                transform: none;
-                display: flex;
+                flex-direction: column;
                 justify-content: center;
-                margin-bottom: 10px;
             }
             .avatar {
-                max-width: 100px;
-                margin: 0 10px;
+                max-width: 80px;
+                margin: 10px;
             }
             .text-content {
                 max-width: 90%;
@@ -136,7 +100,7 @@
 
         @media (max-width: 480px) {
             .avatar {
-                max-width: 80px;
+                max-width: 60px;
             }
             header h1 {
                 font-size: 1.5em;
@@ -150,12 +114,12 @@
 <body>
     <header>
         <div class="avatar-container">
-            <img class="avatar left" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
-            <img class="avatar right" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
-        </div>
-        <div class="text-content">
-            <h1>Bienvenue sur TradLinker</h1>
-            <p>Le bot Discord qui simplifie la communication multilingue.</p>
+            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
+            <div class="text-content">
+                <h1>Bienvenue sur TradLinker</h1>
+                <p>Le bot Discord qui simplifie la communication multilingue.</p>
+            </div>
+            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
         </div>
     </header>
 
