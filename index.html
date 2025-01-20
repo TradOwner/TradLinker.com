@@ -17,6 +17,21 @@
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Ajustez la taille de l'avatar */
+            height: 50px;
+            border-radius: 50%; /* Pour un effet rond */
+        }
+        header img.left {
+            left: 10px;
+        }
+        header img.right {
+            right: 10px;
         }
         nav {
             text-align: center;
@@ -35,6 +50,7 @@
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            padding-bottom: 100px; /* Ajout pour éviter que le texte soit masqué */
         }
         footer {
             text-align: center;
@@ -62,15 +78,18 @@
 </head>
 <body>
     <header>
+        <!-- Ajout des avatars -->
+        <img src="https://github.com/TradOwner/TradLinker-documents-legaux/blob/main/Avatar%20Linker%20rond.png" alt="Avatar gauche" class="left">
         <h1>Bienvenue sur TradLinker</h1>
+        <img src="https://github.com/TradOwner/TradLinker-documents-legaux/blob/main/Avatar%20Orga%20rond.png" class="right">
         <p>Le bot Discord qui simplifie la communication multilingue.</p>
     </header>
 
     <nav>
         <a href="#about">À propos</a>
         <a href="#premium">Services Premium</a>
-        <a href="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/refs/heads/main/terms-of-service.md" target="_blank">Conditions d'utilisation</a>
-        <a href="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/refs/heads/main/privacy-policy.md" target="_blank">Politique de confidentialité</a>
+        <a href="https://github.com/TradOwner/TradLinker-documents-legaux/blob/main/terms-of-service.md" target="_blank">Conditions d'utilisation</a>
+        <a href="https://github.com/TradOwner/TradLinker-documents-legaux/blob/main/privacy-policy.md" target="_blank">Politique de confidentialité</a>
     </nav>
 
     <main>
