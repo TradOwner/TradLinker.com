@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #2E2E2E;
+            color: white;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #00CED1;
             color: white;
             padding: 20px;
             text-align: center;
@@ -23,15 +23,20 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 50px; /* Ajustez la taille de l'avatar */
-            height: 50px;
-            border-radius: 50%; /* Pour un effet rond */
+            height: 100%; /* Ajuste la hauteur pour correspondre au bandeau */
+            width: auto; /* Maintient les proportions */
         }
         header img.left {
             left: 10px;
         }
         header img.right {
             right: 10px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
         }
         nav {
             text-align: center;
@@ -40,22 +45,25 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #4CAF50;
+            color: #00CED1;
             font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: white;
+            background: #393939;
+            color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            padding-bottom: 100px; /* Ajout pour éviter que le texte soit masqué */
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #00CED1;
             color: white;
             position: fixed;
             bottom: 0;
@@ -65,14 +73,17 @@
             display: inline-block;
             margin: 10px 0;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #00CED1;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
         }
         .button:hover {
-            background-color: #45a049;
+            background-color: #00B2AE;
+        }
+        ul {
+            list-style-type: square;
         }
     </style>
 </head>
