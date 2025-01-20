@@ -15,39 +15,41 @@
         header {
             background-color: #007D86;
             color: white;
-            padding: 20px 50px;
+            padding: 20px;
             text-align: center;
             position: relative;
         }
-        header img {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 80%;
+        header .avatars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espacement entre les avatars */
+        }
+        header .avatars img {
+            height: 80px;
             width: auto;
         }
-        header img.left {
-            left: 30%;
-        }
-        header img.right {
-            right: 30%;
-        }
         header h1 {
-            margin: 0;
-            font-size: 2em;
+            margin: 10px 0;
+            font-size: 1.8em;
         }
         header p {
             margin: 5px 0 0;
+            font-size: 1em;
         }
+
         nav {
             text-align: center;
-            margin: 20px 0;
+            margin: 10px 0;
+            padding: 10px 0;
+            background-color: #393939;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             color: #007D86;
             font-weight: bold;
+            font-size: 1em;
         }
         nav a:hover, nav a.active {
             text-decoration: underline;
@@ -62,16 +64,12 @@
             color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            padding-bottom: 70px; /* Ajout d'un espace pour le footer */
         }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #007D86;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .button {
             display: inline-block;
@@ -95,13 +93,15 @@
         .section.active {
             display: block;
         }
-        
+
         /* Responsive Styles */
         @media (max-width: 768px) {
-            header img.left, header img.right {
-                position: static;
-                display: block;
-                margin: 0 auto 10px;
+            header .avatars {
+                flex-direction: column;
+                gap: 5px; /* Réduire l'espacement */
+            }
+            header .avatars img {
+                height: 60px; /* Réduire la taille des avatars */
             }
             header h1 {
                 font-size: 1.5em;
@@ -130,6 +130,9 @@
             }
             header p {
                 font-size: 0.8em;
+            }
+            header .avatars img {
+                height: 50px; /* Taille encore plus petite sur les écrans étroits */
             }
             .button {
                 font-size: 14px;
