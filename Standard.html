@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradLinker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2E2E2E;
+            color: white;
+        }
+        header {
+            background-color: #007D86;
+            color: white;
+            padding: 20px 50px; /* Ajout de padding pour équilibrer les marges */
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80%; /* Ajuste la hauteur pour correspondre au bandeau */
+            width: auto; /* Maintient les proportions */
+        }
+        header img.left {
+            left: 30%; /* Position plus proche du texte */
+        }
+        header img.right {
+            right: 30%; /* Position plus proche du texte */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007D86;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #393939;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding-bottom: 70px; /* Ajout d'un espace pour le footer */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007D86;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007D86;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #00666F;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Ajout des avatars -->
+        <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche" class="left">
+        <h1>Bienvenue sur TradLinker</h1>
+        <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" class="right">
+        <p>Le bot Discord qui simplifie la communication multilingue.</p>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#standard">Services Standard</a>
+        <a href="#premium">Services Premium</a>
+        <a href="#paiements">Abonnements et Dons</a>
+    </nav>
+
+    <main>
+        <section id="standard">
+            <h2>Services Standard</h2>
+            <p>Découvrez les fonctionnalités disponibles pour tous les utilisateurs TradLinker :</p>
+            <ul>
+                <li><strong>Traductions de base :</strong> Traduisez un nombre limité de messages dans les langues principales pour connecter votre communauté.</li>
+                <li><strong>Groupes limités :</strong> Configurez jusqu'à 1 groupe avec un maximum de 5 chaînes pour vos besoins multilingues de base.</li>
+                <li><strong>Réactions synchronisées :</strong> Maintenez les discussions actives avec des réactions visibles dans toutes les langues supportées.</li>
+                <li><strong>Commandes de base :</strong> Accédez à des commandes essentielles pour configurer les fonctionnalités multilingues de votre serveur.</li>
+                <li><strong>Simplicité d'utilisation :</strong> Profitez d'une configuration rapide et intuitive adaptée aux petites communautés.</li>
+            </ul>
+            <p>Les services Standard sont parfaits pour les serveurs souhaitant une expérience multilingue simplifiée sans compromis sur la qualité.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TradLinker. Tous droits réservés.</p>
+        <p>
+            <small>
+                Paiements sécurisés via Stripe |
+                <a href="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/refs/heads/main/terms-of-service.md" target="_blank">Conditions d'utilisation</a> | 
+                <a href="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/refs/heads/main/privacy-policy.md" target="_blank">Politique de confidentialité</a>
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
