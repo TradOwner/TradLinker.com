@@ -17,34 +17,33 @@
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
         }
-        header .avatar {
-            flex: 0 1 auto;
-            max-width: 25%; /* Limite la taille sur grand écran */
-            margin: 10px;
+        .avatar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1 1 100%;
+            margin-bottom: 10px;
         }
-        header img {
-            width: 100%;
+        .avatar {
+            max-width: 150px;
             height: auto;
-            max-height: 150px;
         }
-        header .text-content {
-            flex: 1 1 50%;
+        .text-content {
+            flex: 1 1 100%;
             text-align: center;
-            margin: 10px;
         }
         header h1 {
             margin: 10px 0;
-            font-size: 2em;
+            font-size: 2.5em;
         }
         header p {
             margin: 5px 0 0;
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         nav {
@@ -105,11 +104,29 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            header {
+            .avatar-container {
                 flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 0;
             }
-            header .avatar {
-                max-width: 40%; /* Réduit la taille pour les tablettes */
+            .avatar {
+                max-width: 100px; /* Réduit la taille pour les tablettes */
+                margin: 5px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .avatar-container {
+                justify-content: center;
+            }
+            .avatar {
+                max-width: 80px; /* Réduit encore les avatars pour petits écrans */
                 margin: 5px;
             }
             header h1 {
@@ -119,34 +136,17 @@
                 font-size: 0.9em;
             }
         }
-
-        @media (max-width: 480px) {
-            header {
-                flex-direction: column; /* Réorganise en colonne sur petits écrans */
-            }
-            header .avatar {
-                max-width: 80px; /* Taille fixe pour les avatars */
-            }
-            header h1 {
-                font-size: 1.2em;
-            }
-            header p {
-                font-size: 0.8em;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <div class="avatar">
-            <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
+        <div class="avatar-container">
+            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
+            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
         </div>
         <div class="text-content">
             <h1>Bienvenue sur TradLinker</h1>
             <p>Le bot Discord qui simplifie la communication multilingue.</p>
-        </div>
-        <div class="avatar">
-            <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
         </div>
     </header>
 
