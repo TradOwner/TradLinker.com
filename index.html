@@ -15,7 +15,7 @@
         header {
             background-color: #007D86;
             color: white;
-            padding: 20px 50px; /* Ajout de padding pour équilibrer les marges */
+            padding: 20px 50px;
             text-align: center;
             position: relative;
         }
@@ -23,14 +23,14 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            height: 80%; /* Ajuste la hauteur pour correspondre au bandeau */
-            width: auto; /* Maintient les proportions */
+            height: 80%;
+            width: auto;
         }
         header img.left {
-            left: 30%; /* Position plus proche du texte */
+            left: 30%;
         }
         header img.right {
-            right: 30%; /* Position plus proche du texte */
+            right: 30%;
         }
         header h1 {
             margin: 0;
@@ -49,8 +49,10 @@
             color: #007D86;
             font-weight: bold;
         }
-        nav a:hover {
+        nav a:hover, nav a.active {
             text-decoration: underline;
+            font-weight: bold;
+            color: #00CED1;
         }
         main {
             max-width: 800px;
@@ -87,11 +89,13 @@
         ul {
             list-style-type: square;
         }
+        .section {
+            display: none; /* Masque toutes les sections par défaut */
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Ajout des avatars -->
         <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche" class="left">
         <h1>Bienvenue sur TradLinker</h1>
         <img src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" class="right">
@@ -99,10 +103,10 @@
     </header>
 
     <nav>
-        <a href="#about">À propos</a>
-        <a href="#standard">Services Standard</a>
-        <a href="#premium">Services Premium</a>
-        <a href="#paiements">Abonnements et Dons</a>
+        <a href="#about" onclick="showSection('about')" class="active">À propos</a>
+        <a href="#standard" onclick="showSection('standard')">Services Standard</a>
+        <a href="#premium" onclick="showSection('premium')">Services Premium</a>
+        <a href="#paiements" onclick="showSection('paiements')">Abonnements et Dons</a>
     </nav>
 
     <main>
@@ -201,5 +205,31 @@
             </small>
         </p>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Masquer toutes les sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Afficher la section demandée
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = 'block';
+            }
+
+            // Mettre à jour l'état actif de la navigation
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+        }
+
+        // Afficher la section "À propos" par défaut
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('about');
+        });
+    </script>
 </body>
 </html>
