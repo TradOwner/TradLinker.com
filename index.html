@@ -15,27 +15,33 @@
         header {
             background-color: #007D86;
             color: white;
-            text-align: center;
-            padding: 20px;
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            padding: 20px;
+            position: relative;
+            text-align: center;
         }
         .avatar-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex: 1 1 100%;
-            margin-bottom: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
         }
-        .avatar {
+        .avatar.left {
+            position: absolute;
+            left: 5%;
             max-width: 150px;
-            height: auto;
+        }
+        .avatar.right {
+            position: absolute;
+            right: 5%;
+            max-width: 150px;
         }
         .text-content {
-            flex: 1 1 100%;
-            text-align: center;
+            z-index: 1;
+            max-width: 60%;
+            margin: auto;
         }
         header h1 {
             margin: 10px 0;
@@ -45,7 +51,6 @@
             margin: 5px 0 0;
             font-size: 1.2em;
         }
-
         nav {
             text-align: center;
             margin: 10px 0;
@@ -104,14 +109,22 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
             .avatar-container {
-                flex-wrap: wrap;
+                position: static;
+                transform: none;
+                display: flex;
                 justify-content: center;
-                margin-bottom: 0;
+                margin-bottom: 10px;
             }
             .avatar {
-                max-width: 100px; /* Réduit la taille pour les tablettes */
-                margin: 5px;
+                max-width: 100px;
+                margin: 0 10px;
+            }
+            .text-content {
+                max-width: 90%;
             }
             header h1 {
                 font-size: 2em;
@@ -122,12 +135,8 @@
         }
 
         @media (max-width: 480px) {
-            .avatar-container {
-                justify-content: center;
-            }
             .avatar {
-                max-width: 80px; /* Réduit encore les avatars pour petits écrans */
-                margin: 5px;
+                max-width: 80px;
             }
             header h1 {
                 font-size: 1.5em;
@@ -141,8 +150,8 @@
 <body>
     <header>
         <div class="avatar-container">
-            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
-            <img class="avatar" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
+            <img class="avatar left" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Linker%20rond.png" alt="Avatar gauche">
+            <img class="avatar right" src="https://raw.githubusercontent.com/TradOwner/TradLinker-documents-legaux/main/Avatar%20Orga%20rond.png" alt="Avatar droit">
         </div>
         <div class="text-content">
             <h1>Bienvenue sur TradLinker</h1>
