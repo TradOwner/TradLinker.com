@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TradLinker Suite | TradLinker, TradCoord, TradAssist</title>
-  <meta name="description" content="Suite de bots Discord pour serveurs multilingues : TradLinker (traduction entre salons), TradCoord (organisation premium) et TradAssist (assistant personnel + extension de traduction)." />
+  <title>TradLinker Suite | Traduction Discord multilingue</title>
+  <meta name="description" content="TradLinker Suite : TradLinker (bot principal), TradCoord (organisation premium) et TradAssist (assistant personnel + extension serveur). Site pro, interactif et complet." />
   <meta name="theme-color" content="#0ea5e9" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="TradLinker Suite | Bots Discord multilingues" />
-  <meta property="og:description" content="Traduction, onboarding et coordination multilingue sur Discord avec TradLinker, TradCoord et TradAssist." />
+  <meta property="og:description" content="Traduction, coordination et onboarding multilingue sur Discord avec TradLinker, TradCoord et TradAssist." />
   <meta property="og:image" content="./image/Avatar%20Linker%20rond.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="TradLinker Suite | Bots Discord multilingues" />
-  <meta name="twitter:description" content="Traduction, onboarding et coordination multilingue sur Discord." />
+  <meta name="twitter:description" content="Une suite de 3 bots Discord pour les serveurs multilingues." />
   <meta name="twitter:image" content="./image/Avatar%20Linker%20rond.png" />
 
   <link rel="icon" type="image/png" href="./image/Avatar%20Linker%20rond.png" />
@@ -22,11 +22,11 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
-  <div class="grid-noise"></div>
+  <div class="bg-grid"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
 
-  <header class="site-header" id="top">
+  <header class="header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top">
         <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" />
@@ -36,419 +36,575 @@
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav" id="siteNav">
+      <nav id="siteNav" class="nav">
         <a href="#suite">Suite</a>
         <a href="#bots">Bots</a>
-        <a href="#workflow">Workflow</a>
+        <a href="#simulateur">Simulateur</a>
         <a href="#offres">Offres</a>
         <a href="#faq">FAQ</a>
-        <a href="#cta" class="btn btn-ghost btn-sm">Tester</a>
+        <a href="#cta" class="btn btn-ghost btn-sm">Commencer</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero section-pad">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">🌍 Traduction + onboarding + assistant</p>
-          <h1>Une suite de <span>3 bots</span> pour rendre votre serveur Discord vraiment multilingue</h1>
+          <p class="eyebrow">🌍 Traduction • Onboarding • Coordination</p>
+          <h1>Une suite de <span>3 bots Discord</span> pensée pour les communautés multilingues</h1>
           <p class="lead">
-            <strong>TradLinker</strong> est le bot principal pour relier et traduire les salons.
-            <strong>TradCoord</strong> est l’extension premium d’organisation (welcome, règles, rôles/langues).
-            <strong>TradAssist</strong> est à la fois un assistant personnel et une extension de traduction pour serveurs — avec illimité sur serveurs Premium.
+            <strong>TradLinker</strong> est le bot principal (salons liés + traduction).
+            <strong>TradCoord</strong> ajoute l’organisation serveur (premium).
+            <strong>TradAssist</strong> est à la fois un assistant personnel et une extension de traduction serveur.
           </p>
-
-          <div class="hero-badges">
-            <span>TradLinker = cœur de la traduction serveur</span>
-            <span>TradCoord = organisation Premium</span>
-            <span>TradAssist = perso + extension serveur</span>
-          </div>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&scope=bot" target="_blank" rel="noopener noreferrer">Ajouter TradLinker</a>
-            <a class="btn btn-secondary" href="#offres">Voir Premium / Platinum</a>
+            <a class="btn btn-secondary" href="#bots">Voir les 3 bots</a>
           </div>
 
-          <div class="hero-stats">
-            <div class="stat"><span>🗨️</span><small>Traduction entre salons liés</small></div>
-            <div class="stat"><span>🛡️</span><small>Onboarding & rôles par langue</small></div>
-            <div class="stat"><span>🧩</span><small>Assistant perso + posts multilingues</small></div>
+          <div class="hero-counters">
+            <article class="counter-card">
+              <div class="counter" data-count="3">0</div>
+              <small>Bots complémentaires</small>
+            </article>
+            <article class="counter-card">
+              <div class="counter" data-count="10">0</div>
+              <small>Groupes max (Premium)</small>
+            </article>
+            <article class="counter-card">
+              <div class="counter" data-count="15">0</div>
+              <small>Salons max / groupe (Premium)</small>
+            </article>
+          </div>
+
+          <div class="pill-row">
+            <span>TradLinker = bot principal</span>
+            <span>TradCoord = premium serveur</span>
+            <span>TradAssist = DM + serveur</span>
+            <span>Réactions drapeau</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="hero-panel">
-            <img class="hero-banner" src="./image/banniere-tradassist.png" alt="Bannière TradAssist" />
-            <div class="hero-overlay"></div>
-
-            <div class="suite-stack">
-              <article class="suite-chip linker">
-                <img src="./image/Avatar%20Linker%20rond.png" alt="Avatar TradLinker" />
-                <div>
-                  <p>Bot principal</p>
-                  <h3>TradLinker</h3>
-                  <small>Traduction & relais multi-salons</small>
-                </div>
-              </article>
-
-              <article class="suite-chip assist">
-                <img src="./image/Avatar%20Assistant%20rond.png" alt="Avatar TradAssist" />
-                <div>
-                  <p>Assistant & extension</p>
-                  <h3>TradAssist</h3>
-                  <small>DM + traduction à la demande serveur</small>
-                </div>
-              </article>
-
-              <article class="suite-chip coord">
-                <img src="./image/Avatar%20Orga%20rond.png" alt="Avatar TradCoord" />
-                <div>
-                  <p>Extension Premium</p>
-                  <h3>TradCoord</h3>
-                  <small>Welcome, règles, rôles/langues</small>
-                </div>
-              </article>
-            </div>
+        <div class="hero-panel reveal">
+          <img class="hero-banner" src="./image/banniere-tradassist.png" alt="TradAssist banner" />
+          <div class="hero-panel-overlay"></div>
+          <div class="stack">
+            <article class="stack-card linker">
+              <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" />
+              <div>
+                <p>Bot principal</p>
+                <h3>TradLinker</h3>
+                <small>Relais + traduction entre salons liés</small>
+              </div>
+            </article>
+            <article class="stack-card coord">
+              <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" />
+              <div>
+                <p>Extension premium</p>
+                <h3>TradCoord</h3>
+                <small>Welcome, règles, coordination & rôles</small>
+              </div>
+            </article>
+            <article class="stack-card assist">
+              <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" />
+              <div>
+                <p>Assistant & extension</p>
+                <h3>TradAssist</h3>
+                <small>DM, posts multilang, contexte & drapeaux</small>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="suite" class="section">
+    <section id="suite" class="section-pad">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Pourquoi la suite ?</p>
-          <h2>Une architecture claire : 1 bot principal + 2 extensions complémentaires</h2>
+          <p class="eyebrow">Architecture produit</p>
+          <h2>Une suite claire : un cœur de traduction + deux extensions spécialisées</h2>
           <p class="section-sub">
-            Voici comment fonctionne les 3 bots : <strong>TradLinker</strong> est le principal, <strong>TradCoord</strong> est une extension d’organisation premium, et <strong>TradAssist</strong> est un assistant personnel + extension de traduction côté serveur.
+            L’objectif est simple : garder une conversation unique entre langues, organiser l’arrivée des membres et offrir des outils de traduction avancés sans alourdir la modération.
           </p>
         </div>
 
         <div class="cards-3">
           <article class="info-card reveal">
-            <div class="card-icon cyan">1</div>
-            <h3>Commencez avec TradLinker</h3>
-            <p>Créez des groupes de salons liés (FR / EN / ES…) et laissez le bot relayer/traduire les messages pour garder une seule conversation, sans fragmentation.</p>
+            <div class="badge-num">01</div>
+            <h3>TradLinker (base obligatoire)</h3>
+            <p>Crée des groupes de salons liés (FR / EN / ES…) et republie les messages traduits pour garder le flux synchronisé.</p>
             <ul>
-              <li>Traduction automatique entre salons</li>
-              <li>Réactions synchronisées</li>
+              <li>Groupes de salons liés</li>
+              <li>Traduction automatique des messages</li>
               <li>Sondages multilingues</li>
+              <li>Réactions synchronisées + menu “Show reactions”</li>
             </ul>
           </article>
-
           <article class="info-card reveal">
-            <div class="card-icon blue">2</div>
-            <h3>Ajoutez TradAssist pour l’usage quotidien</h3>
-            <p>Traductions ponctuelles, canaux complets, posts multilingues avec bouton <em>Translate</em>, traduction par réaction drapeau. En Premium serveur, fonctions clés illimitées pour tous sur ce serveur.</p>
+            <div class="badge-num">02</div>
+            <h3>TradAssist (assistant + extension)</h3>
+            <p>Ajoute des outils de traduction ciblée en DM et en serveur : message, canal, post multilingue et réactions drapeau.</p>
             <ul>
-              <li>Assistant personnel en DM</li>
-              <li>Extension de traduction serveur</li>
-              <li>Illimité sur serveur Premium (fonctions supportées)</li>
+              <li>Assistant perso de traduction (DM)</li>
+              <li>Extension serveur de TradLinker</li>
+              <li>Context menus “Translate message/channel”</li>
+              <li>Fonctions illimitées (supportées) avec Premium/Platinium</li>
             </ul>
           </article>
-
           <article class="info-card reveal">
-            <div class="card-icon red">3</div>
-            <h3>Débloquez TradCoord en Premium</h3>
-            <p>Onboarding propre et sécurisé : message de bienvenue, acceptation des règles, sélection de langue, rôles par langue et coordination multi-groupes pour limiter le bruit.</p>
+            <div class="badge-num">03</div>
+            <h3>TradCoord (organisation premium)</h3>
+            <p>Structure l’onboarding et la coordination multilingue avec messages interactifs, rôles de langue et acceptation des règles.</p>
             <ul>
-              <li>Welcome & règles</li>
-              <li>Rôles/langues</li>
-              <li>Organisation multi-groupes</li>
+              <li>Welcome message configurable</li>
+              <li>Règles + bouton d’acceptation + logs</li>
+              <li>Messages de coordination interactifs</li>
+              <li>Réservé aux serveurs Premium</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="bots" class="section alt">
+    <section id="bots" class="section-pad alt">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Les 3 bots</p>
-          <h2>Présentation par bot</h2>
-          <p class="section-sub">Chaque bloc reprend le rôle produit, les fonctions clés et les cas d’usage principaux.</p>
+          <p class="eyebrow">Présentation complète</p>
+          <h2>Détail bot par bot</h2>
+          <p class="section-sub">Version plus complète avec onglets, cas d’usage, commandes, permissions et accès.</p>
         </div>
 
-        <div class="bot-grid">
-          <article class="bot-card reveal">
-            <div class="bot-top">
-              <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="bot-avatar">
+        <div class="bot-tabs reveal" role="tablist" aria-label="Sélectionner un bot">
+          <button class="bot-tab is-active" role="tab" aria-selected="true" data-bot="linker">
+            <img src="./image/Avatar%20Linker%20rond.png" alt="" /> TradLinker
+          </button>
+          <button class="bot-tab" role="tab" aria-selected="false" data-bot="coord">
+            <img src="./image/Avatar%20Orga%20rond.png" alt="" /> TradCoord
+          </button>
+          <button class="bot-tab" role="tab" aria-selected="false" data-bot="assist">
+            <img src="./image/Avatar%20Assistant%20rond.png" alt="" /> TradAssist
+          </button>
+        </div>
+
+        <div class="bot-panels reveal">
+          <article class="bot-panel is-active" data-panel="linker">
+            <div class="bot-header">
+              <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="bot-avatar" />
               <div>
                 <p class="bot-role">Bot principal</p>
                 <h3>TradLinker</h3>
+                <p class="bot-lead">Le cœur de la suite : il relie les salons par langue et maintient une conversation multilingue cohérente.</p>
               </div>
             </div>
-            <p class="bot-lead"><strong>Le cœur du serveur multilingue.</strong> Relie plusieurs salons par langue et republie chaque message traduit dans les canaux liés.</p>
-            <div class="tag-row">
-              <span>Salons liés</span><span>Traduction auto</span><span>Sondages</span><span>Réactions sync</span>
-            </div>
-            <details>
-              <summary>Fonctions / commandes phares</summary>
-              <ul class="feature-list">
-                <li><code>/2-create_group</code>, <code>/3-add_channel</code>, <code>/6-show_groups</code></li>
-                <li><code>/1-create_poll</code> et <code>/1-delete_poll</code></li>
-                <li>Menu contextuel <code>Show reactions</code> (agrégation des réactions)</li>
-                <li><code>/8-buy_premium</code> pour le Premium serveur</li>
-              </ul>
-            </details>
-          </article>
 
-          <article class="bot-card reveal">
-            <div class="bot-top">
-              <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" class="bot-avatar">
-              <div>
-                <p class="bot-role">Assistant & extension</p>
-                <h3>TradAssist</h3>
+            <div class="bot-meta-grid">
+              <div class="panel-card">
+                <h4>Ce qu’il fait</h4>
+                <ul>
+                  <li>Relie plusieurs salons dans un groupe (1 langue par salon)</li>
+                  <li>Traduit et relaie les messages entre salons liés</li>
+                  <li>Synchronise des réactions entre messages miroir</li>
+                  <li>Gère des sondages multilingues distribués</li>
+                </ul>
+              </div>
+              <div class="panel-card">
+                <h4>Limites & plans</h4>
+                <ul>
+                  <li><strong>Free :</strong> 1 groupe / 5 salons</li>
+                  <li><strong>Premium :</strong> 10 groupes / 15 salons</li>
+                  <li>Commande d’achat serveur : <code>/8-buy_premium</code></li>
+                  <li>Idéal pour démarrer avant d’ajouter TradCoord/TradAssist</li>
+                </ul>
+              </div>
+              <div class="panel-card full-span">
+                <div class="card-head-inline">
+                  <h4>Commandes & actions principales</h4>
+                  <input class="command-filter" data-filter-for="linker" type="search" placeholder="Filtrer les commandes…" />
+                </div>
+                <div class="command-list" data-command-list="linker">
+                  <div class="cmd"><code>/help</code><span>Guide de configuration TradLinker</span></div>
+                  <div class="cmd"><code>/2-create_group</code><span>Créer un groupe de salons liés</span></div>
+                  <div class="cmd"><code>/3-add_channel</code><span>Ajouter un salon + langue au groupe</span></div>
+                  <div class="cmd"><code>/4-remove_channel</code><span>Retirer un salon d’un groupe</span></div>
+                  <div class="cmd"><code>/5-delete_group</code><span>Supprimer un groupe</span></div>
+                  <div class="cmd"><code>/6-show_groups</code><span>Afficher la configuration des groupes</span></div>
+                  <div class="cmd"><code>/1-create_poll</code><span>Créer un sondage dans les salons liés</span></div>
+                  <div class="cmd"><code>/1-delete_poll</code><span>Supprimer un sondage</span></div>
+                  <div class="cmd"><code>Show reactions</code><span>Menu contextuel pour agréger/afficher les réactions</span></div>
+                  <div class="cmd"><code>/7-donate</code><span>Support du projet</span></div>
+                  <div class="cmd"><code>/8-buy_premium</code><span>Achat Premium pour le serveur</span></div>
+                </div>
               </div>
             </div>
-            <p class="bot-lead"><strong>L’assistant personnel de traduction… et l’extension serveur de TradLinker.</strong> Outils de traduction avancés utilisables en DM et sur serveur.</p>
-            <div class="tag-row">
-              <span>Traduction message</span><span>Traduction canal</span><span>Posts multilingues</span><span>Flag reactions</span>
+
+            <div class="use-cases">
+              <span>🌐 Communautés internationales</span>
+              <span>🛠️ Support multi-langue</span>
+              <span>🎮 Guildes de jeu</span>
+              <span>📢 Annonces synchronisées</span>
             </div>
-            <details>
-              <summary>Fonctions / commandes phares</summary>
-              <ul class="feature-list">
-                <li><code>/1-translate_and_send</code> • <code>/4-translate_message</code></li>
-                <li><code>/3-translate_channel</code> + menu contextuel <code>Translate channel</code></li>
-                <li><code>/2-multilang_post_create</code> / <code>edit</code> avec bouton <em>Translate</em></li>
-                <li>Groupe <code>/5-flagreact</code> (drapeaux + délai)</li>
-                <li><code>/6-buy_platinium</code> (commande actuelle) / Platinum utilisateur</li>
-              </ul>
-            </details>
           </article>
 
-          <article class="bot-card reveal premium">
-            <div class="bot-top">
-              <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" class="bot-avatar">
+          <article class="bot-panel" data-panel="coord">
+            <div class="bot-header">
+              <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" class="bot-avatar" />
               <div>
-                <p class="bot-role">Extension Premium</p>
+                <p class="bot-role">Extension organisation (Premium serveur)</p>
                 <h3>TradCoord</h3>
+                <p class="bot-lead">Le bot d’organisation et d’onboarding multilingue pour structurer les accès, réduire le bruit et guider les nouveaux membres.</p>
               </div>
             </div>
-            <p class="bot-lead"><strong>L’onboarding intelligent pour serveurs premium.</strong> Accueille les membres, gère règles + rôles de langue et coordonne les accès.</p>
-            <div class="tag-row">
-              <span>Welcome</span><span>Règles</span><span>Rôles/langue</span><span>Coordination</span>
+
+            <div class="bot-meta-grid">
+              <div class="panel-card">
+                <h4>Fonctions clés</h4>
+                <ul>
+                  <li>Message de bienvenue personnalisé avec placeholders</li>
+                  <li>Bouton d’acceptation des règles + attribution de rôle</li>
+                  <li>Logs d’acceptation des règles</li>
+                  <li>Coordination par scopes (un groupe, plusieurs groupes, tous)</li>
+                  <li>Messages interactifs de rôles/langues</li>
+                </ul>
+              </div>
+              <div class="panel-card">
+                <h4>Spécificités premium</h4>
+                <ul>
+                  <li>Vérification serveur Premium sur les commandes</li>
+                  <li>Gestion des vues persistantes (welcome/règles/coordination)</li>
+                  <li>Nettoyage sûr des rôles & permissions lors de suppression</li>
+                  <li>Édition et suppression de coordination via UI</li>
+                </ul>
+              </div>
+              <div class="panel-card full-span">
+                <div class="card-head-inline">
+                  <h4>Commandes TradCoord</h4>
+                  <input class="command-filter" data-filter-for="coord" type="search" placeholder="Filtrer les commandes…" />
+                </div>
+                <div class="command-list" data-command-list="coord">
+                  <div class="cmd"><code>/1-set_welcome</code><span>Configurer un message de bienvenue</span></div>
+                  <div class="cmd"><code>/1-clear_welcome</code><span>Désactiver / supprimer la config welcome</span></div>
+                  <div class="cmd"><code>/2-set_rules_message</code><span>Message règles + bouton acceptation + logs + lien salon langue</span></div>
+                  <div class="cmd"><code>/3-coordination</code><span>Créer un message interactif de coordination (scopes)</span></div>
+                  <div class="cmd"><code>/3-edit_coordination</code><span>Éditer un message interactif existant</span></div>
+                  <div class="cmd"><code>/3-delete_coordination</code><span>Supprimer un scope + nettoyer rôles/permissions</span></div>
+                </div>
+              </div>
             </div>
-            <details>
-              <summary>Fonctions / commandes phares</summary>
-              <ul class="feature-list">
-                <li><code>/1-set_welcome</code> • <code>/1-clear_welcome</code></li>
-                <li><code>/2-set_rules_message</code> (bouton acceptation + logs)</li>
-                <li><code>/3-coordination</code>, <code>edit</code>, <code>delete</code></li>
-                <li>Réservé aux serveurs <strong>Premium</strong></li>
-              </ul>
-            </details>
+
+            <div class="use-cases">
+              <span>👋 Onboarding multilingue</span>
+              <span>🧭 Routage par langue</span>
+              <span>🔐 Accès conditionnel après règles</span>
+              <span>📣 Coordination de groupes</span>
+            </div>
+          </article>
+
+          <article class="bot-panel" data-panel="assist">
+            <div class="bot-header">
+              <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" class="bot-avatar" />
+              <div>
+                <p class="bot-role">Assistant personnel + extension serveur</p>
+                <h3>TradAssist</h3>
+                <p class="bot-lead">Un couteau suisse de traduction : traduction ponctuelle, canaux, posts multilingues et réactions drapeau — en DM et en serveur.</p>
+              </div>
+            </div>
+
+            <div class="bot-meta-grid">
+              <div class="panel-card">
+                <h4>Fonctions de traduction</h4>
+                <ul>
+                  <li><strong>Message :</strong> par ID ou menu contextuel “Translate message” (éphémère)</li>
+                  <li><strong>Canal :</strong> traduction des N derniers messages (pagination) + menu “Translate channel”</li>
+                  <li><strong>Translate & send :</strong> modal langue + texte (DM ou serveur)</li>
+                  <li><strong>Posts multilang :</strong> créer/éditer un post avec bouton “Translate”</li>
+                  <li><strong>Drapeaux :</strong> traduction via réaction (auto-suppression configurable)</li>
+                </ul>
+              </div>
+              <div class="panel-card">
+                <h4>Accès & quotas (Free)</h4>
+                <ul>
+                  <li><strong>Serveur / mois :</strong> message 20 • send 10 • channel 5 • post 5 • flag 20</li>
+                  <li><strong>DM / mois :</strong> message 5 • send 5 • post 2</li>
+                  <li><strong>Bouton Translate (par post) :</strong> 20 clics / mois</li>
+                  <li>Reset des quotas : 1er du mois (UTC)</li>
+                  <li>Illimité (fonctions supportées) avec Premium serveur ou Platinium utilisateur</li>
+                </ul>
+              </div>
+              <div class="panel-card full-span">
+                <div class="card-head-inline">
+                  <h4>Commandes TradAssist</h4>
+                  <input class="command-filter" data-filter-for="assist" type="search" placeholder="Filtrer les commandes…" />
+                </div>
+                <div class="command-list" data-command-list="assist">
+                  <div class="cmd"><code>/1-translate_and_send</code><span>Écrire puis traduire/envoyer (serveur) ou prévisualiser (DM)</span></div>
+                  <div class="cmd"><code>/2-multilang_post_create</code><span>Créer un post multilingue avec bouton Translate</span></div>
+                  <div class="cmd"><code>/2-multilang_post_edit</code><span>Éditer un post multilingue existant</span></div>
+                  <div class="cmd"><code>/3-translate_channel</code><span>Traduire les N derniers messages d’un salon (max 100)</span></div>
+                  <div class="cmd"><code>/4-translate_message</code><span>Traduire un message par ID</span></div>
+                  <div class="cmd"><code>Translate message</code><span>Menu contextuel sur un message</span></div>
+                  <div class="cmd"><code>Translate channel</code><span>Menu contextuel basé sur un message</span></div>
+                  <div class="cmd"><code>/5-flagreact set_delay</code><span>Réglage délai auto-suppression (5–300s)</span></div>
+                  <div class="cmd"><code>/5-flagreact show</code><span>Voir le délai actuel</span></div>
+                  <div class="cmd"><code>/5-flagreact list_flags</code><span>Lister les drapeaux reconnus</span></div>
+                  <div class="cmd"><code>/6-buy_platinium</code><span>Abonnement utilisateur (illimité TradAssist supporté)</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="use-cases">
+              <span>💬 Aide ponctuelle en modération</span>
+              <span>📚 Tutoriels multilingues</span>
+              <span>🧪 Traductions rapides en DM</span>
+              <span>🏳️ Réactions de traduction</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="workflow" class="section">
-      <div class="container workflow-grid">
-        <div class="section-head reveal">
-          <p class="eyebrow">Workflow</p>
-          <h2>Comment les 3 bots se complètent</h2>
-        </div>
-
-        <div class="steps">
-          <article class="step-card reveal">
-            <span class="step-num">01</span>
-            <h3>TradLinker structure les conversations</h3>
-            <p>Groupes de salons liés par langue, relais et traduction automatiques : la conversation reste vivante et unifiée.</p>
-          </article>
-          <article class="step-card reveal">
-            <span class="step-num">02</span>
-            <h3>TradAssist ajoute les outils avancés</h3>
-            <p>Traductions ponctuelles, canal entier, posts multilingues et réactions drapeau — en DM et/ou sur serveur.</p>
-          </article>
-          <article class="step-card reveal">
-            <span class="step-num">03</span>
-            <h3>TradCoord verrouille l’onboarding premium</h3>
-            <p>Règles, langues, rôles et accès : moins de spam, moins de notifications inutiles, meilleure expérience membre.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="offres" class="section alt">
+    <section id="simulateur" class="section-pad">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Premium / Platinum</p>
-          <h2>Différence claire entre abonnement serveur et abonnement utilisateur</h2>
-          <p class="section-sub">
-            2 point clé : <strong>Premium = pour le serveur</strong> (TradLinker + TradCoord + TradAssist illimité sur ce serveur pour tous) • <strong>Platinum = pour une personne</strong> (TradAssist illimité pour l’utilisateur).
-          </p>
+          <p class="eyebrow">Interactif</p>
+          <h2>Simulateur d’accès & quotas</h2>
+          <p class="section-sub">Sélectionne ton contexte pour voir ce qui est disponible immédiatement (Free / Premium / Platinium).</p>
         </div>
 
-        <div class="pricing-grid">
-          <article class="price-card reveal">
+        <div class="sim-grid reveal">
+          <aside class="sim-card controls">
+            <h3>Ton contexte</h3>
+            <label class="switch-row"><input id="ctxServer" type="checkbox" checked> <span>Je suis sur un serveur</span></label>
+            <label class="switch-row"><input id="ctxServerPremium" type="checkbox"> <span>Le serveur est Premium</span></label>
+            <label class="switch-row"><input id="ctxUserPlatinium" type="checkbox"> <span>Je suis utilisateur Platinium</span></label>
+
+            <div class="sim-note">
+              <p><strong>Rappel :</strong></p>
+              <ul>
+                <li>Premium = abonnement <strong>serveur</strong></li>
+                <li>Platinium = abonnement <strong>utilisateur</strong> (TradAssist)</li>
+                <li>TradCoord = uniquement sur serveur Premium</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="sim-card results">
+            <div class="sim-head">
+              <h3>Résultat</h3>
+              <button id="presetFree" class="chip-btn" type="button">Preset Free</button>
+              <button id="presetPremium" class="chip-btn" type="button">Preset Premium serveur</button>
+              <button id="presetPlatinium" class="chip-btn" type="button">Preset Platinium user</button>
+            </div>
+
+            <div id="simSummary" class="sim-summary"></div>
+
+            <div class="feature-grid" id="featureGrid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad alt" id="workflow">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Workflow recommandé</p>
+          <h2>Déploiement en 4 étapes</h2>
+          <p class="section-sub">Un parcours clair pour passer d’un test simple à une stack complète de serveur multilingue.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>Installer TradLinker</h3>
+              <p>Créer un premier groupe de salons liés, définir les langues, tester le relais de messages.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Ajouter TradAssist</h3>
+              <p>Activer les traductions ponctuelles, posts multilang et outils de traduction contextuelle.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Passer le serveur en Premium</h3>
+              <p>Débloquer TradCoord et les usages TradAssist illimités (fonctions supportées) pour le serveur.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>04</span>
+            <div>
+              <h3>Optimiser l’onboarding avec TradCoord</h3>
+              <p>Configurer welcome, règles, rôles/langues et messages de coordination par scope.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offres" class="section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Offres</p>
+          <h2>Premium (serveur) vs Platinium (utilisateur)</h2>
+          <p class="section-sub">Le site explique clairement qui paie quoi, et ce que ça débloque concrètement.</p>
+        </div>
+
+        <div class="pricing-grid reveal">
+          <article class="price-card">
             <p class="plan-badge">Free</p>
             <h3>Découverte</h3>
             <div class="price">0€</div>
             <ul>
               <li>TradLinker : 1 groupe / 5 salons</li>
               <li>TradAssist : quotas mensuels</li>
-              <li>TradCoord : non disponible</li>
+              <li>TradCoord : indisponible</li>
             </ul>
           </article>
 
-          <article class="price-card highlight reveal">
+          <article class="price-card featured">
             <p class="plan-badge premium">Serveur</p>
             <h3>Premium</h3>
             <div class="price">6,99€ <small>/mois</small></div>
             <ul>
               <li>TradLinker : jusqu’à 10 groupes / 15 salons</li>
-              <li><strong>TradCoord inclus</strong> (welcome, règles, coordination)</li>
-              <li>TradAssist : extension de traduction côté serveur</li>
-              <li>Fonctions clés TradAssist <strong>illimitées pour tous</strong> sur ce serveur (supportées)</li>
+              <li><strong>TradCoord inclus</strong></li>
+              <li>TradAssist sur serveur : illimité (fonctions supportées)</li>
+              <li>Avantage pour toute la communauté du serveur</li>
             </ul>
             <a class="btn btn-primary full" href="https://buy.stripe.com/eVa9DpcWf6gsd7GfYY" target="_blank" rel="noopener noreferrer">Passer le serveur en Premium</a>
           </article>
 
-          <article class="price-card reveal">
+          <article class="price-card">
             <p class="plan-badge platinum">Utilisateur</p>
-            <h3>Platinum</h3>
+            <h3>Platinium</h3>
             <div class="price">3,49€ <small>/mois</small></div>
             <ul>
-              <li>TradAssist personnel illimité en DM (fonctions supportées)</li>
-              <li>Bypass des quotas sur serveur pour l’utilisateur (fonctions supportées)</li>
-              <li>Utile même si le serveur n’est pas Premium</li>
+              <li>TradAssist DM illimité (fonctions supportées)</li>
+              <li>TradAssist sur serveur : bypass des quotas pour l’utilisateur</li>
+              <li>Utile même sur serveurs non Premium</li>
             </ul>
-            <button class="btn btn-secondary full" type="button" disabled aria-disabled="true" title="Ajoute ici ton lien TradAssist /6-buy_platinium si tu veux un bouton web">Lien web Platinum à ajouter</button>
+            <a class="btn btn-secondary full" href="#cta">Ajouter TradAssist puis utiliser /6-buy_platinium</a>
           </article>
         </div>
 
-        <div class="compare-wrap reveal">
-          <table class="compare-table" aria-label="Comparatif Free Premium Platinum">
-            <thead>
-              <tr>
-                <th>Fonction / avantage</th>
-                <th>Free</th>
-                <th>Premium (serveur)</th>
-                <th>Platinum (utilisateur)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>TradLinker — groupes & salons liés</td>
-                <td>1 groupe / 5 salons</td>
-                <td class="yes">Jusqu’à 10 / 15</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>TradCoord (welcome + règles + coordination)</td>
-                <td class="no">Non</td>
-                <td class="yes">Oui</td>
-                <td class="no">Non</td>
-              </tr>
-              <tr>
-                <td>TradAssist sur serveur</td>
-                <td class="no">Quotas</td>
-                <td class="yes">Illimité dans le serveur (fonctions supportées)</td>
-                <td class="warn">Illimité pour l’utilisateur (fonctions supportées)</td>
-              </tr>
-              <tr>
-                <td>TradAssist en DM</td>
-                <td class="no">Quotas</td>
-                <td>—</td>
-                <td class="yes">Illimité (fonctions supportées)</td>
-              </tr>
-              <tr>
-                <td>Idéal pour…</td>
-                <td>Tester</td>
-                <td>Une communauté entière</td>
-                <td>Un power user / mod</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <div class="compare-card reveal">
+          <div class="card-head-inline">
+            <h3>Comparatif rapide</h3>
+            <select id="compareFilter" class="select-clean" aria-label="Filtrer le comparatif">
+              <option value="all">Tout afficher</option>
+              <option value="tradlinker">TradLinker</option>
+              <option value="tradcoord">TradCoord</option>
+              <option value="tradassist">TradAssist</option>
+            </select>
+          </div>
 
+          <div class="table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Fonction</th>
+                  <th>Free</th>
+                  <th>Premium serveur</th>
+                  <th>Platinium user</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-cat="tradlinker"><td>TradLinker groupes/salons liés</td><td>1 / 5</td><td class="yes">10 / 15</td><td>—</td></tr>
+                <tr data-cat="tradcoord"><td>TradCoord (welcome/règles/coordination)</td><td class="no">Non</td><td class="yes">Oui</td><td class="no">Non</td></tr>
+                <tr data-cat="tradassist"><td>TradAssist en DM</td><td class="warn">Quotas</td><td>—</td><td class="yes">Illimité (supporté)</td></tr>
+                <tr data-cat="tradassist"><td>TradAssist sur serveur</td><td class="warn">Quotas</td><td class="yes">Illimité (supporté)</td><td class="yes">Illimité pour l’utilisateur (supporté)</td></tr>
+                <tr data-cat="tradassist"><td>Bouton “Translate” (posts multilang)</td><td>20 clics / post / mois</td><td class="yes">Illimité</td><td class="yes">Illimité</td></tr>
+                <tr data-cat="tradassist"><td>Traduction par réaction drapeau</td><td>20 / mois / serveur</td><td class="yes">Illimité (supporté)</td><td class="yes">Illimité pour l’utilisateur (serveur)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="faq" class="section">
+    <section id="faq" class="section-pad alt">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">FAQ rapide</p>
-          <h2>Les questions qui reviennent le plus</h2>
+          <p class="eyebrow">FAQ</p>
+          <h2>Les questions les plus fréquentes</h2>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item reveal" open>
-            <summary>Quelle est la différence entre TradLinker, TradCoord et TradAssist ?</summary>
-            <p>TradLinker est le bot principal de traduction entre salons liés. TradCoord ajoute l’organisation serveur (welcome / règles / rôles de langue) pour les serveurs Premium. TradAssist sert d’assistant personnel et d’extension de traduction pour les serveurs.</p>
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>Je commence par quel bot ?</summary>
+            <p>Commence par <strong>TradLinker</strong>. C’est le bot principal qui crée les salons liés et la traduction inter-salons. Ensuite ajoute TradAssist, puis TradCoord si ton serveur passe en Premium.</p>
           </details>
-
-          <details class="faq-item reveal">
-            <summary>Premium ou Platinum : lequel choisir ?</summary>
-            <p><strong>Premium</strong> si tu veux améliorer tout un serveur. <strong>Platinum</strong> si tu veux débloquer TradAssist pour toi-même (DM + usages serveur supportés), même sur des serveurs non Premium.</p>
+          <details class="faq-item">
+            <summary>TradCoord fonctionne-t-il sans Premium ?</summary>
+            <p>Non. TradCoord est une extension d’organisation réservée aux <strong>serveurs Premium</strong>.</p>
           </details>
-
-          <details class="faq-item reveal">
-            <summary>TradAssist est-il utile sans serveur Premium ?</summary>
-            <p>Oui. TradAssist reste utile comme assistant personnel et pour des traductions ponctuelles sur serveur. Le Premium serveur sert surtout à rendre certaines fonctions clés illimitées pour tous sur ce serveur.</p>
+          <details class="faq-item">
+            <summary>TradAssist est-il utile sans Premium serveur ?</summary>
+            <p>Oui. TradAssist reste utile comme assistant personnel (DM) et pour des traductions ponctuelles sur serveur. Les quotas Free peuvent être levés avec <strong>Platinium</strong> pour l’utilisateur.</p>
           </details>
-
-          <details class="faq-item reveal">
-            <summary>Comment démarrer simplement ?</summary>
-            <p>Installe TradLinker, crée un premier groupe de salons liés, teste le flux multilingue, puis ajoute TradAssist si tu veux les outils avancés. Passe ensuite en Premium pour intégrer TradCoord et débloquer l’expérience serveur complète.</p>
+          <details class="faq-item">
+            <summary>Premium et Platinium sont-ils cumulables ?</summary>
+            <p>Oui. <strong>Premium</strong> améliore le serveur entier. <strong>Platinium</strong> améliore l’expérience d’un utilisateur (surtout TradAssist), y compris sur des serveurs non Premium.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section id="cta" class="section cta-section">
+    <section id="cta" class="section-pad">
       <div class="container cta-grid">
         <article class="cta-card reveal">
-          <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="cta-avatar">
-          <h3>Commencer avec TradLinker</h3>
-          <p>Le cœur de la suite pour connecter des salons multilingues.</p>
+          <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="cta-avatar" />
+          <h3>1) Installer TradLinker</h3>
+          <p>Le cœur de ta stack multilingue (salons liés + traduction).</p>
           <a class="btn btn-primary full" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&scope=bot" target="_blank" rel="noopener noreferrer">Ajouter TradLinker</a>
         </article>
 
         <article class="cta-card reveal">
-          <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" class="cta-avatar">
-          <h3>Ajouter TradAssist</h3>
-          <p>Assistant personnel + extension de traduction avancée pour serveur.</p>
+          <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" class="cta-avatar" />
+          <h3>2) Ajouter TradAssist</h3>
+          <p>Assistant perso + outils de traduction avancés en serveur.</p>
           <a class="btn btn-primary full" href="https://discord.com/oauth2/authorize?client_id=1419765128597078218" target="_blank" rel="noopener noreferrer">Ajouter TradAssist</a>
         </article>
 
         <article class="cta-card reveal">
-          <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" class="cta-avatar">
-          <h3>Passer en Premium</h3>
-          <p>Débloque TradCoord et l’illimité TradAssist sur le serveur Premium.</p>
+          <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" class="cta-avatar" />
+          <h3>3) Passer en Premium</h3>
+          <p>Débloque TradCoord et l’illimité TradAssist (fonctions supportées) pour ton serveur.</p>
           <a class="btn btn-ghost full" href="https://buy.stripe.com/eVa9DpcWf6gsd7GfYY" target="_blank" rel="noopener noreferrer">Voir Premium</a>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container footer-grid">
       <div>
         <div class="brand footer-brand">
-          <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker">
+          <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" />
           <span>
             <strong>TradLinker Suite</strong>
             <small>Traduction & organisation Discord</small>
           </span>
         </div>
-        <p class="footer-text">Une suite de bots pour communautés multilingues : traduction, onboarding et coordination.</p>
+        <p class="footer-text">Suite de bots Discord pour communautés multilingues : conversation unifiée, onboarding structuré et outils de traduction avancés.</p>
       </div>
-
       <div>
-        <h4>Liens utiles</h4>
+        <h4>Liens</h4>
         <ul class="footer-links">
           <li><a href="https://discord.gg/aNZYbRfBxq" target="_blank" rel="noopener noreferrer">Support Discord</a></li>
           <li><a href="https://donate.stripe.com/7sIeXJaO748k2t2fZ0" target="_blank" rel="noopener noreferrer">Faire un don</a></li>
           <li><a href="https://buy.stripe.com/eVa9DpcWf6gsd7GfYY" target="_blank" rel="noopener noreferrer">Premium serveur</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Légal</h4>
         <ul class="footer-links">
@@ -457,9 +613,7 @@
         </ul>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> TradLinker Suite — Non affilié à Discord Inc.</p>
-    </div>
+    <div class="container footer-bottom">© <span id="year"></span> TradLinker Suite — Non affilié à Discord Inc.</div>
   </footer>
 </body>
 </html>
