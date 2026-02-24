@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TradLinker, TradCoord et TradAssist : bots Discord multilingues pour relier des salons, organiser les accès et traduire facilement.">
+  <title>TradLinker · TradLinker.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="" data-bot-page="tradlinker">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="TradLinker.com accueil">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>TradLinker.com</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a><a href="tradlinker.html" aria-current="page">TradLinker</a><a href="tradcoord.html">TradCoord</a><a href="tradassist.html">TradAssist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="card">
+          <div class="wrap">
+            <img class="avatar" data-bot-avatar src="" alt="">
+            <div>
+              <h1 data-bot-name>Bot</h1>
+              <p data-bot-description></p>
+              <div class="meta" data-bot-meta></div>
+              <div class="actions">
+                <a class="btn btn-primary" data-bot-invite href="#" target="_blank" rel="noopener noreferrer"><span data-bot-cta-text>Ajouter le bot</span></a>
+                <a class="btn btn-secondary" data-bot-support-link href="https://discord.gg/c5zvbAWwu8" target="_blank" rel="noopener noreferrer">Serveur support</a>
+                <a class="btn btn-ghost" href="index.html">Retour à l’accueil</a>
+              </div>
+            </div>
+          </div>
+          <nav class="subnav" aria-label="Sections de la page">
+            <a href="#role" data-section-link>Rôle</a>
+            <a href="#features" data-section-link>Fonctions publiques</a>
+            <a href="#commands" data-section-link>Commandes publiques</a>
+            <a href="#faq" data-section-link>FAQ</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="role">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Rôle du bot</h2>
+            <p>Résumé de ce que les utilisateurs et admins voient publiquement.</p>
+          </div>
+        </div>
+        <div class="grid cards-2">
+          <div class="card">
+            <h3 data-bot-name>Bot</h3>
+            <p data-bot-role></p>
+          </div>
+          <div class="card">
+            <h3>Ce qui est listé ici</h3>
+            <p>Uniquement les fonctions et commandes publiques repérées dans le code fourni (slash commands, groupes publics, menus contextuels et comportements visibles côté utilisateur/admin).</p>
+          </div>
+        </div>
+        <div class="kpi-row" data-bot-kpis style="margin-top:.8rem"></div>
+        <div class="note" style="margin-top:.8rem">
+          <strong>Notes publiques / portée :</strong>
+          <ul data-public-notes style="margin:.45rem 0 0; padding-left:1rem"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Fonctions publiques</h2>
+            <p>Ce que le bot apporte concrètement dans ton serveur (ou en DM).</p>
+          </div>
+        </div>
+        <div class="grid cards-3" data-features-grid></div>
+      </div>
+    </section>
+
+    <section id="commands">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Commandes publiques</h2>
+            <p>Recherche par nom, usage ou catégorie. Clique sur “Détails” pour voir les paramètres et notes.</p>
+          </div>
+        </div>
+        <div class="card command-explorer">
+          <div class="command-toolbar">
+            <label class="searchbox" aria-label="Rechercher une commande">
+              <span aria-hidden="true">🔎</span>
+              <input type="search" data-command-search placeholder="Ex: create_group, poll, flagreact, welcome…">
+            </label>
+            <div class="chips" role="tablist" aria-label="Filtres">
+              <button type="button" class="chip active" data-filter="all">Tout</button>
+              <button type="button" class="chip" data-filter="slash">Slash</button>
+              <button type="button" class="chip" data-filter="context">Context menu</button>
+              <button type="button" class="chip" data-filter="group">Groupes</button>
+              <button type="button" class="chip" data-filter="premium">Premium</button>
+            </div>
+          </div>
+          <div class="command-list" data-command-list></div>
+          <div class="no-results hidden" data-no-results>Aucune commande ne correspond à cette recherche / filtre.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>FAQ rapide</h2>
+            <p>Les questions que l’on se pose avant de tester le bot.</p>
+          </div>
+        </div>
+        <div class="faq-list" data-faq-list></div>
+        <div class="cta-band">
+          <div>
+            <strong>Envie de tester ?</strong>
+            <p>Installe d’abord le bot sur un serveur de test, puis suis la page de commande dédiée pour le configurer étape par étape.</p>
+          </div>
+          <a class="btn btn-primary" data-bot-invite href="#" target="_blank" rel="noopener noreferrer"><span data-bot-cta-text>Ajouter le bot</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="brand"><span class="brand-badge" aria-hidden="true"></span><span>TradLinker.com</span></div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="tradlinker.html">TradLinker</a>
+          <a href="tradcoord.html">TradCoord</a>
+          <a href="tradassist.html">TradAssist</a>
+          <a href="terms-of-service.md" target="_blank" rel="noopener noreferrer">Terms</a>
+          <a href="privacy-policy.md" target="_blank" rel="noopener noreferrer">Privacy</a>
+        </div>
+      </div>
+      <small>Site de présentation des fonctionnalités et commandes publiques des bots. © <span data-year></span> TradLinker.</small>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
