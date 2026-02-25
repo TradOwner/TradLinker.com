@@ -100,6 +100,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  // Clickable home tiles -> dedicated bot pages
+  const homeTiles = [...document.querySelectorAll('[data-card-page]')];
+  homeTiles.forEach(tile => {
+    const targetId = tile.getAttribute('data-card-page');
+    if (!targetId || !pageMap.has(targetId)) return;
+
+    tile.style.cursor = 'pointer';
+
+    tile.addEventListener('click', () => {
+      showPage(targetId, { updateHash: true, scrollTop: true });
+    });
+
+    tile.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showPage(targetId, { updateHash: true, scrollTop: true });
+      }
+    });
+  });
+
   function handleHashChange(initial = false) {
     const targetId = (location.hash || '#home').slice(1);
     if (pageMap.has(targetId)) {
