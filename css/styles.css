@@ -146,11 +146,6 @@ code {
   background: rgba(255,255,255,.03);
   border-color: rgba(255,255,255,.14);
 }
-.btn-platinum {
-  background: linear-gradient(135deg, rgba(167,139,250,.26), rgba(236,72,153,.18));
-  border-color: rgba(167,139,250,.32);
-  box-shadow: 0 10px 35px rgba(167,139,250,.12);
-}
 .btn-ghost {
   background: linear-gradient(135deg, rgba(248,113,113,.13), rgba(167,139,250,.11));
   border-color: rgba(248,113,113,.22);
@@ -399,8 +394,6 @@ code {
   border-radius: 18px;
   padding: 16px;
   box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
 }
 .price-card.highlight {
   border-color: rgba(34,211,238,.23);
@@ -430,8 +423,75 @@ code {
   color: #dbe9fa;
 }
 .price-card li + li { margin-top: 7px; }
-.price-card .btn { margin-top: auto; }
-.price-card ul { margin-bottom: 14px; }
+.price-card .btn { margin-top: 14px; }
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+}
+.price-card-actions {
+  margin-top: auto;
+  padding-top: 14px;
+}
+.price-card-actions .btn { margin-top: 0; }
+.btn-platinum {
+  background: linear-gradient(135deg, rgba(167,139,250,.24), rgba(139,92,246,.20));
+  border-color: rgba(167,139,250,.34);
+  box-shadow: 0 10px 35px rgba(139,92,246,.14);
+}
+
+.offers-detail-panels {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+.offer-detail-tile {
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  padding: 14px;
+}
+.offer-detail-badge {
+  display: inline-flex;
+  margin: 0 0 8px;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: .75rem;
+  border: 1px solid rgba(34,211,238,.22);
+  color: #c9fbff;
+  background: rgba(34,211,238,.08);
+}
+.offer-detail-badge.platinum {
+  border-color: rgba(167,139,250,.22);
+  color: #eadcff;
+  background: rgba(167,139,250,.08);
+}
+.offer-detail-badge.free {
+  border-color: rgba(255,255,255,.14);
+  color: #d8e8fb;
+  background: rgba(255,255,255,.03);
+}
+.offer-detail-tile h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+.offer-steps,
+.offer-quotas-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #dbe9fa;
+}
+.offer-steps li + li,
+.offer-quotas-list li + li { margin-top: 7px; }
+.offer-detail-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+.btn.is-active-panel {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
 
 .compare-wrap {
   margin-top: 14px;
@@ -741,32 +801,4 @@ code {
 .nav a.btn.is-active {
   border-color: rgba(34,211,238,.32);
   box-shadow: 0 0 0 1px rgba(34,211,238,.18) inset;
-}
-
-
-/* Offres - tuiles explicatives interactives */
-.offer-info-area {
-  margin-top: 14px;
-}
-.offer-info-panel {
-  margin-top: 0;
-}
-.offer-info-panel[hidden] {
-  display: none !important;
-}
-.offer-info-panel h4 {
-  margin: 0 0 8px;
-  font-size: .95rem;
-  color: #eaf3ff;
-}
-.offer-info-panel ol,
-.offer-info-panel ul {
-  margin-bottom: 0;
-}
-.offer-toggle.is-active {
-  border-color: rgba(34,211,238,.32);
-  box-shadow: 0 0 0 1px rgba(34,211,238,.18) inset;
-}
-@media (max-width: 1080px) {
-  .offer-quota-grid { grid-template-columns: 1fr; }
 }
