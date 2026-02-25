@@ -734,3 +734,31 @@ code {
   border-color: rgba(34,211,238,.32);
   box-shadow: 0 0 0 1px rgba(34,211,238,.18) inset;
 }
+
+
+/* Offres - tuiles explicatives interactives */
+.offer-info-area {
+  margin-top: 14px;
+}
+.offer-info-panel {
+  margin-top: 0;
+}
+.offer-info-panel[hidden] {
+  display: none !important;
+}
+.offer-info-panel h4 {
+  margin: 0 0 8px;
+  font-size: .95rem;
+  color: #eaf3ff;
+}
+.offer-info-panel ol,
+.offer-info-panel ul {
+  margin-bottom: 0;
+}
+.offer-toggle.is-active {
+  border-color: rgba(34,211,238,.32);
+  box-shadow: 0 0 0 1px rgba(34,211,238,.18) inset;
+}
+@media (max-width: 1080px) {
+  .offer-quota-grid { grid-template-columns: 1fr; }
+}
