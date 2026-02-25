@@ -550,15 +550,82 @@ code {
   transform: translateY(0);
 }
 
+
+
+/* Bot detail pages */
+.bot-page-hero { padding-bottom: 12px; }
+.bot-page-card {
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,.022), rgba(255,255,255,.01));
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.bot-page-card.premium-glow {
+  border-color: rgba(248,113,113,.20);
+  background: linear-gradient(180deg, rgba(248,113,113,.045), rgba(255,255,255,.01));
+}
+.bot-page-card.assist-glow {
+  border-color: rgba(59,130,246,.20);
+  background: linear-gradient(180deg, rgba(59,130,246,.045), rgba(255,255,255,.01));
+}
+.bot-page-top {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.bot-page-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+}
+.bot-page-top h2 {
+  margin: 2px 0 0;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.1;
+}
+.bot-page-sub {
+  margin: 10px 0 0;
+  color: var(--muted);
+  max-width: 80ch;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.detail-card {
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  background: rgba(255,255,255,.015);
+  padding: 14px;
+}
+.detail-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.feature-list.compact {
+  margin-top: 10px;
+  padding-top: 0;
+}
+.feature-list.compact li + li { margin-top: 6px; }
+.detail-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
 /* Responsive */
 @media (max-width: 1080px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-panel { min-height: 460px; }
-  .cards-3, .bot-grid, .steps, .pricing-grid, .cta-grid { grid-template-columns: 1fr; }
+  .cards-3, .bot-grid, .steps, .pricing-grid, .cta-grid, .detail-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: 1fr; }
 }
-@media (max-width: 860px) {
+@media (max-width: 1180px) {
   .menu-toggle { display: block; }
   .nav {
     position: absolute; left: 4vw; right: 4vw; top: calc(100% + 8px);
