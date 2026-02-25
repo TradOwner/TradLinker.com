@@ -404,6 +404,7 @@
     </section>
       </div>
 
+      
 
       <div id="tradlinker" class="page-panel" data-page="tradlinker" hidden>
 <section class="section bot-page-hero">
@@ -422,7 +423,7 @@
           </div>
           <div class="hero-actions" style="margin-top:14px">
             <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&scope=bot" target="_blank" rel="noopener noreferrer">Ajouter TradLinker</a>
-            <a class="btn btn-secondary" href="#offres" data-page-link="offres">Voir l’offre Premium</a>
+            <a class="btn btn-secondary" href="#presentation" data-page-link="presentation">Voir la vue d’ensemble</a>
           </div>
         </div>
       </div>
@@ -453,8 +454,7 @@
             <ul>
               <li>Expérience fluide côté membres</li>
               <li>Conversation unifiée entre langues</li>
-              <li>Synchronisation automatique des réactions, des réponses Discord (système de reply) et des modifications en place des messages relayés</li>
-              <li>Réactions visibles via l'outil de lecture des réactions</li>
+              <li>Réactions visibles via outil public dédié</li>
             </ul>
           </article>
           <article class="info-card reveal">
@@ -474,9 +474,9 @@
 <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Commandes</p>
+          <p class="eyebrow">Commandes publiques</p>
           <h2>Tout ce qu’un admin / modérateur utilise au quotidien</h2>
-          <p class="section-sub">Ci-dessous : les commandes et actions visibles côté utilisateurs/admins.</p>
+          <p class="section-sub">Ci-dessous : uniquement les commandes et actions publiques visibles côté utilisateurs/admins (pas de commandes internes).</p>
         </div>
 
         <div class="detail-grid">
@@ -504,14 +504,14 @@
             <h3>📊 Sondages multilingues</h3>
             <ul class="feature-list compact">
               <li><code>/1-create_poll</code> — crée un sondage dans un salon lié et le diffuse dans les salons liés du groupe</li>
-              <li><code>/1-delete_poll</code> — supprime un sondage que vous avez créé (les admin peuvent supprimer tous les sondages)</li>
+              <li><code>/1-delete_poll</code> — supprime un sondage que vous avez créé (ou tout sondage si admin serveur)</li>
               <li>Durées proposées intégrées (de 15 min à 3 jours)</li>
               <li>Options texte (et images optionnelles par réponse si utilisées de façon complète)</li>
             </ul>
           </article>
 
           <article class="detail-card reveal">
-            <h3>💬 Outil de lecture des réactions</h3>
+            <h3>💬 Outil public de lecture des réactions</h3>
             <ul class="feature-list compact">
               <li><strong>Menu contextuel</strong> <code>Show reactions</code> — affiche les réactions d’un message de façon agrégée</li>
               <li>Très utile dans un système de messages relayés / traduits</li>
@@ -524,7 +524,7 @@
               <li><code>/7-donate</code> — soutien au projet</li>
               <li><code>/8-buy_premium</code> — abonnement Premium pour le serveur en cours</li>
             </ul>
-            <p class="detail-note">Le Premium débloque davantage de groupes/salons, ouvre l’accès à TradCoord (onboarding premium) et permet d'utiliser TradAssist en illimité sur le serveur.</p>
+            <p class="detail-note">Le Premium serveur débloque davantage de groupes/salons et ouvre l’accès à TradCoord (onboarding premium).</p>
           </article>
 
           <article class="detail-card reveal">
@@ -538,7 +538,7 @@
         </div>
 
         <div class="notice reveal">
-          <strong>Plan gratuit vs Premium :</strong> TradLinker inclut déjà la base du chat multilingue. Le Premium augmente les limites de configuration (groupes/salons) et complète l’expérience avec TradCoord + l'usage illimité de TradAssist sur le serveur.
+          <strong>Plan gratuit vs Premium :</strong> TradLinker inclut déjà la base du chat multilingue. Le Premium serveur augmente les limites de configuration (groupes/salons) et complète l’expérience avec TradCoord + usages avancés de la suite.
         </div>
       </div>
     </section>
@@ -697,7 +697,7 @@
             <span>DM + serveur</span><span>Traduction message</span><span>Traduction canal</span><span>Posts multilingues</span><span>Flag reactions</span>
           </div>
           <div class="hero-actions" style="margin-top:14px">
-            <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1419765128597078218&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">Ajouter TradAssist</a>
+            <a class="btn btn-primary" href="#tester" data-page-link="tester">Tester TradAssist</a>
             <a class="btn btn-secondary" href="#offres" data-page-link="offres">Voir Premium / Platinum</a>
           </div>
         </div>
@@ -749,9 +749,9 @@
 <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Commandes</p>
-          <h2>Fonctions de TradAssist (côté utilisateurs et serveurs)</h2>
-          <p class="section-sub">Liste complète des commandes slash et menus contextuels. Les quotas/illimités dépendent du plan (Free, Premium serveur, Platinum utilisateur).</p>
+          <p class="eyebrow">Commandes publiques</p>
+          <h2>Fonctions publiques de TradAssist (côté utilisateurs et serveurs)</h2>
+          <p class="section-sub">Liste complète des commandes slash et menus contextuels publics. Les quotas/illimités dépendent du plan (Free, Premium serveur, Platinum utilisateur).</p>
         </div>
 
         <div class="detail-grid">
@@ -795,7 +795,7 @@
           <article class="detail-card reveal">
             <h3>🚩 Traduction par réactions drapeau</h3>
             <ul class="feature-list compact">
-              <li>Fonction serveur uniquement : les membres réagissent avec un drapeau reconnu pour obtenir une traduction temporaire</li>
+              <li>Fonction publique : les membres réagissent avec un drapeau reconnu pour obtenir une traduction temporaire</li>
               <li><code>/5-flagreact set_delay</code> — règle l’auto-suppression (5 à 300 s)</li>
               <li><code>/5-flagreact show</code> — affiche le délai actuel</li>
               <li><code>/5-flagreact list_flags</code> — liste les drapeaux reconnus</li>
@@ -841,7 +841,9 @@
               <li>TradAssist : quotas mensuels</li>
               <li>TradCoord : non disponible</li>
             </ul>
-            <button class="btn btn-secondary full" type="button" data-offer-toggle="quotas-tradassist">Quotas TradAssist</button>
+            <div class="price-card-actions">
+              <button class="btn btn-secondary full" type="button" data-offer-panel-target="tradassist-quotas">Quotas TradAssist</button>
+            </div>
           </article>
 
           <article class="price-card highlight reveal">
@@ -854,7 +856,9 @@
               <li>TradAssist : extension de traduction côté serveur</li>
               <li>Fonctions clés TradAssist <strong>illimitées pour tous</strong> sur ce serveur (supportées)</li>
             </ul>
-            <button class="btn btn-primary full" type="button" data-offer-toggle="premium-serveur">Passer le serveur en Premium</button>
+            <div class="price-card-actions">
+              <button class="btn btn-primary full" type="button" data-offer-panel-target="premium-serveur">Passer le serveur en Premium</button>
+            </div>
           </article>
 
           <article class="price-card reveal">
@@ -866,7 +870,9 @@
               <li>Bypass des quotas sur serveur pour l’utilisateur (fonctions supportées)</li>
               <li>Utile même si le serveur n’est pas Premium</li>
             </ul>
-            <button class="btn btn-platinum full" type="button" data-offer-toggle="platinium-utilisateur">Devenez un utilisateur Platinium</button>
+            <div class="price-card-actions">
+              <button class="btn btn-platinum full" type="button" data-offer-panel-target="platinium-utilisateur">Devenez un utilisateur Platinium</button>
+            </div>
           </article>
         </div>
 
@@ -914,54 +920,41 @@
             </tbody>
           </table>
         </div>
-        <div class="offer-info-area" id="offresInfos" aria-live="polite">
-          <article class="detail-card offer-info-panel" data-offer-panel="premium-serveur" hidden>
-            <h3>🚀 Comment passer un serveur en Premium</h3>
-            <ol class="feature-list compact">
-              <li>Depuis <strong>le serveur que tu veux passer en Premium</strong>, lance la commande <code>/8-buy_premium</code>.</li>
-              <li>Le bot génère et transmet un <strong>lien de paiement Stripe</strong> (organisme de paiement sécurisé) pour souscrire à l’abonnement Premium serveur.</li>
+
+        <div class="offers-detail-panels reveal" id="offersDetailPanels" aria-live="polite">
+          <article class="offer-detail-tile" id="offer-panel-premium-serveur" data-offer-panel="premium-serveur" hidden>
+            <p class="offer-detail-badge">Premium serveur</p>
+            <h3>Comment passer un serveur en Premium</h3>
+            <ol class="offer-steps">
+              <li>Sur le <strong>serveur à passer en Premium</strong>, lance la commande <code>/8-buy_premium</code>.</li>
+              <li>Le bot génère un <strong>lien de paiement</strong> et le transmet pour accéder à <strong>Stripe</strong> (organisme de paiement sécurisé).</li>
               <li>Une fois le paiement reçu et validé, le serveur est <strong>automatiquement enregistré comme Premium</strong>.</li>
             </ol>
-            <p class="detail-note">La commande doit être exécutée dans le serveur concerné, car l’abonnement Premium est lié au serveur.</p>
+            <p class="offer-detail-note">Astuce : exécute la commande depuis le bon serveur pour que l’activation s’applique au bon espace Discord.</p>
           </article>
 
-          <article class="detail-card offer-info-panel" data-offer-panel="platinium-utilisateur" hidden>
-            <h3>💎 Comment devenir utilisateur Platinium</h3>
-            <ol class="feature-list compact">
-              <li>Fais la commande <code>/6-buy_platinium</code> (serveur, DM ou canal privé).</li>
-              <li>Le bot crée/affiche le lien de souscription sécurisé pour finaliser l’abonnement Platinium utilisateur.</li>
-              <li>Une fois le paiement validé, le compte utilisateur est <strong>automatiquement enregistré en Platinium</strong>.</li>
+          <article class="offer-detail-tile" id="offer-panel-platinium-utilisateur" data-offer-panel="platinium-utilisateur" hidden>
+            <p class="offer-detail-badge platinum">Platinium utilisateur</p>
+            <h3>Comment devenir un utilisateur Platinium</h3>
+            <ol class="offer-steps">
+              <li>Lance la commande <code>/6-buy_platinium</code> avec ton compte Discord.</li>
+              <li>Le bot te guide vers le lien de souscription associé à ton profil utilisateur.</li>
+              <li>Après paiement validé, ton compte est <strong>automatiquement enregistré comme utilisateur Platinium</strong>.</li>
             </ol>
-            <p class="detail-note">Cet abonnement est lié à l’utilisateur (pas à un serveur entier).</p>
+            <p class="offer-detail-note">Le plan Platinium débloque TradAssist pour toi, même si le serveur n’est pas Premium (fonctions supportées).</p>
           </article>
 
-          <article class="detail-card offer-info-panel" data-offer-panel="quotas-tradassist" hidden>
-            <h3>📊 Quotas TradAssist (utilisation gratuite)</h3>
-            <div class="detail-grid offer-quota-grid">
-              <div>
-                <h4>Sur serveur (par mois / serveur)</h4>
-                <ul class="feature-list compact">
-                  <li><code>translate_message</code> : <strong>20</strong></li>
-                  <li><code>translate_and_send</code> : <strong>10</strong></li>
-                  <li><code>translate_channel</code> : <strong>5</strong></li>
-                  <li><code>tutorial_post</code> : <strong>5</strong></li>
-                  <li><code>translate_flag</code> : <strong>20</strong> (réactions traduites)</li>
-                </ul>
-              </div>
-              <div>
-                <h4>En DM (par mois / utilisateur)</h4>
-                <ul class="feature-list compact">
-                  <li><code>translate_message</code> : <strong>5</strong></li>
-                  <li><code>translate_and_send</code> : <strong>5</strong></li>
-                  <li><code>tutorial_post</code> : <strong>2</strong></li>
-                </ul>
-                <h4 style="margin-top:12px;">Bouton tutoriel “Translate”</h4>
-                <ul class="feature-list compact">
-                  <li><strong>20 clics / mois / bouton</strong></li>
-                </ul>
-              </div>
-            </div>
-            <p class="detail-note">Réinitialisation des quotas gratuits : <strong>1er de chaque mois à 00:00 UTC</strong>.</p>
+          <article class="offer-detail-tile" id="offer-panel-tradassist-quotas" data-offer-panel="tradassist-quotas" hidden>
+            <p class="offer-detail-badge free">Quotas TradAssist (Free)</p>
+            <h3>Quotas en utilisation gratuite de TradAssist</h3>
+            <ul class="offer-quotas-list">
+              <li><strong>Sur serveur :</strong> quotas mensuels appliqués aux fonctions TradAssist (selon usage et commandes supportées).</li>
+              <li><strong>En DM :</strong> quotas mensuels pour l’usage personnel gratuit.</li>
+              <li><strong>Bouton tutoriel / démarrage :</strong> disponible pour aider à découvrir les fonctions sans abonnement.</li>
+              <li><strong>Extension serveur Premium :</strong> certaines fonctions deviennent illimitées sur un serveur Premium.</li>
+              <li><strong>Platinium utilisateur :</strong> bypass des quotas pour l’utilisateur sur les fonctions supportées.</li>
+            </ul>
+            <p class="offer-detail-note">Les quotas exacts peuvent évoluer : l’interface Discord / messages du bot font foi au moment de l’usage.</p>
           </article>
         </div>
       </div>
