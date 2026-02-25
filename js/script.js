@@ -122,46 +122,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-  // Offres: boutons -> tuiles explicatives (une seule visible à la fois)
-  const offerToggleButtons = [...document.querySelectorAll('[data-offer-toggle]')];
+  // Offres: explanatory panels (exclusive display)
+  const offerPanelButtons = [...document.querySelectorAll('[data-offer-panel-target]')];
   const offerPanels = [...document.querySelectorAll('[data-offer-panel]')];
   const offerPanelMap = new Map(offerPanels.map(panel => [panel.getAttribute('data-offer-panel'), panel]));
 
-  function showOfferPanel(panelId) {
-    if (!offerPanelMap.has(panelId)) return;
-
+  function openOfferPanel(panelId) {
     offerPanels.forEach(panel => {
       const isTarget = panel.getAttribute('data-offer-panel') === panelId;
-      if (isTarget) {
-        panel.removeAttribute('hidden');
-      } else {
-        panel.setAttribute('hidden', '');
-      }
+      panel.toggleAttribute('hidden', !isTarget);
     });
 
-    offerToggleButtons.forEach(btn => {
-      const isActive = btn.getAttribute('data-offer-toggle') === panelId;
-      btn.classList.toggle('is-active', isActive);
-      btn.classList.toggle('offer-toggle', true);
-      btn.setAttribute('aria-expanded', String(isActive));
+    offerPanelButtons.forEach(btn => {
+      const active = btn.getAttribute('data-offer-panel-target') === panelId;
+      btn.classList.toggle('is-active-panel', active);
+      btn.setAttribute('aria-expanded', active ? 'true' : 'false');
     });
 
-    const activePanel = offerPanelMap.get(panelId);
-    if (activePanel) {
-      activePanel.scrollIntoView({ block: 'nearest', behavior: reduceMotion ? 'auto' : 'smooth' });
+    const target = offerPanelMap.get(panelId);
+    if (target) {
+      const y = target.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top: Math.max(0, y), behavior: reduceMotion ? 'auto' : 'smooth' });
     }
   }
 
-  offerToggleButtons.forEach(btn => {
-    btn.classList.add('offer-toggle');
+  offerPanelButtons.forEach(btn => {
     btn.setAttribute('aria-expanded', 'false');
     btn.addEventListener('click', () => {
-      const target = btn.getAttribute('data-offer-toggle');
-      if (!target) return;
-      showOfferPanel(target);
+      const panelId = btn.getAttribute('data-offer-panel-target');
+      if (!panelId || !offerPanelMap.has(panelId)) return;
+      openOfferPanel(panelId);
     });
   });
+
   function handleHashChange(initial = false) {
     const targetId = (location.hash || '#home').slice(1);
     if (pageMap.has(targetId)) {
