@@ -590,6 +590,10 @@ code {
 .page-stack {
   position: relative;
 }
+/* Masquage par défaut : une seule page visible (même sans JS) */
+.page-panel {
+  display: none;
+}
 .page-panel[hidden] {
   display: none !important;
 }
