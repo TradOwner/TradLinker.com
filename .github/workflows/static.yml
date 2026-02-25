@@ -31,12 +31,11 @@ jobs:
       - name: Prepare site folder
         run: |
           mkdir -p _site
-          cp index.html _site/
-          cp -r css _site/
-          cp -r js _site/
-          cp -r image _site/
-          [ -f privacy-policy.md ] && cp privacy-policy.md _site/ || true
-          [ -f terms-of-service.md ] && cp terms-of-service.md _site/ || true
+          rsync -av \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='_site/' \
+            ./ _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
