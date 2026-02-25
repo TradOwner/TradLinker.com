@@ -131,6 +131,7 @@ code {
   border: 1px solid var(--border);
   color: white; background: rgba(255,255,255,.02);
   font-weight: 650; line-height: 1;
+  cursor: pointer;
   transition: transform .15s ease, filter .15s ease, background .2s ease, border-color .2s ease;
 }
 .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
