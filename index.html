@@ -841,6 +841,7 @@
               <li>TradAssist : quotas mensuels</li>
               <li>TradCoord : non disponible</li>
             </ul>
+            <button class="btn btn-secondary full" type="button" data-offer-toggle="quotas-tradassist">Quotas TradAssist</button>
           </article>
 
           <article class="price-card highlight reveal">
@@ -853,7 +854,7 @@
               <li>TradAssist : extension de traduction côté serveur</li>
               <li>Fonctions clés TradAssist <strong>illimitées pour tous</strong> sur ce serveur (supportées)</li>
             </ul>
-            <a class="btn btn-primary full" href="https://buy.stripe.com/eVa9DpcWf6gsd7GfYY" target="_blank" rel="noopener noreferrer">Passer le serveur en Premium</a>
+            <button class="btn btn-primary full" type="button" data-offer-toggle="premium-serveur">Passer le serveur en Premium</button>
           </article>
 
           <article class="price-card reveal">
@@ -865,7 +866,7 @@
               <li>Bypass des quotas sur serveur pour l’utilisateur (fonctions supportées)</li>
               <li>Utile même si le serveur n’est pas Premium</li>
             </ul>
-            <button class="btn btn-secondary full" type="button" disabled aria-disabled="true" title="Ajoute ici ton lien TradAssist /6-buy_platinium si tu veux un bouton web">Lien web Platinum à ajouter</button>
+            <button class="btn btn-secondary full" type="button" data-offer-toggle="platinium-utilisateur">Devenez utilisateur Platinium</button>
           </article>
         </div>
 
@@ -912,6 +913,56 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        <div class="offer-info-area" id="offresInfos" aria-live="polite">
+          <article class="detail-card offer-info-panel" data-offer-panel="premium-serveur" hidden>
+            <h3>🚀 Comment passer un serveur en Premium</h3>
+            <ol class="feature-list compact">
+              <li>Depuis <strong>le serveur que tu veux passer en Premium</strong>, lance la commande <code>/8-buy_premium</code>.</li>
+              <li>Le bot génère et transmet un <strong>lien de paiement Stripe</strong> (organisme de paiement sécurisé) pour souscrire à l’abonnement Premium serveur.</li>
+              <li>Une fois le paiement reçu et validé, le serveur est <strong>automatiquement enregistré comme Premium</strong>.</li>
+            </ol>
+            <p class="detail-note">La commande doit être exécutée dans le serveur concerné, car l’abonnement Premium est lié au serveur.</p>
+          </article>
+
+          <article class="detail-card offer-info-panel" data-offer-panel="platinium-utilisateur" hidden>
+            <h3>💎 Comment devenir utilisateur Platinium</h3>
+            <ol class="feature-list compact">
+              <li>Fais la commande <code>/6-buy_platinium</code> (serveur, DM ou canal privé).</li>
+              <li>Le bot crée/affiche le lien de souscription sécurisé pour finaliser l’abonnement Platinium utilisateur.</li>
+              <li>Une fois le paiement validé, le compte utilisateur est <strong>automatiquement enregistré en Platinium</strong>.</li>
+            </ol>
+            <p class="detail-note">Cet abonnement est lié à l’utilisateur (pas à un serveur entier).</p>
+          </article>
+
+          <article class="detail-card offer-info-panel" data-offer-panel="quotas-tradassist" hidden>
+            <h3>📊 Quotas TradAssist (utilisation gratuite)</h3>
+            <div class="detail-grid offer-quota-grid">
+              <div>
+                <h4>Sur serveur (par mois / serveur)</h4>
+                <ul class="feature-list compact">
+                  <li><code>translate_message</code> : <strong>20</strong></li>
+                  <li><code>translate_and_send</code> : <strong>10</strong></li>
+                  <li><code>translate_channel</code> : <strong>5</strong></li>
+                  <li><code>tutorial_post</code> : <strong>5</strong></li>
+                  <li><code>translate_flag</code> : <strong>20</strong> (réactions traduites)</li>
+                </ul>
+              </div>
+              <div>
+                <h4>En DM (par mois / utilisateur)</h4>
+                <ul class="feature-list compact">
+                  <li><code>translate_message</code> : <strong>5</strong></li>
+                  <li><code>translate_and_send</code> : <strong>5</strong></li>
+                  <li><code>tutorial_post</code> : <strong>2</strong></li>
+                </ul>
+                <h4 style="margin-top:12px;">Bouton tutoriel “Translate”</h4>
+                <ul class="feature-list compact">
+                  <li><strong>20 clics / mois / bouton</strong></li>
+                </ul>
+              </div>
+            </div>
+            <p class="detail-note">Réinitialisation des quotas gratuits : <strong>1er de chaque mois à 00:00 UTC</strong>.</p>
+          </article>
         </div>
       </div>
     </section>
