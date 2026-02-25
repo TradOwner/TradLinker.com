@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menuToggle');
   const nav = document.getElementById('siteNav');
   const year = document.getElementById('year');
+  const pagePanels = [...document.querySelectorAll('.page-panel')];
+  const pageMap = new Map(pagePanels.map(p => [p.id, p]));
+  const pageLinks = [...document.querySelectorAll('a[href^="#"]')];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -11,16 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
       menuBtn.setAttribute('aria-expanded', String(!expanded));
       nav.classList.toggle('open');
     });
-
-    nav.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', () => {
-        menuBtn.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('open');
-      });
-    });
   }
 
-  // Reveal on scroll
+  // Reveal on scroll (kept from original)
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -32,18 +29,86 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.12 });
   revealEls.forEach(el => io.observe(el));
 
-  // Active nav section
-  const navLinks = [...document.querySelectorAll('#siteNav a[href^="#"]')];
-  const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  let currentPageId = pagePanels.find(p => p.classList.contains('is-active'))?.id || 'home';
 
-  const spy = new IntersectionObserver((entries) => {
-    const visible = entries
-      .filter(e => e.isIntersecting)
-      .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    const id = '#' + visible.target.id;
-    navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === id));
-  }, { rootMargin: '-35% 0px -55% 0px', threshold: [0.1, 0.2, 0.4, 0.6] });
+  function closeMenu() {
+    if (!menuBtn || !nav) return;
+    menuBtn.setAttribute('aria-expanded', 'false');
+    nav.classList.remove('open');
+  }
 
-  sections.forEach(s => spy.observe(s));
+  function markActiveLink(pageId) {
+    const normalized = '#' + pageId;
+    document.querySelectorAll('#siteNav a[href^="#"]').forEach(link => {
+      link.classList.toggle('is-active', link.getAttribute('href') === normalized);
+    });
+  }
+
+  function showPage(pageId, opts = {}) {
+    const next = pageMap.get(pageId);
+    if (!next) return false;
+    const current = pageMap.get(currentPageId);
+
+    if (current && current !== next) {
+      current.classList.remove('is-active', 'entering');
+      current.setAttribute('hidden', '');
+    }
+
+    next.removeAttribute('hidden');
+    next.classList.add('is-active');
+
+    if (!reduceMotion) {
+      next.classList.remove('entering');
+      void next.offsetWidth; // restart animation
+      next.classList.add('entering');
+    }
+
+    currentPageId = pageId;
+    markActiveLink(pageId);
+    closeMenu();
+
+    if (opts.updateHash !== false && location.hash !== '#' + pageId) {
+      history.replaceState(null, '', '#' + pageId);
+    }
+
+    if (opts.scrollTop !== false) {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
+
+    return true;
+  }
+
+  // Init hidden state
+  pagePanels.forEach(panel => {
+    if (!panel.classList.contains('is-active')) panel.setAttribute('hidden', '');
+  });
+
+  // Click navigation / internal page links
+  pageLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+      const targetId = href.slice(1);
+
+      if (!pageMap.has(targetId)) {
+        closeMenu();
+        return;
+      }
+
+      e.preventDefault();
+      showPage(targetId, { updateHash: true, scrollTop: true });
+    });
+  });
+
+  function handleHashChange(initial = false) {
+    const targetId = (location.hash || '#home').slice(1);
+    if (pageMap.has(targetId)) {
+      showPage(targetId, { updateHash: false, scrollTop: !initial });
+    } else if (initial) {
+      showPage('home', { updateHash: false, scrollTop: false });
+    }
+  }
+
+  window.addEventListener('hashchange', () => handleHashChange(false));
+  handleHashChange(true);
 });
