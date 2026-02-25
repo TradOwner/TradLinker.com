@@ -146,6 +146,11 @@ code {
   background: rgba(255,255,255,.03);
   border-color: rgba(255,255,255,.14);
 }
+.btn-platinum {
+  background: linear-gradient(135deg, rgba(167,139,250,.26), rgba(236,72,153,.18));
+  border-color: rgba(167,139,250,.32);
+  box-shadow: 0 10px 35px rgba(167,139,250,.12);
+}
 .btn-ghost {
   background: linear-gradient(135deg, rgba(248,113,113,.13), rgba(167,139,250,.11));
   border-color: rgba(248,113,113,.22);
@@ -394,6 +399,8 @@ code {
   border-radius: 18px;
   padding: 16px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
 }
 .price-card.highlight {
   border-color: rgba(34,211,238,.23);
@@ -423,7 +430,8 @@ code {
   color: #dbe9fa;
 }
 .price-card li + li { margin-top: 7px; }
-.price-card .btn { margin-top: 14px; }
+.price-card .btn { margin-top: auto; }
+.price-card ul { margin-bottom: 14px; }
 
 .compare-wrap {
   margin-top: 14px;
