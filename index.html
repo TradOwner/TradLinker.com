@@ -41,8 +41,10 @@
       </button>
 
       <nav class="nav" id="siteNav">
-  <a href="#home" data-page-link="home" class="is-active">Accueil</a>
   <a href="#presentation" data-page-link="presentation">Présentation</a>
+  <a href="#tradlinker" data-page-link="tradlinker">TradLinker</a>
+  <a href="#tradcoord" data-page-link="tradcoord">TradCoord</a>
+  <a href="#tradassist" data-page-link="tradassist">TradAssist</a>
   <a href="#offres" data-page-link="offres">Offres</a>
   <a href="#faq" data-page-link="faq">FAQ</a>
   <a href="#tester" data-page-link="tester" class="btn btn-ghost btn-sm">Tester</a>
@@ -274,6 +276,422 @@
             <h3>TradCoord verrouille l’onboarding premium</h3>
             <p>Règles, langues, rôles et accès : moins de spam, moins de notifications inutiles, meilleure expérience membre.</p>
           </article>
+        </div>
+      </div>
+    </section>
+      </div>
+
+      
+
+      <div id="tradlinker" class="page-panel" data-page="tradlinker" hidden>
+<section class="section bot-page-hero">
+      <div class="container">
+        <div class="bot-page-card reveal">
+          <div class="bot-page-top">
+            <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="bot-page-avatar">
+            <div>
+              <p class="eyebrow">Bot principal</p>
+              <h2>TradLinker</h2>
+              <p class="bot-page-sub">Le cœur de la conversation multilingue sur Discord : il relie des salons par langue et republie automatiquement les messages traduits dans chaque salon lié.</p>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span>Traduction automatique</span><span>Salons liés</span><span>Sondages multilingues</span><span>Réactions synchronisées</span>
+          </div>
+          <div class="hero-actions" style="margin-top:14px">
+            <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&scope=bot" target="_blank" rel="noopener noreferrer">Ajouter TradLinker</a>
+            <a class="btn btn-secondary" href="#presentation" data-page-link="presentation">Voir la vue d’ensemble</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ce que fait TradLinker</p>
+          <h2>Un seul fil de discussion, dans plusieurs langues</h2>
+          <p class="section-sub">TradLinker est conçu pour éviter la fragmentation des échanges. Au lieu d’avoir des communautés séparées, vous créez un groupe de salons (FR, EN, ES, etc.) et le bot se charge de relayer chaque message dans les autres salons du groupe avec traduction.</p>
+        </div>
+        <div class="cards-3">
+          <article class="info-card reveal">
+            <div class="card-icon cyan">A</div>
+            <h3>Groupes de salons liés</h3>
+            <p>Vous créez des groupes (ex. <em>General</em>) puis vous y ajoutez un salon par langue. TradLinker sait ainsi où republier chaque message.</p>
+            <ul>
+              <li>Organisation par groupe (ex : Général, Support, Recrutement)</li>
+              <li>Un salon = une langue dans le groupe</li>
+              <li>Configuration visible et modifiable à tout moment</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon blue">B</div>
+            <h3>Relais + traduction automatiques</h3>
+            <p>Quand un membre écrit dans un salon lié, le message est republié dans les autres salons du même groupe avec traduction adaptée à chaque langue.</p>
+            <ul>
+              <li>Expérience fluide côté membres</li>
+              <li>Conversation unifiée entre langues</li>
+              <li>Réactions visibles via outil public dédié</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon red">C</div>
+            <h3>Sondages multilingues intégrés</h3>
+            <p>Vous pouvez lancer un sondage depuis un salon lié et le bot le diffuse dans tous les salons du groupe avec options traduites.</p>
+            <ul>
+              <li>Questions + options traduites par langue</li>
+              <li>Diffusion synchronisée sur les salons liés</li>
+              <li>Suppression assistée du sondage par son créateur (ou admin)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Commandes publiques</p>
+          <h2>Tout ce qu’un admin / modérateur utilise au quotidien</h2>
+          <p class="section-sub">Ci-dessous : uniquement les commandes et actions publiques visibles côté utilisateurs/admins (pas de commandes internes).</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>🧭 Mise en route</h3>
+            <ul class="feature-list compact">
+              <li><code>/help</code> — guide d’installation rapide TradLinker (groupes, salons, premium, support)</li>
+              <li><strong>Bon à savoir :</strong> le bot présente la logique de setup étape par étape pour démarrer rapidement</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🛠️ Configuration des groupes (admin serveur)</h3>
+            <ul class="feature-list compact">
+              <li><code>/2-create_group</code> — crée un groupe de salons liés</li>
+              <li><code>/3-add_channel</code> — ajoute un salon à un groupe puis propose la sélection de langue</li>
+              <li><code>/4-remove_channel</code> — retire un salon d’un groupe</li>
+              <li><code>/5-delete_group</code> — supprime un groupe entier</li>
+              <li><code>/6-show_groups</code> — affiche la configuration actuelle (groupes + salons + langues)</li>
+            </ul>
+            <p class="detail-note">Usage principal en serveur • permissions de gestion des salons requises pour les commandes de configuration.</p>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>📊 Sondages multilingues</h3>
+            <ul class="feature-list compact">
+              <li><code>/1-create_poll</code> — crée un sondage dans un salon lié et le diffuse dans les salons liés du groupe</li>
+              <li><code>/1-delete_poll</code> — supprime un sondage que vous avez créé (ou tout sondage si admin serveur)</li>
+              <li>Durées proposées intégrées (de 15 min à 3 jours)</li>
+              <li>Options texte (et images optionnelles par réponse si utilisées de façon complète)</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>💬 Outil public de lecture des réactions</h3>
+            <ul class="feature-list compact">
+              <li><strong>Menu contextuel</strong> <code>Show reactions</code> — affiche les réactions d’un message de façon agrégée</li>
+              <li>Très utile dans un système de messages relayés / traduits</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>💎 Soutien & abonnement serveur</h3>
+            <ul class="feature-list compact">
+              <li><code>/7-donate</code> — soutien au projet</li>
+              <li><code>/8-buy_premium</code> — abonnement Premium pour le serveur en cours</li>
+            </ul>
+            <p class="detail-note">Le Premium serveur débloque davantage de groupes/salons et ouvre l’accès à TradCoord (onboarding premium).</p>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🎯 Pour quel usage ?</h3>
+            <ul class="feature-list compact">
+              <li>Communautés internationales (gaming, créateurs, support, open source)</li>
+              <li>Serveurs qui veulent garder <strong>une seule communauté</strong> sans séparer par langue</li>
+              <li>Équipes qui ont besoin d’un setup simple et fiable à administrer</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Plan gratuit vs Premium :</strong> TradLinker inclut déjà la base du chat multilingue. Le Premium serveur augmente les limites de configuration (groupes/salons) et complète l’expérience avec TradCoord + usages avancés de la suite.
+        </div>
+      </div>
+    </section>
+      </div>
+
+      <div id="tradcoord" class="page-panel" data-page="tradcoord" hidden>
+<section class="section bot-page-hero">
+      <div class="container">
+        <div class="bot-page-card reveal premium-glow">
+          <div class="bot-page-top">
+            <img src="./image/Avatar%20Orga%20rond.png" alt="TradCoord" class="bot-page-avatar">
+            <div>
+              <p class="eyebrow">Extension Premium</p>
+              <h2>TradCoord</h2>
+              <p class="bot-page-sub">Le bot d’onboarding et de coordination qui rend un serveur premium propre dès l’arrivée des membres : accueil, acceptation des règles, rôles de langue et gestion d’accès par scope.</p>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span>Welcome</span><span>Règles</span><span>Rôles/langue</span><span>Coordination interactive</span>
+          </div>
+          <div class="hero-actions" style="margin-top:14px">
+            <a class="btn btn-secondary" href="#offres" data-page-link="offres">Voir Premium serveur</a>
+            <a class="btn btn-primary" href="#tester" data-page-link="tester">Voir les liens d’ajout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rôle dans la suite</p>
+          <h2>TradCoord prend le relais après la traduction</h2>
+          <p class="section-sub">Une fois les salons multilingues en place avec TradLinker, TradCoord aide à accueillir les nouveaux membres, faire accepter les règles et distribuer les accès/langues sans chaos ni notifications inutiles.</p>
+        </div>
+        <div class="cards-3">
+          <article class="info-card reveal">
+            <div class="card-icon cyan">1</div>
+            <h3>Accueil personnalisé</h3>
+            <p>Configure un message de bienvenue avec texte personnalisé, mention du nouvel arrivant et lien vers un salon clé.</p>
+            <ul>
+              <li>Texte libre (via modal)</li>
+              <li>Variables simples <code>{user}</code> et <code>{channel}</code></li>
+              <li>Bouton pour aller au bon salon</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon blue">2</div>
+            <h3>Acceptation des règles</h3>
+            <p>Publie un message de règles avec bouton d’acceptation, attribue un rôle à l’utilisateur et envoie un log d’acceptation.</p>
+            <ul>
+              <li>Flux simple pour les nouveaux membres</li>
+              <li>Traçabilité côté modération</li>
+              <li>Redirection vers le salon de choix de langue</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon red">3</div>
+            <h3>Coordination par scope</h3>
+            <p>Crée des messages interactifs de rôles/langues pour un groupe, plusieurs groupes, ou tous les groupes TradLinker.</p>
+            <ul>
+              <li>Sélection d’un ou plusieurs groupes</li>
+              <li>Mise à jour / suppression sécurisées</li>
+              <li>Nettoyage des rôles et permissions</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Commandes publiques</p>
+          <h2>Fonctions visibles côté admins (Premium serveur)</h2>
+          <p class="section-sub">Toutes les commandes ci-dessous sont des commandes publiques d’administration côté Discord. TradCoord est destiné aux serveurs Premium.</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>👋 Welcome</h3>
+            <ul class="feature-list compact">
+              <li><code>/1-set_welcome</code> — configure le message de bienvenue (choix du salon d’envoi + texte via modal)</li>
+              <li><code>/1-clear_welcome</code> — désactive et supprime la configuration de bienvenue du serveur</li>
+            </ul>
+            <p class="detail-note">Permissions : gestion des messages. Réservé aux serveurs Premium.</p>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>📜 Règles + validation</h3>
+            <ul class="feature-list compact">
+              <li><code>/2-set_rules_message</code> — envoie un message d’acceptation des règles avec bouton</li>
+              <li>Paramètres publics : salon du message, salon de logs, salon de langue, rôle à attribuer</li>
+              <li>Au clic : attribution du rôle + message de confirmation + lien vers le salon de langue</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🧩 Coordination interactive (création)</h3>
+            <ul class="feature-list compact">
+              <li><code>/3-coordination</code> — crée un message interactif de gestion de rôles dans un salon donné</li>
+              <li>Permet de cibler un groupe, plusieurs groupes ou tous les groupes TradLinker</li>
+              <li>Crée/associe les rôles par langue pour le scope choisi</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>✏️ Maintenance de la coordination</h3>
+            <ul class="feature-list compact">
+              <li><code>/3-edit_coordination</code> — met à jour un message de coordination existant (utile après changement de groupes/salons)</li>
+              <li><code>/3-delete_coordination</code> — supprime un scope de coordination avec confirmation</li>
+              <li>Nettoyage sécurisé des permissions/roles inutilisés si possible</li>
+            </ul>
+            <p class="detail-note">Suppression : permissions <em>Manage Messages</em> + <em>Manage Roles</em>.</p>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>✅ Ce que ça change pour tes membres</h3>
+            <ul class="feature-list compact">
+              <li>Arrivée plus claire (welcome + règles + choix de langue)</li>
+              <li>Moins de friction pour accéder au bon contenu</li>
+              <li>Meilleure lisibilité d’un serveur multilingue à grande échelle</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🎯 Pour quel type de serveur ?</h3>
+            <ul class="feature-list compact">
+              <li>Communautés avec onboarding important (créateurs, jeux, support, écoles)</li>
+              <li>Serveurs avec beaucoup de salons/langues et besoin de structure</li>
+              <li>Équipes de modération qui veulent gagner du temps</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Important :</strong> TradCoord est pensé comme un <strong>complément Premium</strong> de TradLinker. Il s’appuie sur la configuration de groupes/langues déjà créée dans TradLinker pour piloter l’accès et l’onboarding.
+        </div>
+      </div>
+    </section>
+      </div>
+
+      <div id="tradassist" class="page-panel" data-page="tradassist" hidden>
+<section class="section bot-page-hero">
+      <div class="container">
+        <div class="bot-page-card reveal assist-glow">
+          <div class="bot-page-top">
+            <img src="./image/Avatar%20Assistant%20rond.png" alt="TradAssist" class="bot-page-avatar">
+            <div>
+              <p class="eyebrow">Assistant personnel & extension serveur</p>
+              <h2>TradAssist</h2>
+              <p class="bot-page-sub">Le bot “boîte à outils traduction” : traductions ponctuelles, traduction d’un message ou d’un canal, posts multilingues avec bouton Translate, et traduction par réactions drapeau.</p>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span>DM + serveur</span><span>Traduction message</span><span>Traduction canal</span><span>Posts multilingues</span><span>Flag reactions</span>
+          </div>
+          <div class="hero-actions" style="margin-top:14px">
+            <a class="btn btn-primary" href="#tester" data-page-link="tester">Tester TradAssist</a>
+            <a class="btn btn-secondary" href="#offres" data-page-link="offres">Voir Premium / Platinum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Pourquoi il plaît</p>
+          <h2>Un assistant simple pour les utilisateurs, puissant pour les serveurs</h2>
+          <p class="section-sub">TradAssist peut être utilisé en message privé pour un usage personnel, mais aussi directement sur serveur comme extension de traduction. C’est le bot “action rapide” de la suite.</p>
+        </div>
+        <div class="cards-3">
+          <article class="info-card reveal">
+            <div class="card-icon cyan">1</div>
+            <h3>Traduire vite, sans config lourde</h3>
+            <p>Traduction de message, de texte saisi, ou d’un canal récent via commandes et menus contextuels.</p>
+            <ul>
+              <li>Usage en DM et sur serveur (selon la commande)</li>
+              <li>Réponses éphémères pour ne pas polluer le salon</li>
+              <li>Ciblage automatique de la langue selon la locale</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon blue">2</div>
+            <h3>Publier du contenu multilingue</h3>
+            <p>Crée des posts avec texte + pièces jointes et bouton <em>Translate</em>, puis édite facilement ces posts.</p>
+            <ul>
+              <li>Création rapide (attachments + modal)</li>
+              <li>Bouton Translate pour les lecteurs</li>
+              <li>Edition du message du bot avec contrôle adapté</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <div class="card-icon red">3</div>
+            <h3>Réactions drapeau = traduction instantanée</h3>
+            <p>Les membres réagissent avec un drapeau reconnu, et TradAssist envoie une traduction temporaire du message.</p>
+            <ul>
+              <li>Très intuitif pour les membres</li>
+              <li>Délai d’auto-suppression configurable</li>
+              <li>Liste des drapeaux reconnus disponible en commande</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Commandes publiques</p>
+          <h2>Fonctions publiques de TradAssist (côté utilisateurs et serveurs)</h2>
+          <p class="section-sub">Liste complète des commandes slash et menus contextuels publics. Les quotas/illimités dépendent du plan (Free, Premium serveur, Platinum utilisateur).</p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>✍️ Traduction & envoi de texte</h3>
+            <ul class="feature-list compact">
+              <li><code>/1-translate_and_send</code> — ouvre un sélecteur de langue puis un formulaire texte à traduire/envoyer</li>
+              <li>Disponible en serveur, DM et canaux privés</li>
+              <li>Idéal pour rédiger rapidement un message dans une autre langue</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🧾 Posts multilingues avec bouton Translate</h3>
+            <ul class="feature-list compact">
+              <li><code>/2-multilang_post_create</code> — crée un post (texte + jusqu’à 5 pièces jointes) avec bouton <em>Translate</em></li>
+              <li><code>/2-multilang_post_edit</code> — édite un post existant du bot (texte + remplacement de pièces jointes optionnel)</li>
+              <li>Usage possible en serveur, DM et canaux privés</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>📚 Traduction d’un canal (serveur)</h3>
+            <ul class="feature-list compact">
+              <li><code>/3-translate_channel</code> — traduit les <strong>N derniers messages</strong> du salon (max 100) avec pagination</li>
+              <li><strong>Menu contextuel</strong> <code>Translate channel</code> — ouvre le même flux depuis un message</li>
+              <li>Commande serveur uniquement (pas DM)</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>💬 Traduction d’un message précis</h3>
+            <ul class="feature-list compact">
+              <li><code>/4-translate_message</code> — traduit un message du salon courant (via ID de message)</li>
+              <li><strong>Menu contextuel</strong> <code>Translate message</code> — méthode la plus simple (clic droit / Apps)</li>
+              <li>Disponible en serveur, DM et canaux privés</li>
+              <li>Réponse éphémère, pratique pour traduire sans spam</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>🚩 Traduction par réactions drapeau</h3>
+            <ul class="feature-list compact">
+              <li>Fonction publique : les membres réagissent avec un drapeau reconnu pour obtenir une traduction temporaire</li>
+              <li><code>/5-flagreact set_delay</code> — règle l’auto-suppression (5 à 300 s)</li>
+              <li><code>/5-flagreact show</code> — affiche le délai actuel</li>
+              <li><code>/5-flagreact list_flags</code> — liste les drapeaux reconnus</li>
+            </ul>
+            <p class="detail-note">Réglage <code>set_delay</code> : commande serveur avec permissions de gestion du serveur / admin.</p>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>💎 Abonnement utilisateur (public)</h3>
+            <ul class="feature-list compact">
+              <li><code>/6-buy_platinium</code> — ouvre/guide l’abonnement Platinum utilisateur</li>
+              <li>Commande disponible en serveur, DM et canaux privés</li>
+              <li>Intéressant pour un usage perso illimité sur fonctions supportées</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="notice reveal">
+          <strong>À retenir :</strong> TradAssist est le bot le plus “immédiat” de la suite. Il peut servir à un utilisateur seul (DM) <em>ou</em> devenir une extension très utile sur serveur — surtout en complément de TradLinker.
         </div>
       </div>
     </section>
