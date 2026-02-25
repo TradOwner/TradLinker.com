@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pagePanels = [...document.querySelectorAll('.page-panel')];
   const pageMap = new Map(pagePanels.map(p => [p.id, p]));
   const pageLinks = [...document.querySelectorAll('a[href^="#"]')];
+  const suiteChips = [...document.querySelectorAll('.suite-chip[data-page-target]')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (year) year.textContent = new Date().getFullYear();
@@ -78,6 +79,23 @@ document.addEventListener('DOMContentLoaded', () => {
     return true;
   }
 
+  // Clickable home suite tiles (TradLinker / TradAssist / TradCoord)
+  suiteChips.forEach(tile => {
+    const targetId = tile.getAttribute('data-page-target');
+    if (!targetId || !pageMap.has(targetId)) return;
+
+    tile.addEventListener('click', () => {
+      showPage(targetId, { updateHash: true, scrollTop: true });
+    });
+
+    tile.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showPage(targetId, { updateHash: true, scrollTop: true });
+      }
+    });
+  });
+
   // Init hidden state
   pagePanels.forEach(panel => {
     if (!panel.classList.contains('is-active')) panel.setAttribute('hidden', '');
@@ -97,27 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
       showPage(targetId, { updateHash: true, scrollTop: true });
-    });
-  });
-
-
-  // Clickable home tiles -> dedicated bot pages
-  const homeTiles = [...document.querySelectorAll('[data-card-page]')];
-  homeTiles.forEach(tile => {
-    const targetId = tile.getAttribute('data-card-page');
-    if (!targetId || !pageMap.has(targetId)) return;
-
-    tile.style.cursor = 'pointer';
-
-    tile.addEventListener('click', () => {
-      showPage(targetId, { updateHash: true, scrollTop: true });
-    });
-
-    tile.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        showPage(targetId, { updateHash: true, scrollTop: true });
-      }
     });
   });
 
