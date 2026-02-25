@@ -28,7 +28,7 @@
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top">
+      <a class="brand" href="#home" data-page-link="home">
         <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" />
         <span>
           <strong>TradLinker Suite</strong>
@@ -41,18 +41,19 @@
       </button>
 
       <nav class="nav" id="siteNav">
-        <a href="#suite">Suite</a>
-        <a href="#bots">Bots</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#offres">Offres</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cta" class="btn btn-ghost btn-sm">Tester</a>
-      </nav>
+  <a href="#home" data-page-link="home" class="is-active">Accueil</a>
+  <a href="#presentation" data-page-link="presentation">Présentation</a>
+  <a href="#offres" data-page-link="offres">Offres</a>
+  <a href="#faq" data-page-link="faq">FAQ</a>
+  <a href="#tester" data-page-link="tester" class="btn btn-ghost btn-sm">Tester</a>
+</nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+    <main class="app-main">
+    <div class="page-stack" id="pageStack">
+      <div id="home" class="page-panel is-active" data-page="home">
+<section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">🌍 Traduction + onboarding + assistant</p>
@@ -71,7 +72,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&scope=bot" target="_blank" rel="noopener noreferrer">Ajouter TradLinker</a>
-            <a class="btn btn-secondary" href="#offres">Voir Premium / Platinum</a>
+            <a class="btn btn-secondary" href="#offres" data-page-link="offres">Voir Premium / Platinum</a>
           </div>
 
           <div class="hero-stats">
@@ -118,8 +119,10 @@
         </div>
       </div>
     </section>
+      </div>
 
-    <section id="suite" class="section">
+      <div id="presentation" class="page-panel" data-page="presentation">
+<section class="section">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Pourquoi la suite ?</p>
@@ -166,7 +169,7 @@
       </div>
     </section>
 
-    <section id="bots" class="section alt">
+<section class="section alt">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Les 3 bots</p>
@@ -248,7 +251,7 @@
       </div>
     </section>
 
-    <section id="workflow" class="section">
+<section class="section">
       <div class="container workflow-grid">
         <div class="section-head reveal">
           <p class="eyebrow">Workflow</p>
@@ -274,8 +277,10 @@
         </div>
       </div>
     </section>
+      </div>
 
-    <section id="offres" class="section alt">
+      <div id="offres" class="page-panel" data-page="offres">
+<section class="section alt">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">Premium / Platinum</p>
@@ -367,10 +372,12 @@
             </tbody>
           </table>
         </div>
-
+      </div>
     </section>
+      </div>
 
-    <section id="faq" class="section">
+      <div id="faq" class="page-panel" data-page="faq">
+<section class="section">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">FAQ rapide</p>
@@ -400,8 +407,10 @@
         </div>
       </div>
     </section>
+      </div>
 
-    <section id="cta" class="section cta-section">
+      <div id="tester" class="page-panel" data-page="tester">
+<section class="section cta-section">
       <div class="container cta-grid">
         <article class="cta-card reveal">
           <img src="./image/Avatar%20Linker%20rond.png" alt="TradLinker" class="cta-avatar">
@@ -425,6 +434,8 @@
         </article>
       </div>
     </section>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
