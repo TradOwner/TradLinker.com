@@ -582,3 +582,39 @@ code {
   .suite-chip { grid-template-columns: 50px 1fr; padding: 10px; }
   .suite-chip img { width: 50px; height: 50px; }
 }
+
+/* --- Navigation par pages (une seule page visible à la fois) --- */
+.app-main {
+  min-height: calc(100svh - 74px);
+}
+.page-stack {
+  position: relative;
+}
+.page-panel[hidden] {
+  display: none !important;
+}
+.page-panel.is-active {
+  display: block;
+}
+.page-panel.entering {
+  animation: page-in .36s cubic-bezier(.2,.7,.2,1);
+  transform-origin: top center;
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(.992);
+    filter: saturate(.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: saturate(1);
+  }
+}
+
+/* Accent visuel sur le lien actif même quand il a la classe .btn */
+.nav a.btn.is-active {
+  border-color: rgba(34,211,238,.32);
+  box-shadow: 0 0 0 1px rgba(34,211,238,.18) inset;
+}
