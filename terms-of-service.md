@@ -1,37 +1,38 @@
-**📜 Conditions d'utilisation - TradLinker**
+**📜 Conditions d’utilisation (CGU) — TradLinker, TradAssist, TradCoord**
 
-Date d'entrée en vigueur : 29/12/2024
+Date d'entrée en vigueur : 26 février 2026
 
-Merci d’utiliser TradLinker, votre bot de traduction et de relais de messages. En ajoutant TradLinker à votre serveur Discord, vous acceptez les conditions suivantes.
+**1. Éditeur & contact**
+Les bots Discord TradLinker, TradAssist et TradCoord (les “Bots”) sont opérés par TradOwner.
+Support/Contact : [Support TradLinker Suite](https://discord.gg/c5zvbAWwu8)
+Les Bots ne sont pas affiliés à Discord Inc.
 
-**1. Fonctionnalités principales**
-- TradLinker permet de :
-  - Relayer et traduire les messages entre des canaux configurés.
-  - Configurer des groupes de canaux avec des langues spécifiques.
-  - Organiser des sondages multilingues.
+**2. Acceptation**
+En ajoutant un Bot à un serveur, en l’utilisant, ou en interagissant avec ses fonctionnalités, tu acceptes les présentes CGU. Si tu n’acceptes pas, n’utilise pas les Bots et retire-les de ton serveur.
 
-**2. Utilisation autorisée**
-- En utilisant TradLinker, vous acceptez de :
-  - Configurer le bot uniquement dans des canaux où vous avez les permissions nécessaires.
-  - Ne pas utiliser TradLinker pour des activités illégales, offensantes ou non conformes aux règles de Discord.
+**3. Fonctionnalités principales**
+- TradLinker : relai de messages entre salons configurés, traduction selon la langue du salon, fonctionnalités complémentaires selon configuration, et possibilité d’utiliser des webhooks si le serveur l’autorise.
+- TradAssist : traduction à la demande, traduction de séries de messages, contenus interactifs traduisibles, et options de traduction selon réglages.
+- TradCoord : onboarding serveur, gestion de rôles/langues via messages interactifs, et fonctions de maintenance/configuration.
 
-**3. Responsabilités de l'utilisateur**
-- Vous êtes responsable de :
-  - La configuration correcte des groupes et des canaux pour éviter les erreurs de traduction.
-  - La gestion des permissions des canaux dans votre serveur Discord.
+**4. Permissions & responsabilité serveur**
+Certaines fonctions nécessitent des permissions Discord (lecture de messages/historique, gestion de rôles, webhooks, etc.). Tu es responsable des permissions accordées au Bot et de la configuration de ton serveur.
 
-**4. Limites et disponibilité**
-- TradLinker est proposé "en l'état". Nous faisons de notre mieux pour garantir une expérience stable, mais des interruptions, des erreurs de traduction ou des limitations techniques peuvent survenir. Des fonctionnalités premium peuvent être proposées avec des limites ajustées.
+**5. Usage interdit**
+Interdits : spam, harcèlement, contenu illégal, contournement de modération, exploitation, surcharge volontaire, ou collecte abusive de données.
+L’accès aux Bots peut être limité ou suspendu en cas d’abus, de risque sécurité, ou de non-respect des présentes CGU.
 
-**5. Limitation de responsabilité**
-- Le développeur de TradLinker ne peut être tenu responsable des pertes, interruptions ou dommages causés par l'utilisation du bot, y compris des erreurs dans les traductions.
+**6. Qualité, limites, disponibilité**
+Les Bots sont fournis “en l’état”. La traduction automatique peut contenir des erreurs. Le service peut être interrompu (maintenance, incident, dépendances tierces). Aucune disponibilité continue n’est garantie.
 
-**6. Résiliation et suspension**
-- Vous pouvez supprimer TradLinker de votre serveur à tout moment.
-- Nous nous réservons le droit de suspendre ou limiter l'accès au bot en cas de non-respect de ces conditions.
+**7. Abonnements / fonctionnalités payantes (si applicable)**
+Certaines fonctionnalités peuvent être accessibles via un abonnement serveur (ex. Premium) ou un abonnement utilisateur (ex. Platinium).
 
-**7. Modifications**
-- Ces conditions peuvent être modifiées à tout moment. Toute modification sera notifiée sur les serveurs utilisateurs ou les canaux officiels de communication.
+Le paiement et la gestion des abonnements sont assurés par un prestataire tiers (Stripe). Les informations essentielles (prix, périodicité, renouvellement et modalités de résiliation) sont indiquées au moment de la souscription.
 
-**8. Contact**
-- Pour toute question ou assistance liée à TradLinker, veuillez rejoindre notre serveur Discord de support : [Support TradSphere](https://discord.gg/c5zvbAWwu8).
+Sauf indication contraire lors de la souscription, les abonnements sont à reconduction automatique. La résiliation peut être effectuée à tout moment via le portail de gestion d’abonnement mis à disposition après souscription, notamment via les commandes prévues à cet effet ou via le support officiel du bot.
+
+Droit de rétractation (consommateurs, si applicable) : lorsqu’un abonnement est souscrit à distance par un consommateur, un droit de rétractation de 14 jours peut s’appliquer à compter de la conclusion du contrat. Si l’utilisateur demande l’activation immédiate de l’abonnement avant la fin de ce délai, l’exécution du service commence sans attendre. En cas de rétractation après le début d’exécution, un montant proportionnel au service déjà fourni peut rester dû, conformément au droit applicable.
+
+**8. Modifications**
+Les CGU peuvent être mises à jour. Continuer d’utiliser les Bots après une mise à jour vaut acceptation de la nouvelle version.
