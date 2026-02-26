@@ -156,6 +156,11 @@ code {
   background: linear-gradient(135deg, rgba(248,113,113,.13), rgba(167,139,250,.11));
   border-color: rgba(248,113,113,.22);
 }
+.btn-ghost-support {
+  background: linear-gradient(135deg, rgba(59,130,246,.13), rgba(52,211,153,.12));
+  border-color: rgba(34,211,238,.24);
+  box-shadow: 0 10px 35px rgba(34,211,238,.08);
+}
 .btn-sm { padding: 9px 12px; font-size: .92rem; }
 .full { width: 100%; }
 
