@@ -74,9 +74,70 @@ code {
   border-bottom: 1px solid rgba(255,255,255,.04);
 }
 .nav-wrap {
+  position: relative;
   min-height: 74px;
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px;
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switcher-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lang-switcher {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-width: 78px;
+  padding: 9px 34px 9px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.03);
+  color: #d6e6fb;
+  font: inherit;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.lang-switcher:hover {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.22);
+  color: white;
+}
+
+.lang-switcher-wrap::after {
+  content: "▾";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #d6e6fb;
+  font-size: .8rem;
+}
+
+.lang-switcher option {
+  color: #111;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .brand {
   display: inline-flex; align-items: center; gap: 12px;
@@ -682,8 +743,16 @@ code {
 }
 @media (max-width: 1180px) {
   .menu-toggle { display: block; }
+  .header-right {
+    margin-left: auto;
+    gap: 10px;
+  }
+  .lang-switcher {
+    min-width: 70px;
+    padding: 9px 30px 9px 10px;
+  }
   .nav {
-    position: absolute; left: 4vw; right: 4vw; top: calc(100% + 8px);
+    position: absolute; left: 0; right: 0; top: calc(100% + 8px);
     display: none;
     flex-direction: column; align-items: stretch;
     gap: 4px;
