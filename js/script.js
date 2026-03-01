@@ -8,9 +8,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const langSwitcher = document.getElementById('langSwitcher');
   if (langSwitcher) {
-    langSwitcher.addEventListener('change', () => {
+    function buildLanguagePath(targetLang) {
       const hash = window.location.hash || '';
-      window.location.href = `${langSwitcher.value}${hash}`;
+      const rawPath = window.location.pathname || '/';
+      const hadTrailingSlash = rawPath.endsWith('/');
+      const segments = rawPath.split('/').filter(Boolean);
+
+      if (segments[segments.length - 1] === 'index.html') {
+        segments.pop();
+      }
+
+      if (segments.length && ['fr', 'en'].includes(segments[segments.length - 1])) {
+        segments.pop();
+      } else if (!hadTrailingSlash && segments.length) {
+        // Handles paths like /repo/en served without the trailing slash.
+        const last = segments[segments.length - 1];
+        if (['fr', 'en'].includes(last)) {
+          segments.pop();
+        }
+      }
+
+      return `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}${targetLang}/index.html${hash}`;
+    }
+
+    langSwitcher.addEventListener('change', () => {
+      window.location.assign(buildLanguagePath(langSwitcher.value));
     });
   }
 
