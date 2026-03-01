@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageMap = new Map(pagePanels.map(p => [p.id, p]));
   const pageLinks = [...document.querySelectorAll('a[href^="#"]')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const langSwitcher = document.getElementById('langSwitcher');
+  if (langSwitcher) {
+    langSwitcher.addEventListener('change', () => {
+      const hash = window.location.hash || '';
+      window.location.href = `${langSwitcher.value}${hash}`;
+    });
+  }
 
   if (year) year.textContent = new Date().getFullYear();
 
