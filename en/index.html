@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>TradLinker Suite | TradLinker, TradCoord, TradAssist</title>
-<meta content="Suite of Discord bots for multilingual servers: TradLinker (translation between linked channels), TradCoord (premium organization), and TradAssist (personal assistant + translation extension)." name="description"/>
+<meta content="Discord bot suite for multilingual servers: TradLinker (translation between linked channels), TradCoord (premium server organization), and TradAssist (personal assistant + translation extension)." name="description"/>
 <meta content="#0ea5e9" name="theme-color"/>
 <meta content="website" property="og:type"/>
 <meta content="TradLinker Suite | Multilingual Discord Bots" property="og:title"/>
@@ -43,7 +43,7 @@
 <a data-page-link="faq" href="#faq">FAQ</a>
 <a class="btn btn-ghost btn-sm" data-page-link="tester" href="#tester">Add TradLinker Suite</a>
 <a class="btn btn-ghost btn-ghost-support btn-sm" href="https://discord.gg/c5zvbAWwu8" rel="noopener noreferrer" target="_blank">Support</a>
-</nav><div class="lang-switcher-wrap"><label class="sr-only" for="langSwitcher">Choose language</label><select aria-label="Choose language" class="lang-switcher" id="langSwitcher"><option value="../index.html">FR</option><option selected="" value="./index.html">EN</option></select></div></div><button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle">
+</nav><div class="lang-switcher-wrap"><label class="sr-only" for="langSwitcher">Choose language</label><select aria-label="Choose language" class="lang-switcher" id="langSwitcher"><option value="fr">FR</option><option selected="" value="en">EN</option></select></div></div><button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle">
 <span></span><span></span><span></span>
 </button></div>
 </header>
@@ -58,8 +58,8 @@
 <p class="lead"><strong>TradLinker</strong> is the main bot for linking and translating channels. <strong>TradCoord</strong> is the premium organization extension (welcome, rules, language roles). <strong>TradAssist</strong> is both a personal assistant and a translation extension for servers.</p>
 <div class="hero-badges">
 <span>TradLinker = core server translation</span>
-<span>TradCoord = Premium organization</span>
-<span>TradAssist = personal assistant + server extension</span>
+<span>TradCoord = Premium server organization</span>
+<span>TradAssist = personal assistant + server translation tools</span>
 </div>
 <div class="hero-actions">
 <a class="btn btn-primary" data-page-link="tester" href="#tester">Add TradLinker Suite</a>
@@ -113,7 +113,7 @@
 <p class="eyebrow">Why this suite?</p>
 <h2>A clear architecture: 1 main bot + 2 complementary extensions</h2>
 <p class="section-sub">
-            Here is how the three bots work together: <strong>TradLinker</strong> is the main bot, <strong>TradCoord</strong> is the premium organization add-on, and <strong>TradAssist</strong> works both as a personal assistant and as a server-side translation extension.
+            Here is how the three bots work together: <strong>TradLinker</strong> is the main bot, <strong>TradCoord</strong> is the premium organization add-on, and <strong>TradAssist</strong> works both as a personal assistant and as a server translation extension.
           </p>
 </div>
 <div class="cards-3">
@@ -130,10 +130,10 @@
 <article class="info-card reveal">
 <div class="card-icon blue">2</div>
 <h3>Add TradAssist for everyday use</h3>
-<p>On-demand translations, full-channel translations, and multilingual posts with a <em>Translate</em>, plus flag-reaction translation. On Premium, key features are unlimited for everyone on that server.</p>
+<p>On-demand translations, channel translation, and multilingual posts with a <em>Translate</em> button, plus flag-reaction translation. On Premium, key features are unlimited for everyone on that server.</p>
 <ul>
 <li>Personal assistant in DMs</li>
-<li>Server translation extension</li>
+<li>Server translation tools</li>
 <li>Unlimited on Premium servers (supported features)</li>
 </ul>
 </article>
@@ -198,7 +198,7 @@
 <li><code>/1-translate_and_send</code> • <code>/4-translate_message</code></li>
 <li><code>/3-translate_channel</code> + context menu <code>Translate channel</code></li>
 <li><code>/2-multilang_post_create</code> / <code>edit</code> with a <em>Translate</em> button</li>
-<li>Groupe <code>/5-flagreact</code> (flags + delay)</li>
+<li><code>/5-flagreact</code> command group (flags + delay)</li>
 <li><code>/6-buy_platinium</code> (current command) / user Platinium plan</li>
 </ul>
 </details>
@@ -243,7 +243,7 @@
 <article class="step-card reveal">
 <span class="step-num">02</span>
 <h3>TradAssist adds advanced tools</h3>
-<p>On-demand translations, whole-channel translation, multilingual posts, and flag reactions — in DMs and/or on servers.</p>
+<p>On-demand translations, channel translation, multilingual posts, and flag reactions — in DMs and/or on servers.</p>
 </article>
 <article class="step-card reveal">
 <span class="step-num">03</span>
@@ -463,7 +463,7 @@
 <li><code>/5-delete_group</code> — deletes an entire group</li>
 <li><code>/6-show_groups</code> — shows the current configuration (groups + channels + languages)</li>
 </ul>
-<p class="detail-note">Mainly used on servers • manage channels permissions required for configuration commands.</p>
+<p class="detail-note">Mainly used on servers • the <em>Manage Channels</em> permission is required for configuration commands.</p>
 </article>
 <article class="detail-card reveal">
 <h3>📊 Multilingual polls</h3>
@@ -513,7 +513,7 @@
 <div>
 <p class="eyebrow">Premium extension</p>
 <h2>TradCoord</h2>
-<p class="bot-page-sub">The onboarding and coordination bot that keeps a premium server clean from the moment members arrive: welcome flow, rules acceptance, language roles, and scoped access management.</p>
+<p class="bot-page-sub">The onboarding and coordination bot that keeps a premium server organized from the moment members arrive: welcome flow, rules acceptance, language roles, and scoped access management.</p>
 </div>
 </div>
 <div class="tag-row">
@@ -674,7 +674,7 @@
 <article class="info-card reveal">
 <div class="card-icon blue">2</div>
 <h3>Publish multilingual content</h3>
-<p>Creates posts with text + attachments and a <em>Translate</em>, then lets you edit those posts easily.</p>
+<p>Creates posts with text + attachments and a <em>Translate</em> button, then lets you edit those posts easily.</p>
 <ul>
 <li>Quick creation (attachments + modal)</li>
 <li>Translate button for readers</li>
@@ -713,7 +713,7 @@
 <article class="detail-card reveal">
 <h3>🧾 Multilingual posts with Translate button</h3>
 <ul class="feature-list compact">
-<li><code>/2-multilang_post_create</code> — creates a post (text + up to 5 attachments) with a <em>Translate</em></li>
+<li><code>/2-multilang_post_create</code> — creates a post (text + up to 5 attachments) with a <em>Translate</em> button</li>
 <li><code>/2-multilang_post_edit</code> — edits an existing bot post (text + optional attachment replacement)</li>
 <li>Can be used on servers, in DMs, and in private channels</li>
 </ul>
@@ -743,7 +743,7 @@
 <li><code>/5-flagreact show</code> — shows the current delay</li>
 <li><code>/5-flagreact list_flags</code> — lists recognized flags</li>
 </ul>
-<p class="detail-note">Setting <code>set_delay</code> : server command requiring manage server / admin permissions.</p>
+<p class="detail-note">Setting <code>set_delay</code>: server command requiring <em>Manage Server</em> or administrator permissions.</p>
 </article>
 <article class="detail-card reveal">
 <h3>💎 User subscription</h3>
