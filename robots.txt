@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://tradowner.github.io/TradLinker.com/sitemap.xml
+Host: tradowner.github.io
