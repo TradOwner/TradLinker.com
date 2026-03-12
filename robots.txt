@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tradowner.github.io/TradLinker.com/sitemap.xml
+Sitemap: https://tradowner.github.io/TradLinker.com/sitemap.txt
