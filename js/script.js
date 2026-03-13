@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      return `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}${targetLang}/index.html${hash}`;
+      return `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}${targetLang}/${hash}`;
     }
 
     langSwitcher.addEventListener('change', () => {
