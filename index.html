@@ -15,6 +15,15 @@
 
   <script>
     (function () {
+      var githubHost = 'tradowner.github.io';
+      var customDomain = 'https://tradlinker.com';
+  
+      if (window.location.hostname === githubHost) {
+        var path = (window.location.pathname || '/').replace(/^\/tradlinker\.com(?=\/|$)/, '') || '/';
+        window.location.replace(customDomain + path + window.location.search + window.location.hash);
+        return;
+      }
+  
       var target = './en/' + (window.location.hash || '');
       window.location.replace(target);
     })();
