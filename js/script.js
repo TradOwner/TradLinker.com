@@ -1,3 +1,19 @@
+// Force the custom domain when the GitHub Pages project URL is used
+(function () {
+  const githubHost = 'tradowner.github.io';
+  const customDomain = 'https://tradlinker.com';
+
+  if (window.location.hostname !== githubHost) return;
+
+  let path = window.location.pathname || '/';
+
+  // Convert /tradlinker.com/fr/ -> /fr/
+  path = path.replace(/^\/tradlinker\.com(?=\/|$)/, '') || '/';
+
+  const target = customDomain + path + window.location.search + window.location.hash;
+  window.location.replace(target);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menuToggle');
   const nav = document.getElementById('siteNav');
@@ -129,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
   // Clickable home tiles -> dedicated bot pages
   const homeTiles = [...document.querySelectorAll('[data-card-page]')];
   homeTiles.forEach(tile => {
@@ -149,8 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-
 
   // Offres: boutons -> tuiles explicatives (une seule visible à la fois)
   const offerToggleButtons = [...document.querySelectorAll('[data-offer-toggle]')];
