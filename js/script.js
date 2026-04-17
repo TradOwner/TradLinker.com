@@ -44,7 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      return `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}${targetLang}/${hash}`;
+      const basePath = `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}`;
+      if (targetLang === 'en') {
+        return `${basePath}${hash}`;
+      }
+      return `${basePath}fr/${hash}`;
     }
 
     langSwitcher.addEventListener('change', () => {
