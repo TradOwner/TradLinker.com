@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const basePath = `${window.location.origin}/${segments.join('/')}${segments.length ? '/' : ''}`;
       if (targetLang === 'en') {
-        return `${basePath}${hash}`;
+        return `${basePath}en/${hash}`;
       }
       return `${basePath}fr/${hash}`;
     }
