@@ -563,6 +563,16 @@ code {
 }
 .faq-item[open] summary { border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 10px; }
 
+.visible-faq {
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.seo-faq-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 760px) {
+  .seo-faq-list { grid-template-columns: 1fr; }
+}
+
 /* CTA */
 .cta-section { padding-top: 24px; }
 .cta-grid {
@@ -798,8 +808,11 @@ code {
 .page-stack {
   position: relative;
 }
-/* Masquage par défaut : une seule page visible (même sans JS) */
+/* Masquage par classe CSS : les panneaux restent dans le DOM sans attribut HTML hidden */
 .page-panel {
+  display: block;
+}
+.page-panel.panel-hidden {
   display: none;
 }
 .page-panel[hidden] {
