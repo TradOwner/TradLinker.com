@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Offres: boutons -> tuiles explicatives (une seule visible à la fois)
+  // Offres: boutons -> tuiles explicatives (une seule visible à la fois, sans attribut HTML hidden)
   const offerToggleButtons = [...document.querySelectorAll('[data-offer-toggle]')];
   const offerPanels = [...document.querySelectorAll('[data-offer-panel]')];
   const offerPanelMap = new Map(offerPanels.map(panel => [panel.getAttribute('data-offer-panel'), panel]));
@@ -176,9 +176,9 @@ document.addEventListener('DOMContentLoaded', () => {
     offerPanels.forEach(panel => {
       const isTarget = panel.getAttribute('data-offer-panel') === panelId;
       if (isTarget) {
-        panel.removeAttribute('hidden');
+        panel.classList.remove('offer-panel-hidden');
       } else {
-        panel.setAttribute('hidden', '');
+        panel.classList.add('offer-panel-hidden');
       }
     });
 
