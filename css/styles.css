@@ -852,7 +852,7 @@ code {
 .offer-info-panel {
   margin-top: 0;
 }
-.offer-info-panel[hidden] {
+.offer-info-panel.offer-panel-hidden {
   display: none !important;
 }
 .offer-info-panel h4 {
