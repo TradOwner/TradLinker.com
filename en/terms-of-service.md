@@ -4,7 +4,7 @@ Effective date: February 26, 2026
 
 **1. Publisher & contact**  
 The Discord bots TradLinker, TradAssist, and TradCoord (the “Bots”) are operated by TradOwner.  
-Support / Contact: [TradLinker Suite Support](https://discord.gg/c5zvbAWwu8)  
+Support / Contact: [TradLinker Suite Support](https://discord.gg/9tu2DhRFXv)  
 The Bots are not affiliated with Discord Inc.
 
 **2. Acceptance**  

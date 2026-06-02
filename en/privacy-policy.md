@@ -4,7 +4,7 @@ Effective date: February 26, 2026
 
 **1. Controller & contact**  
 Controller: TradOwner  
-Privacy contact: [TradLinker Suite Support](https://discord.gg/c5zvbAWwu8)
+Privacy contact: [TradLinker Suite Support](https://discord.gg/9tu2DhRFXv)
 
 **2. Data processed**  
 Depending on the features used, the Bots may process:
@@ -59,7 +59,7 @@ Reasonable measures are implemented to protect data, without any guarantee of ze
 
 **10. Your rights**  
 Depending on the applicable law, you may request access, rectification, deletion, objection, or restriction.  
-To exercise your rights: contact TradOwner via https://discord.gg/c5zvbAWwu8 and indicate your Discord ID and/or the ID of the relevant server.  
+To exercise your rights: contact TradOwner via https://discord.gg/9tu2DhRFXv and indicate your Discord ID and/or the ID of the relevant server.  
 You may also lodge a complaint with the competent supervisory authority, including the CNIL in France where applicable.
 
 **11. Changes**  

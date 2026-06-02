@@ -4,7 +4,7 @@ Date d'entrée en vigueur : 26 février 2026
 
 **1. Responsable & contact**
 Responsable de traitement : TradOwner
-Contact confidentialité : [Support TradLinker Suite](https://discord.gg/c5zvbAWwu8)
+Contact confidentialité : [Support TradLinker Suite](https://discord.gg/9tu2DhRFXv)
 
 **2. Données traitées**
 Selon les fonctionnalités utilisées, les Bots peuvent traiter :
@@ -59,7 +59,7 @@ Des mesures raisonnables sont mises en place pour protéger les données, sans g
 
 **10. Tes droits**
 Selon la loi applicable, tu peux demander accès, rectification, suppression, opposition ou limitation.
-Pour exercer tes droits : contacte TradOwner via https://discord.gg/c5zvbAWwu8 en indiquant ton ID Discord et/ou l’ID du serveur concerné.
+Pour exercer tes droits : contacte TradOwner via https://discord.gg/9tu2DhRFXv en indiquant ton ID Discord et/ou l’ID du serveur concerné.
 Tu peux également introduire une réclamation auprès de l’autorité de contrôle compétente, notamment en France auprès de la CNIL.
 
 **11. Modifications**

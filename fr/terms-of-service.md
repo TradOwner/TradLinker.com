@@ -4,7 +4,7 @@ Date d'entrée en vigueur : 26 février 2026
 
 **1. Éditeur & contact**
 Les bots Discord TradLinker, TradAssist et TradCoord (les “Bots”) sont opérés par TradOwner.
-Support/Contact : [Support TradLinker Suite](https://discord.gg/c5zvbAWwu8)
+Support/Contact : [Support TradLinker Suite](https://discord.gg/9tu2DhRFXv)
 Les Bots ne sont pas affiliés à Discord Inc.
 
 **2. Acceptation**
