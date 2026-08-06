@@ -403,6 +403,7 @@
 <li><code>/1-set_welcome</code> • <code>/1-clear_welcome</code></li>
 <li><code>/2-set_rules_message</code> (acceptance button + logs)</li>
 <li><code>/3-coordination</code>, <code>edit</code>, <code>delete</code></li>
+<li><code>/4-role_assignment</code> • <code>/4-stop_role_assignment</code> (bulk and automatic assignment)</li>
 <li>Reserved for <strong>Premium</strong></li>
 </ul>
 </details>
@@ -789,6 +790,15 @@
 <li>Safely cleans up unused permissions/roles when possible</li>
 </ul>
 <p class="detail-note">Deletion: permissions <em>Manage Messages</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Bulk role assignment</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — assigns an existing role to all current members</li>
+<li>Can then assign it automatically to new members or when they receive their first role</li>
+<li><code>/4-stop_role_assignment</code> — disables automatic assignment for a configured role</li>
+</ul>
+<p class="detail-note">Permission: <em>Manage Roles</em>. Bots are skipped and the role hierarchy is respected.</p>
 </article>
 <article class="detail-card reveal">
 <h3>✅ What this changes for your members</h3>
