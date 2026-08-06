@@ -403,6 +403,7 @@
 <li><code>/1-set_welcome</code> • <code>/1-clear_welcome</code></li>
 <li><code>/2-set_rules_message</code> (bouton acceptation + logs)</li>
 <li><code>/3-coordination</code>, <code>edit</code>, <code>delete</code></li>
+<li><code>/4-role_assignment</code> • <code>/4-stop_role_assignment</code> (attribution globale et automatique)</li>
 <li>Réservé aux serveurs <strong>Premium</strong></li>
 </ul>
 </details>
@@ -789,6 +790,15 @@
 <li>Nettoyage sécurisé des permissions/roles inutilisés si possible</li>
 </ul>
 <p class="detail-note">Suppression : permissions <em>Manage Messages</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Attribution globale de rôles</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — attribue un rôle existant à tous les membres actuels</li>
+<li>Peut ensuite l’attribuer automatiquement aux nouveaux membres ou à la réception de leur premier rôle</li>
+<li><code>/4-stop_role_assignment</code> — désactive l’attribution automatique pour un rôle configuré</li>
+</ul>
+<p class="detail-note">Permission : <em>Manage Roles</em>. Les bots sont ignorés et la hiérarchie des rôles reste respectée.</p>
 </article>
 <article class="detail-card reveal">
 <h3>✅ Ce que cela change pour vos membres</h3>
