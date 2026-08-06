@@ -58,7 +58,7 @@
         "On-demand message translation with TradAssist",
         "Multilingual posts and announcements",
         "Multilingual polls with synchronized reactions",
-        "Language-role onboarding with TradCoord",
+        "Onboarding, language-role coordination, and automatic role assignment with TradCoord",
         "Support for 100+ languages",
         "Free, Premium, and Platinium usage paths"
       ],
@@ -127,7 +127,7 @@
       "name": "What is the difference between TradLinker, TradAssist, and TradCoord?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "TradLinker is the core Discord translation bot for linked multilingual channels. TradAssist adds quick translation actions, personal translation help, and server translation extensions. TradCoord is the Premium organization layer for onboarding, rules, welcome flows, and language-role coordination after the translation structure is already in place."
+        "text": "TradLinker is the core Discord translation bot for linked multilingual channels. TradAssist adds quick translation actions, personal translation help, and server translation extensions. TradCoord is the Premium organization layer for onboarding, rules, language-role coordination, and bulk or automatic role assignment."
       }
     },
     {
@@ -167,15 +167,15 @@
       "name": "When should I choose Premium instead of Platinium?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Choose Premium when the whole Discord server needs higher limits, TradCoord onboarding, organized language roles, and extended TradAssist usage for members on that server. Choose Platinium when one user wants individual access to TradAssist across supported contexts."
+        "text": "Choose Premium when the whole Discord server needs higher limits, TradCoord onboarding, organized language roles, bulk or automatic role assignment, and extended TradAssist usage. Choose Platinium when one user wants individual access to TradAssist across supported contexts."
       }
     },
     {
       "@type": "Question",
-      "name": "Can TradLinker help with onboarding language roles?",
+      "name": "Can TradCoord assign roles automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. TradCoord complements TradLinker by helping new members choose language roles, read welcome or rule messages, and receive cleaner channel access. This is useful when a multilingual Discord server needs both translation and organization, especially to reduce confusion for members arriving in different languages."
+        "text": "Yes. TradCoord coordinates language roles and can assign an existing role to all eligible current members. An administrator can then automate that role for new members or when someone receives their first role, and later stop the automation without removing roles already granted."
       }
     },
     {
@@ -183,7 +183,7 @@
       "name": "How do I start using TradLinker on my Discord server?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Start by adding TradLinker, creating your first group of linked channels, and testing messages between two languages. Then add TradAssist for quick translations and reactions. If the server grows, Premium can expand channel limits and add TradCoord for structured onboarding and language-role management."
+        "text": "Start by adding TradLinker, creating your first group of linked channels, and testing messages between two languages. Then add TradAssist for quick translations. If the server grows, Premium expands limits and adds TradCoord for structured onboarding, language coordination, and automatic role assignment."
       }
     }
   ]
@@ -225,11 +225,11 @@
 <p class="eyebrow">🌍 Discord translation bot + onboarding + assistant</p>
 <h1>TradLinker — multilingual chats on Discord</h1>
 <p class="lead">
-<strong>Looking for a Discord translation bot?</strong> <strong>TradLinker</strong> helps international Discord servers keep one conversation across multiple languages. Link your channels by language, translate messages automatically, keep polls and reactions readable for everyone, translate individual messages or entire channels on demand, publish multilingual posts, and simplify onboarding with language roles.
+<strong>Looking for a Discord translation bot?</strong> <strong>TradLinker</strong> helps international Discord servers keep one conversation across multiple languages. Link your channels by language, translate messages automatically, keep polls and reactions readable for everyone, translate individual messages or entire channels on demand, publish multilingual posts, and simplify onboarding, access, and role assignment with TradCoord.
           </p>
 <div class="hero-badges">
 <span>TradLinker = Discord translation bot core</span>
-<span>TradCoord = Premium server organization</span>
+<span>TradCoord = Premium onboarding &amp; roles</span>
 <span>TradAssist = on-demand translations/flag reaction</span>
 <span>110+ supported languages</span>
 <span>2k+ servers/Hundreds of thousands of users</span>
@@ -241,7 +241,7 @@
 <div class="hero-stats">
 <div class="stat"><span>🗨️</span><small>Linked multilingual channels/Multilingual polls &amp; synchronized reactions</small></div>
 <div class="stat"><span>🗳️</span><small>On-demand translations/Flag reaction/Multilingual posts</small></div>
-<div class="stat"><span>🛡️</span><small>Onboarding, rules &amp; language roles</small></div>
+<div class="stat"><span>🛡️</span><small>Onboarding, rules &amp; automatic role assignment</small></div>
 </div>
 </div>
 <div class="hero-visual reveal">
@@ -270,7 +270,7 @@
 <div>
 <p>Premium extension</p>
 <h3>TradCoord</h3>
-<small>Welcome, rules, language roles</small>
+<small>Onboarding, coordination, role assignment</small>
 </div>
 </article>
 </div>
@@ -283,7 +283,7 @@
 <div class="section-head reveal">
 <p class="eyebrow">Discord translation bot</p>
 <h2>A Discord translation bot built for linked multilingual channels</h2>
-<p class="section-sub">TradLinker helps multilingual Discord communities keep one conversation across several channels and languages. It automatically translates messages, supports multilingual polls and synchronized reactions, lets you run on-demand translations and publish multilingual posts, and structures onboarding with language roles and organized access.</p>
+<p class="section-sub">TradLinker helps multilingual Discord communities keep one conversation across several channels and languages. It automatically translates messages, supports multilingual polls and synchronized reactions, lets you run on-demand translations and publish multilingual posts, and structures onboarding with language roles, organized access, and automatic role assignment.</p>
 </div>
 </div>
 </section>
@@ -322,11 +322,12 @@
 <article class="info-card reveal">
 <div class="card-icon red">3</div>
 <h3>With Premium, unlock TradCoord</h3>
-<p>Clean, secure onboarding: welcome message, rules acceptance, language selection, language roles, and multi-group coordination to reduce noise.</p>
+<p>Clean, secure onboarding: welcome messages, rules acceptance, multi-group coordination, bulk assignment of an existing role, and automation for future members.</p>
 <ul>
 <li>Welcome &amp; rules</li>
 <li>Language roles</li>
 <li>Multi-group organization</li>
+<li>Bulk &amp; automatic role assignment</li>
 </ul>
 </article>
 </div>
@@ -393,9 +394,9 @@
 <h3>TradCoord</h3>
 </div>
 </div>
-<p class="bot-lead"><strong>Smart onboarding for premium servers.</strong> Welcomes members, manages rules + language roles, and coordinates access.</p>
+<p class="bot-lead"><strong>Automated onboarding and roles for Premium servers.</strong> Manages rules, coordinates languages, and assigns roles at scale.</p>
 <div class="tag-row">
-<span>Welcome</span><span>Rules</span><span>Language roles</span><span>Coordination</span>
+<span>Welcome</span><span>Rules</span><span>Coordination</span><span>Bulk roles</span><span>Automatic roles</span>
 </div>
 <details>
 <summary>Key features / commands</summary>
@@ -403,6 +404,7 @@
 <li><code>/1-set_welcome</code> • <code>/1-clear_welcome</code></li>
 <li><code>/2-set_rules_message</code> (acceptance button + logs)</li>
 <li><code>/3-coordination</code>, <code>edit</code>, <code>delete</code></li>
+<li><code>/4-role_assignment</code> • <code>/4-stop_role_assignment</code></li>
 <li>Reserved for <strong>Premium</strong></li>
 </ul>
 </details>
@@ -429,8 +431,8 @@
 </article>
 <article class="info-card reveal">
 <div class="card-icon red">3</div>
-<h3>TradCoord structures Premium onboarding</h3>
-<p>Rules, languages, roles, and access: fewer unnecessary messages, fewer notifications, and a better member experience.</p>
+<h3>TradCoord structures onboarding and automates roles</h3>
+<p>Rules, languages, access, and bulk assignments: fewer repetitive admin tasks and a better member experience.</p>
 </article>
 </div>
 </div>
@@ -695,11 +697,11 @@
 <div>
 <p class="eyebrow">Premium extension</p>
 <h2>TradCoord</h2>
-<p class="bot-page-sub">The onboarding and coordination bot that keeps a Premium server organized from the moment members arrive: welcome flow, rules acceptance, language roles, and access management by language group.</p>
+<p class="bot-page-sub">The Premium bot that structures onboarding and roles: rules, language coordination, bulk assignment of an existing role, and automation for future assignments.</p>
 </div>
 </div>
 <div class="tag-row">
-<span>Welcome</span><span>Rules</span><span>Language roles</span><span>Interactive coordination</span>
+<span>Welcome</span><span>Rules</span><span>Interactive coordination</span><span>Bulk assignment</span><span>Automatic roles</span>
 </div>
 <div class="hero-actions" style="margin-top:14px">
 <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Add TradCoord</a>
@@ -712,10 +714,10 @@
 <div class="container">
 <div class="section-head reveal">
 <p class="eyebrow">Role in the suite</p>
-<h2>TradCoord takes over after translation</h2>
-<p class="section-sub">Once multilingual channels are set up with TradLinker, TradCoord guides new members through language selection, assigns the right access automatically, and limits noise (pings / unnecessary notifications) to keep onboarding clean.</p>
+<h2>TradCoord structures onboarding and automates roles</h2>
+<p class="section-sub">TradCoord combines onboarding, language roles, and administration at scale. It guides members to the right access, assigns an existing role to all eligible current members, and can continue automatically for future arrivals.</p>
 </div>
-<div class="cards-3">
+<div class="cards-3 cards-4">
 <article class="info-card reveal">
 <div class="card-icon cyan">1</div>
 <h3>Custom welcome</h3>
@@ -744,6 +746,16 @@
 <li>Select one or multiple groups</li>
 <li>Safe update / deletion</li>
 <li>Noise reduction: language roles to limit pings and unnecessary notifications</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Bulk and automatic role assignment</h3>
+<p>Select an existing role, assign it to eligible current members, then optionally choose an automatic rule for future members.</p>
+<ul>
+<li>Bulk assignment for human members while respecting Discord’s role hierarchy</li>
+<li>Choose one automation mode: on join or when the first role is received</li>
+<li>Stop automation without removing roles already assigned</li>
 </ul>
 </article>
 </div>
@@ -791,11 +803,20 @@
 <p class="detail-note">Deletion: permissions <em>Manage Messages</em> + <em>Manage Roles</em>.</p>
 </article>
 <article class="detail-card reveal">
+<h3>⚙️ Bulk and automatic role assignment</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — assigns an existing role to all eligible current members</li>
+<li>Choose one option: automate that role on join or when the first role is received</li>
+<li><code>/4-stop_role_assignment</code> — stops future automatic assignments without removing the role from members</li>
+</ul>
+<p class="detail-note">Permission: <em>Manage Roles</em>. Role selection respects both the administrator’s and the bot’s role hierarchy.</p>
+</article>
+<article class="detail-card reveal">
 <h3>✅ What this changes for your members</h3>
 <ul class="feature-list compact">
 <li>Clearer arrival flow (welcome + rules + language choice)</li>
 <li>Less friction to reach the right content</li>
-<li>Better readability for large multilingual servers</li>
+<li>Consistent roles for current members and future arrivals</li>
 </ul>
 </article>
 <article class="detail-card reveal">
@@ -803,12 +824,12 @@
 <ul class="feature-list compact">
 <li>Communities with significant onboarding needs (creators, gaming, support, schools)</li>
 <li>Servers with many channels/languages and a need for structure</li>
-<li>Moderation teams that want to save time</li>
+<li>Moderation teams that want to avoid repetitive manual assignments</li>
 </ul>
 </article>
 </div>
 <div class="notice reveal">
-<strong>Important:</strong> TradCoord is designed as a <strong>Premium add-on</strong> for TradLinker. It relies on the group/language setup already created in TradLinker to manage access and onboarding.
+<strong>Important:</strong> TradCoord is a <strong>Premium add-on</strong> for TradLinker. Language coordination uses groups already configured in TradLinker; bulk and automatic assignment works with existing Discord roles.
         </div>
 </div>
 </section>
@@ -970,7 +991,7 @@
 <div class="price">€6.99 <small>/month</small></div>
 <ul>
 <li>TradLinker: up to 10 groups (max. 15 channels per group)</li>
-<li><strong>TradCoord included</strong> (welcome, rules, coordination)</li>
+<li><strong>TradCoord included</strong> (welcome, rules, coordination, bulk and automatic role assignment)</li>
 <li>TradAssist: server-side translation extension</li>
 <li>Key TradAssist features <strong>unlimited for everyone</strong> on that server (supported)</li>
 </ul>
@@ -1006,7 +1027,7 @@
 <td>—</td>
 </tr>
 <tr>
-<td>TradCoord (welcome + rules + coordination)</td>
+<td>TradCoord (welcome + rules + coordination + role assignment)</td>
 <td class="no">No</td>
 <td class="yes">Yes</td>
 <td class="no">No</td>
@@ -1107,7 +1128,7 @@
 </div>
 </section>
 </div>
-</div><section class="section visible-faq" id="faq"><div class="container"><div class="section-head reveal"><p class="eyebrow">FAQ — Discord translation bot</p><h2>Questions about TradLinker, TradAssist, and TradCoord</h2><p class="section-sub">Clear answers about automatic channel translation, on-demand translation, multilingual communities, onboarding, and the Premium / Platinium plans.</p></div><div class="faq-list seo-faq-list"><details class="faq-item reveal" open=""><summary>What is a Discord translation bot?</summary><p>A Discord translation bot helps members write in their own language while other members receive a translated version. TradLinker focuses on multilingual Discord servers by linking language channels, translating messages automatically, preserving context across communities, and reducing the need to split international members into separate discussions.</p></details><details class="faq-item reveal" open=""><summary>How does TradLinker translate Discord channels automatically?</summary><p>TradLinker lets you create groups of linked channels, usually one channel per language. When someone posts in one channel, the bot detects the source language, translates the message, and republishes it in the other linked channels so English, French, Spanish, or other communities can follow the same conversation.</p></details><details class="faq-item reveal" open=""><summary>Can TradLinker translate individual Discord messages on demand?</summary><p>Yes. The suite supports on-demand translation through TradAssist and related translation actions. Members can request a translation for a specific message, use supported reactions, or translate targeted content without forcing the whole server to rely only on automatic channel relays.</p></details><details class="faq-item reveal" open=""><summary>Is TradLinker useful for multilingual gaming communities?</summary><p>Yes. Gaming communities often mix players from different countries, time zones, and language groups. TradLinker helps announcements, general chat, event coordination, and support channels stay readable by translating conversations between linked channels while keeping the community together instead of splitting every language into isolated spaces.</p></details><details class="faq-item reveal" open=""><summary>What is the difference between TradLinker, TradAssist, and TradCoord?</summary><p>TradLinker is the core Discord translation bot for linked multilingual channels. TradAssist adds quick translation actions, personal translation help, and server translation extensions. TradCoord is the Premium organization layer for onboarding, rules, welcome flows, and language-role coordination after the translation structure is already in place.</p></details><details class="faq-item reveal" open=""><summary>Does the bot support multilingual polls and reactions?</summary><p>TradLinker is designed for more than plain message translation. The suite includes multilingual polls, synchronized reactions, and multilingual publishing tools so members can vote, react, and understand shared posts across language channels without forcing administrators to manually duplicate the same content several times.</p></details><details class="faq-item reveal" open=""><summary>How many languages can the Discord translation bot support?</summary><p>TradLinker supports more than one hundred languages, making the suite suitable for international Discord servers, gaming clans, education groups, creator communities, and support spaces. The exact setup depends on your server configuration, linked channels, quotas, and the plan you choose.</p></details><details class="faq-item reveal" open=""><summary>Can TradLinker translate an entire Discord channel?</summary><p>TradLinker is built around linked channels and automatic relays, while TradAssist adds on-demand translation tools for selected content. Together, they cover the common need to translate ongoing channel activity and targeted messages so members can follow discussions without copying everything into an external translator.</p></details><details class="faq-item reveal" open=""><summary>Is there a free plan for this Discord translation bot?</summary><p>Yes. The free plan lets you start with the core TradLinker experience and test multilingual channel translation before upgrading. Premium increases server limits and adds TradCoord, while Platinium is designed for individual TradAssist usage across supported contexts.</p></details><details class="faq-item reveal" open=""><summary>When should I choose Premium instead of Platinium?</summary><p>Choose Premium when the whole Discord server needs higher limits, TradCoord onboarding, organized language roles, and extended TradAssist usage for members on that server. Choose Platinium when one user wants individual access to TradAssist across supported contexts.</p></details><details class="faq-item reveal" open=""><summary>Can TradLinker help with onboarding language roles?</summary><p>Yes. TradCoord complements TradLinker by helping new members choose language roles, read welcome or rule messages, and receive cleaner channel access. This is useful when a multilingual Discord server needs both translation and organization, especially to reduce confusion for members arriving in different languages.</p></details><details class="faq-item reveal" open=""><summary>How do I start using TradLinker on my Discord server?</summary><p>Start by adding TradLinker, creating your first group of linked channels, and testing messages between two languages. Then add TradAssist for quick translations and reactions. If the server grows, Premium can expand channel limits and add TradCoord for structured onboarding and language-role management.</p></details></div></div></section>
+</div><section class="section visible-faq" id="faq"><div class="container"><div class="section-head reveal"><p class="eyebrow">FAQ — Discord translation bot</p><h2>Questions about TradLinker, TradAssist, and TradCoord</h2><p class="section-sub">Clear answers about automatic channel translation, on-demand translation, multilingual communities, onboarding, and the Premium / Platinium plans.</p></div><div class="faq-list seo-faq-list"><details class="faq-item reveal" open=""><summary>What is a Discord translation bot?</summary><p>A Discord translation bot helps members write in their own language while other members receive a translated version. TradLinker focuses on multilingual Discord servers by linking language channels, translating messages automatically, preserving context across communities, and reducing the need to split international members into separate discussions.</p></details><details class="faq-item reveal" open=""><summary>How does TradLinker translate Discord channels automatically?</summary><p>TradLinker lets you create groups of linked channels, usually one channel per language. When someone posts in one channel, the bot detects the source language, translates the message, and republishes it in the other linked channels so English, French, Spanish, or other communities can follow the same conversation.</p></details><details class="faq-item reveal" open=""><summary>Can TradLinker translate individual Discord messages on demand?</summary><p>Yes. The suite supports on-demand translation through TradAssist and related translation actions. Members can request a translation for a specific message, use supported reactions, or translate targeted content without forcing the whole server to rely only on automatic channel relays.</p></details><details class="faq-item reveal" open=""><summary>Is TradLinker useful for multilingual gaming communities?</summary><p>Yes. Gaming communities often mix players from different countries, time zones, and language groups. TradLinker helps announcements, general chat, event coordination, and support channels stay readable by translating conversations between linked channels while keeping the community together instead of splitting every language into isolated spaces.</p></details><details class="faq-item reveal" open=""><summary>What is the difference between TradLinker, TradAssist, and TradCoord?</summary><p>TradLinker is the core Discord translation bot for linked multilingual channels. TradAssist adds quick translation actions, personal translation help, and server translation extensions. TradCoord is the Premium organization layer for onboarding, rules, language-role coordination, and bulk or automatic role assignment.</p></details><details class="faq-item reveal" open=""><summary>Does the bot support multilingual polls and reactions?</summary><p>TradLinker is designed for more than plain message translation. The suite includes multilingual polls, synchronized reactions, and multilingual publishing tools so members can vote, react, and understand shared posts across language channels without forcing administrators to manually duplicate the same content several times.</p></details><details class="faq-item reveal" open=""><summary>How many languages can the Discord translation bot support?</summary><p>TradLinker supports more than one hundred languages, making the suite suitable for international Discord servers, gaming clans, education groups, creator communities, and support spaces. The exact setup depends on your server configuration, linked channels, quotas, and the plan you choose.</p></details><details class="faq-item reveal" open=""><summary>Can TradLinker translate an entire Discord channel?</summary><p>TradLinker is built around linked channels and automatic relays, while TradAssist adds on-demand translation tools for selected content. Together, they cover the common need to translate ongoing channel activity and targeted messages so members can follow discussions without copying everything into an external translator.</p></details><details class="faq-item reveal" open=""><summary>Is there a free plan for this Discord translation bot?</summary><p>Yes. The free plan lets you start with the core TradLinker experience and test multilingual channel translation before upgrading. Premium increases server limits and adds TradCoord, while Platinium is designed for individual TradAssist usage across supported contexts.</p></details><details class="faq-item reveal" open=""><summary>When should I choose Premium instead of Platinium?</summary><p>Choose Premium when the whole Discord server needs higher limits, TradCoord onboarding, organized language roles, bulk or automatic role assignment, and extended TradAssist usage. Choose Platinium when one user wants individual access to TradAssist across supported contexts.</p></details><details class="faq-item reveal" open=""><summary>Can TradCoord assign roles automatically?</summary><p>Yes. TradCoord coordinates language roles and can assign an existing role to all eligible current members. An administrator can then automate that role for new members or when someone receives their first role, and later stop the automation without removing roles already granted.</p></details><details class="faq-item reveal" open=""><summary>How do I start using TradLinker on my Discord server?</summary><p>Start by adding TradLinker, creating your first group of linked channels, and testing messages between two languages. Then add TradAssist for quick translations. If the server grows, Premium expands limits and adds TradCoord for structured onboarding, language coordination, and automatic role assignment.</p></details></div></div></section>
 </main>
 <footer class="site-footer">
 <div class="container footer-grid">
