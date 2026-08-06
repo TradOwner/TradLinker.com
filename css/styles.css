@@ -353,6 +353,9 @@ code {
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
+.cards-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .info-card {
   background: linear-gradient(180deg, rgba(255,255,255,.022), rgba(255,255,255,.012));
   border: 1px solid rgba(255,255,255,.09);
