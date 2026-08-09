@@ -16,7 +16,7 @@
     "hreflang": "es",
     "dir": "ltr",
     "ogLocale": "es_ES",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -26,7 +26,7 @@
     "hreflang": "de",
     "dir": "ltr",
     "ogLocale": "de_DE",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -36,7 +36,7 @@
     "hreflang": "ja",
     "dir": "ltr",
     "ogLocale": "ja_JP",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -56,7 +56,7 @@
     "hreflang": "pt",
     "dir": "ltr",
     "ogLocale": "pt_PT",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -66,7 +66,7 @@
     "hreflang": "ru",
     "dir": "ltr",
     "ogLocale": "ru_RU",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -76,7 +76,7 @@
     "hreflang": "it",
     "dir": "ltr",
     "ogLocale": "it_IT",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -86,7 +86,7 @@
     "hreflang": "nl",
     "dir": "ltr",
     "ogLocale": "nl_NL",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -96,7 +96,7 @@
     "hreflang": "pl",
     "dir": "ltr",
     "ogLocale": "pl_PL",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -106,7 +106,7 @@
     "hreflang": "tr",
     "dir": "ltr",
     "ogLocale": "tr_TR",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -116,7 +116,7 @@
     "hreflang": "zh-Hans",
     "dir": "ltr",
     "ogLocale": "zh_CN",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -126,7 +126,7 @@
     "hreflang": "fa",
     "dir": "rtl",
     "ogLocale": "fa_IR",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -136,7 +136,7 @@
     "hreflang": "vi",
     "dir": "ltr",
     "ogLocale": "vi_VN",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -146,7 +146,7 @@
     "hreflang": "cs",
     "dir": "ltr",
     "ogLocale": "cs_CZ",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -156,7 +156,7 @@
     "hreflang": "id",
     "dir": "ltr",
     "ogLocale": "id_ID",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -166,7 +166,7 @@
     "hreflang": "ko",
     "dir": "ltr",
     "ogLocale": "ko_KR",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -176,7 +176,7 @@
     "hreflang": "uk",
     "dir": "ltr",
     "ogLocale": "uk_UA",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -186,7 +186,7 @@
     "hreflang": "hi",
     "dir": "ltr",
     "ogLocale": "hi_IN",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -196,7 +196,7 @@
     "hreflang": "ar",
     "dir": "rtl",
     "ogLocale": "ar_SA",
-    "published": false,
+    "published": true,
     "legalPublished": false
   },
   {
@@ -206,7 +206,7 @@
     "hreflang": "hu",
     "dir": "ltr",
     "ogLocale": "hu_HU",
-    "published": false,
+    "published": true,
     "legalPublished": false
   }
 ]
