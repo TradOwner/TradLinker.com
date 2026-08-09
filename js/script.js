@@ -24,27 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const langSwitcher = document.getElementById('langSwitcher');
   if (langSwitcher) {
-    function buildLanguagePath(targetLang) {
-      const hash = window.location.hash || '';
-      const rawPath = window.location.pathname || '/';
-      const segments = rawPath.split('/').filter(Boolean);
-
-      if (segments[segments.length - 1] === 'index.html') {
-        segments.pop();
-      }
-
-      const langIndex = segments.findIndex(segment => ['fr', 'en'].includes(segment));
-      if (langIndex >= 0) {
-        segments[langIndex] = targetLang;
-      } else {
-        segments.push(targetLang);
-      }
-
-      return `${window.location.origin}/${segments.join('/')}/${hash}`;
-    }
-
     langSwitcher.addEventListener('change', () => {
-      window.location.assign(buildLanguagePath(langSwitcher.value));
+      const target = langSwitcher.value;
+      if (!target) return;
+
+      // On the landing page, keep the current section (#plans, #faq, etc.)
+      // while changing language. Dedicated pages already point directly to
+      // their localized counterpart through each option value.
+      const preserveHash = langSwitcher.dataset.page === 'home';
+      const hash = preserveHash ? (window.location.hash || '') : '';
+      window.location.assign(target + hash);
     });
   }
 
@@ -149,18 +138,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const homeTiles = [...document.querySelectorAll('[data-card-page]')];
   homeTiles.forEach(tile => {
     const targetId = tile.getAttribute('data-card-page');
-    if (!targetId || !pageMap.has(targetId)) return;
+    if (!targetId) return;
 
     tile.style.cursor = 'pointer';
 
-    tile.addEventListener('click', () => {
-      showPage(targetId, { updateHash: true, scrollTop: true });
-    });
+    const openTarget = () => {
+      if (pageMap.has(targetId)) {
+        showPage(targetId, { updateHash: true, scrollTop: true });
+        return;
+      }
 
+      const locale = document.documentElement.lang.toLowerCase().split('-')[0] || 'en';
+      window.location.assign(`/${locale}/${targetId}/`);
+    };
+
+    tile.addEventListener('click', openTarget);
     tile.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        showPage(targetId, { updateHash: true, scrollTop: true });
+        openTarget();
       }
     });
   });
