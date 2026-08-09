@@ -22,7 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageMap = new Map(pagePanels.map(p => [p.id, p]));
   const pageLinks = [...document.querySelectorAll('a[href^="#"]')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const langDropdown = document.querySelector('.lang-dropdown');
+  const languageLinks = [...document.querySelectorAll('.lang-option[href]')];
+  languageLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      const target = link.getAttribute('href');
+      if (!target) return;
+
+      // Keep the active home section when changing language, exactly like
+      // the previous select-based language switcher did.
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      const onLocaleHome = segments.length === 1;
+      const hash = onLocaleHome ? (window.location.hash || '') : '';
+      if (!hash) return;
+
+      event.preventDefault();
+      window.location.assign(target + hash);
+    });
+  });
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -31,21 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
       menuBtn.setAttribute('aria-expanded', String(!expanded));
       nav.classList.toggle('open');
-      if (expanded) closeLanguageDropdown();
     });
   }
-
-  document.addEventListener('click', (event) => {
-    if (langDropdown && !langDropdown.contains(event.target)) {
-      closeLanguageDropdown();
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeMenu();
-    }
-  });
 
   // Reveal on scroll (kept from original)
   const revealEls = document.querySelectorAll('.reveal');
@@ -61,16 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentPageId = pagePanels.find(p => p.classList.contains('is-active'))?.id || 'home';
 
-  function closeLanguageDropdown() {
-    if (langDropdown) langDropdown.removeAttribute('open');
-  }
-
   function closeMenu() {
-    if (menuBtn && nav) {
-      menuBtn.setAttribute('aria-expanded', 'false');
-      nav.classList.remove('open');
-    }
-    closeLanguageDropdown();
+    if (!menuBtn || !nav) return;
+    menuBtn.setAttribute('aria-expanded', 'false');
+    nav.classList.remove('open');
   }
 
   function markActiveLink(pageId) {
@@ -137,21 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
       showPage(targetId, { updateHash: true, scrollTop: true });
-    });
-  });
-
-  languageLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      const href = link.getAttribute('href');
-      if (!href) return;
-
-      const segments = window.location.pathname.split('/').filter(Boolean);
-      const onLocaleHome = segments.length === 1;
-      const hash = window.location.hash || '';
-      if (!onLocaleHome || !hash) return;
-
-      event.preventDefault();
-      window.location.assign(href + hash);
     });
   });
 
