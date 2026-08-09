@@ -75,19 +75,39 @@ def alternate_links(languages: list[dict], page: str) -> str:
     return "\n  ".join(items)
 
 
-def language_options(languages: list[dict], current: dict, page: str) -> str:
-    options = []
+def language_menu(languages: list[dict], current: dict, page: str, label: str) -> str:
     available = published_for_page(languages, page)
+    items = []
     for lang in available:
-        selected = " selected" if lang["code"] == current["code"] else ""
         url = rel_page_url(lang["code"], page)
-        label = f'{lang["nativeName"]} ({lang["code"].upper()})'
-        options.append(f'<option value="{html.escape(url)}"{selected}>{html.escape(label)}</option>')
-    return "".join(options)
+        item = (
+            f'<span class="lang-option is-current" aria-current="true">'
+            if lang["code"] == current["code"]
+            else f'<a class="lang-option" href="{html.escape(url)}">'
+        )
+        closing = '</span>' if lang["code"] == current["code"] else '</a>'
+        items.append(
+            item
+            + f'<span class="lang-flag" aria-hidden="true">{html.escape(lang.get("flag", "🌐"))}</span>'
+            + f'<span class="lang-option-label">{html.escape(lang["nativeName"])}</span>'
+            + closing
+        )
+    return (
+        '<div class="nav-lang">'
+        '<details class="lang-dropdown">'
+        f'<summary class="lang-current" aria-label="{html.escape(label, quote=True)}">'
+        f'<span class="lang-flag" aria-hidden="true">{html.escape(current.get("flag", "🌐"))}</span>'
+        f'<span class="lang-current-label">{html.escape(current["nativeName"])}</span>'
+        '</summary>'
+        f'<div class="lang-dropdown-panel" role="list" aria-label="{html.escape(label, quote=True)}">'
+        + ''.join(items)
+        + '</div></details></div>'
+    )
 
 
-def nav_html(lang: str, page: str, data: dict) -> str:
-    home = f"/{lang}/"
+def nav_html(lang: dict, page: str, data: dict, languages: list[dict]) -> str:
+    code = lang["code"]
+    home = f"/{code}/"
     if page == "home":
         overview, plans, faq, add = "#presentation", "#offres", "#faq", "#tester"
     else:
@@ -96,13 +116,14 @@ def nav_html(lang: str, page: str, data: dict) -> str:
     active = lambda name: ' class="is-active" aria-current="page"' if page == name else ""
     return f'''<nav class="nav" id="siteNav" aria-label="Main navigation">
 <a href="{overview}">{html.escape(data['nav']['overview'])}</a>
-<a href="/{lang}/tradlinker/"{active('tradlinker')}>TradLinker</a>
-<a href="/{lang}/tradcoord/"{active('tradcoord')}>TradCoord</a>
-<a href="/{lang}/tradassist/"{active('tradassist')}>TradAssist</a>
+<a href="/{code}/tradlinker/"{active('tradlinker')}>TradLinker</a>
+<a href="/{code}/tradcoord/"{active('tradcoord')}>TradCoord</a>
+<a href="/{code}/tradassist/"{active('tradassist')}>TradAssist</a>
 <a href="{plans}">{html.escape(data['nav']['plans'])}</a>
 <a href="{faq}">{html.escape(data['nav']['faq'])}</a>
 <a class="btn btn-ghost btn-sm" href="{add}">{html.escape(data['nav']['add'])}</a>
 <a class="btn btn-ghost btn-ghost-support btn-sm" href="https://discord.gg/9tu2DhRFXv" rel="noopener noreferrer" target="_blank">{html.escape(data['nav']['support'])}</a>
+{language_menu(languages, lang, page, data['chooseLanguage'])}
 </nav>'''
 
 
@@ -226,7 +247,7 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
 <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div><div class="grid-noise"></div>
 <header class="site-header" id="top"><div class="container nav-wrap">
 <a class="brand" href="/{lang['code']}/"><img alt="TradLinker" decoding="async" height="256" width="256" src="/image/Avatar%20Linker%20rond.webp"><span><strong>TradLinker Suite</strong><small>{html.escape(data['brandSubtitle'])}</small></span></a>
-<div class="header-right">{nav_html(lang['code'], page, data)}<div class="lang-switcher-wrap"><label class="sr-only" for="langSwitcher">{html.escape(data['chooseLanguage'])}</label><select class="lang-switcher" id="langSwitcher" aria-label="{html.escape(data['chooseLanguage'], quote=True)}" data-page="{page}">{language_options(languages, lang, page)}</select></div></div>
+<div class="header-right">{nav_html(lang, page, data, languages)}</div>
 <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="{html.escape(data['menuLabel'], quote=True)}"><span></span><span></span><span></span></button>
 </div></header>
 <main class="app-main">{body}</main>
