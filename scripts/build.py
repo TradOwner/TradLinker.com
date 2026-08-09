@@ -2,6 +2,7 @@
 """Dependency-free static site generator for TradLinker GitHub Pages."""
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -49,6 +50,10 @@ def load_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def asset_version(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+
+
 def page_url(lang: str, page: str) -> str:
     slug = PAGE_SLUGS[page]
     return f"{BASE_URL}/{lang}/" + (f"{slug}/" if slug else "")
@@ -80,14 +85,14 @@ def language_menu(languages: list[dict], current: dict, page: str, label: str) -
     items = []
     for lang in available:
         url = rel_page_url(lang["code"], page)
-        item = (
-            f'<span class="lang-option is-current" aria-current="true">'
-            if lang["code"] == current["code"]
-            else f'<a class="lang-option" href="{html.escape(url)}">'
-        )
-        closing = '</span>' if lang["code"] == current["code"] else '</a>'
+        if lang["code"] == current["code"]:
+            opening = '<span class="lang-option is-current" aria-current="true">'
+            closing = '</span>'
+        else:
+            opening = f'<a class="lang-option" href="{html.escape(url)}">'
+            closing = '</a>'
         items.append(
-            item
+            opening
             + f'<span class="lang-flag" aria-hidden="true">{html.escape(lang.get("flag", "🌐"))}</span>'
             + f'<span class="lang-option-label">{html.escape(lang["nativeName"])}</span>'
             + closing
@@ -99,7 +104,7 @@ def language_menu(languages: list[dict], current: dict, page: str, label: str) -
         f'<span class="lang-flag" aria-hidden="true">{html.escape(current.get("flag", "🌐"))}</span>'
         f'<span class="lang-current-label">{html.escape(current["nativeName"])}</span>'
         '</summary>'
-        f'<div class="lang-dropdown-panel" role="list" aria-label="{html.escape(label, quote=True)}">'
+        f'<div class="lang-dropdown-panel" aria-label="{html.escape(label, quote=True)}">'
         + ''.join(items)
         + '</div></details></div>'
     )
@@ -208,6 +213,8 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
     )
     preload = '<link rel="preload" as="image" href="/image/Banniere.webp" type="image/webp" fetchpriority="high">' if page == "home" else ""
     body_class = " class=\"legal-body\"" if legal else ""
+    css_version = asset_version(ROOT / "css" / "styles.css")
+    js_version = asset_version(ROOT / "js" / "script.js")
     return f'''<!doctype html>
 <html lang="{html.escape(lang['hreflang'])}" dir="{lang['dir']}">
 <head>
@@ -239,8 +246,8 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
   <link rel="icon" type="image/webp" href="/image/Avatar%20Linker%20rond.webp">
   <link rel="apple-touch-icon" href="/image/apple-touch-icon.png">
   {preload}
-  <link rel="stylesheet" href="/css/styles.css?v=20260809-2">
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="/css/styles.css?v={css_version}">
+  <script defer src="/js/script.js?v={js_version}"></script>
   <script type="application/ld+json">{structured_data(lang, page, canonical, meta)}</script>
 </head>
 <body{body_class}>
@@ -373,7 +380,7 @@ def build_root(languages: list[dict]):
 
 def build_404(languages: list[dict]):
     links = "".join(f'<li><a href="/{x["code"]}/">{html.escape(x["nativeName"])}</a></li>' for x in languages if x.get("published"))
-    text = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | TradLinker</title><link rel="stylesheet" href="/css/styles.css?v=20260809-2"></head><body><main class="app-main"><section class="section"><div class="container legal-container"><article class="legal-card"><h1>Page not found</h1><p>This page does not exist. Choose a language to return to TradLinker.</p><ul>{links}</ul></article></div></section></main></body></html>'''
+    text = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | TradLinker</title><link rel="stylesheet" href="/css/styles.css"></head><body><main class="app-main"><section class="section"><div class="container legal-container"><article class="legal-card"><h1>Page not found</h1><p>This page does not exist. Choose a language to return to TradLinker.</p><ul>{links}</ul></article></div></section></main></body></html>'''
     write_page(OUT / "404.html", text)
 
 
