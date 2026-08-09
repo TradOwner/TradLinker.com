@@ -22,20 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageMap = new Map(pagePanels.map(p => [p.id, p]));
   const pageLinks = [...document.querySelectorAll('a[href^="#"]')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const langSwitcher = document.getElementById('langSwitcher');
-  if (langSwitcher) {
-    langSwitcher.addEventListener('change', () => {
-      const target = langSwitcher.value;
-      if (!target) return;
-
-      // On the landing page, keep the current section (#plans, #faq, etc.)
-      // while changing language. Dedicated pages already point directly to
-      // their localized counterpart through each option value.
-      const preserveHash = langSwitcher.dataset.page === 'home';
-      const hash = preserveHash ? (window.location.hash || '') : '';
-      window.location.assign(target + hash);
-    });
-  }
+  const langDropdown = document.querySelector('.lang-dropdown');
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -44,8 +31,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
       menuBtn.setAttribute('aria-expanded', String(!expanded));
       nav.classList.toggle('open');
+      if (expanded) closeLanguageDropdown();
     });
   }
+
+  document.addEventListener('click', (event) => {
+    if (langDropdown && !langDropdown.contains(event.target)) {
+      closeLanguageDropdown();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+    }
+  });
 
   // Reveal on scroll (kept from original)
   const revealEls = document.querySelectorAll('.reveal');
@@ -61,10 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentPageId = pagePanels.find(p => p.classList.contains('is-active'))?.id || 'home';
 
+  function closeLanguageDropdown() {
+    if (langDropdown) langDropdown.removeAttribute('open');
+  }
+
   function closeMenu() {
-    if (!menuBtn || !nav) return;
-    menuBtn.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('open');
+    if (menuBtn && nav) {
+      menuBtn.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('open');
+    }
+    closeLanguageDropdown();
   }
 
   function markActiveLink(pageId) {
@@ -131,6 +137,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
       showPage(targetId, { updateHash: true, scrollTop: true });
+    });
+  });
+
+  languageLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      const onLocaleHome = segments.length === 1;
+      const hash = window.location.hash || '';
+      if (!onLocaleHome || !hash) return;
+
+      event.preventDefault();
+      window.location.assign(href + hash);
     });
   });
 
