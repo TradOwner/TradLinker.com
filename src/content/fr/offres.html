@@ -1,0 +1,141 @@
+<div class="page-panel panel-hidden" data-page="offres" id="offres">
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Premium / Platinium</p>
+<h2>Offres Premium et Platinium</h2>
+<p class="section-sub">
+            Choisissez l’offre adaptée à votre usage : <strong>Premium</strong> s’applique à tout le serveur (TradLinker, TradCoord avec accueil, coordination et attribution de rôles, puis TradAssist illimité pour les membres de ce serveur), tandis que <strong>Platinium</strong> ouvre l’accès à TradAssist pour un utilisateur.
+          </p>
+</div>
+<div class="pricing-grid">
+<article class="price-card reveal">
+<p class="plan-badge">Free</p>
+<h3>Découverte</h3>
+<div class="price">0€</div>
+<ul>
+<li>TradLinker : 1 groupe (5 salons max)</li>
+<li>TradAssist : quotas mensuels</li>
+<li>TradCoord : non disponible</li>
+</ul>
+<button class="btn btn-secondary full" data-offer-toggle="quotas-tradassist" type="button">Quotas TradAssist</button>
+</article>
+<article class="price-card highlight reveal">
+<p class="plan-badge premium">Serveur</p>
+<h3>Premium</h3>
+<div class="price">6,99€ <small>/mois</small></div>
+<ul>
+<li>TradLinker : jusqu’à 10 groupes (15 salons max par groupe)</li>
+<li><strong>TradCoord inclus</strong> (welcome, règles, coordination, attribution globale et automatique de rôles)</li>
+<li>TradAssist : extension de traduction côté serveur</li>
+<li>Fonctions clés TradAssist <strong>illimitées pour tous</strong> sur ce serveur (supportées)</li>
+</ul>
+<button class="btn btn-primary full" data-offer-toggle="premium-serveur" type="button">Passez votre serveur en Premium</button>
+</article>
+<article class="price-card reveal">
+<p class="plan-badge platinum">Utilisateur</p>
+<h3>Platinium</h3>
+<div class="price">3,49€ <small>/mois</small></div>
+<ul>
+<li>TradAssist personnel illimité en DM (fonctions supportées)</li>
+<li>Suppression des quotas serveur pour l’utilisateur (fonctions supportées)</li>
+<li>Utile même si le serveur n’est pas Premium</li>
+</ul>
+<button class="btn btn-platinum full" data-offer-toggle="platinium-utilisateur" type="button">Devenez un utilisateur Platinium</button>
+</article>
+</div>
+<div class="compare-wrap reveal">
+<table aria-label="Comparatif Free Premium Platinium" class="compare-table">
+<thead>
+<tr>
+<th>Fonction / avantage</th>
+<th>Free</th>
+<th>Premium (serveur)</th>
+<th>Platinium (utilisateur)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TradLinker — groupes &amp; salons liés</td>
+<td>1 groupe • 5 salons max</td>
+<td class="yes">Jusqu’à 10 groupes • 15 salons/groupe</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TradCoord (welcome + règles + coordination + attribution de rôles)</td>
+<td class="no">Non</td>
+<td class="yes">Oui</td>
+<td class="no">Non</td>
+</tr>
+<tr>
+<td>TradAssist sur serveur</td>
+<td class="no">Quotas</td>
+<td class="yes">Illimité dans le serveur (fonctions supportées)</td>
+<td class="warn">Illimité pour l’utilisateur (fonctions supportées)</td>
+</tr>
+<tr>
+<td>TradAssist en DM</td>
+<td class="no">Quotas</td>
+<td>—</td>
+<td class="yes">Illimité (fonctions supportées)</td>
+</tr>
+<tr>
+<td>Idéal pour…</td>
+<td>Tester</td>
+<td>Une communauté entière</td>
+<td>Un power user / mod</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div aria-live="polite" class="offer-info-area" id="offresInfos">
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="premium-serveur">
+<h3>🚀 Comment passer un serveur en Premium</h3>
+<ol class="feature-list compact">
+<li>Depuis <strong>le serveur que vous souhaitez passer en Premium</strong>, lancez la commande <code>/8-buy_premium</code>.</li>
+<li>Le bot génère et transmet un <strong>lien de paiement Stripe</strong> (organisme de paiement sécurisé) pour souscrire à l’abonnement Premium serveur.</li>
+<li>Une fois le paiement reçu et validé, le serveur est <strong>automatiquement enregistré comme Premium</strong>.</li>
+</ol>
+<p class="detail-note">La commande doit être exécutée dans le serveur concerné, car l’abonnement Premium est lié au serveur.</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="platinium-utilisateur">
+<h3>💎 Comment devenir utilisateur Platinium</h3>
+<ol class="feature-list compact">
+<li>Fais la commande <code>/6-buy_platinium</code> (serveur, DM ou canal privé).</li>
+<li>Le bot crée/affiche le lien de souscription sécurisé pour finaliser l’abonnement Platinium.</li>
+<li>Une fois le paiement validé, le compte utilisateur est <strong>automatiquement enregistré en Platinium</strong>.</li>
+</ol>
+<p class="detail-note">Cet abonnement est lié à l’utilisateur (pas à un serveur entier).</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="quotas-tradassist">
+<h3>📊 Quotas TradAssist (utilisation gratuite)</h3>
+<div class="detail-grid offer-quota-grid">
+<div>
+<h4>Sur serveur (par mois / serveur)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>20</strong></li>
+<li><code>translate_and_send</code> : <strong>10</strong></li>
+<li><code>translate_channel</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>5</strong></li>
+<li><code>translate_flag</code> : <strong>20</strong> (réactions traduites)</li>
+</ul>
+</div>
+<div>
+<h4>En DM (par mois / utilisateur)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>5</strong></li>
+<li><code>translate_and_send</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>2</strong></li>
+</ul>
+<h4 style="margin-top:12px;">Bouton tutoriel “Translate”</h4>
+<ul class="feature-list compact">
+<li><strong>20 clics / mois / bouton</strong></li>
+</ul>
+</div>
+</div>
+<p class="detail-note">Réinitialisation des quotas gratuits : <strong>1er de chaque mois à 00:00 UTC</strong>.</p>
+</article>
+</div>
+</div>
+</section>
+</div>

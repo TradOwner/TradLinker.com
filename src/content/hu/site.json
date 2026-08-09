@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Discord fordítóbot",
+  "chooseLanguage": "Nyelv kiválasztása",
+  "menuLabel": "Menü megnyitása",
+  "nav": {
+    "overview": "Áttekintés",
+    "plans": "Csomagok",
+    "faq": "FAQ",
+    "add": "TradLinker Suite hozzáadása",
+    "support": "Támogatás"
+  },
+  "footer": {
+    "brandSubtitle": "Discord fordítás és szervezés",
+    "description": "Discord fordítóbot többnyelvű közösségekhez: összekapcsolt csatornák, beléptetés, koordináció, szerepkiosztás és igény szerinti fordítás.",
+    "linksTitle": "Hasznos hivatkozások",
+    "discordSupport": "Discord támogatás",
+    "donate": "Támogatás adománnyal",
+    "legalTitle": "Jogi információk",
+    "terms": "Szolgáltatási feltételek",
+    "privacy": "Adatvédelmi szabályzat",
+    "copyright": "TradLinker Suite — Nem áll kapcsolatban a Discord Inc.-vel."
+  },
+  "pages": {
+    "home": {
+      "title": "Discord fordítóbot többnyelvű szerverekhez | TradLinker",
+      "description": "Discord fordítóbot összekapcsolt csatornákkal, automatikus és igény szerinti fordítással, szavazásokkal, beléptetéssel és automatikus szerepkiosztással."
+    },
+    "tradlinker": {
+      "title": "TradLinker Discord fordítóbot | Összekapcsolt többnyelvű csatornák",
+      "description": "A TradLinker nyelv szerint összekapcsolja a Discord-csatornákat, és automatikusan lefordítja az üzeneteket, hogy a többnyelvű közösségek egy közös beszélgetést folytathassanak."
+    },
+    "tradassist": {
+      "title": "TradAssist Discord fordítási asszisztens | Igény szerinti fordítás",
+      "description": "A TradAssist igény szerinti Discord-fordítást, zászlóreakciókat, személyes DM-fordítást és fejlett fordítási műveleteket ad a többnyelvű szerverekhez."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Beléptetés, szabályok és automatikus szerepek",
+      "description": "A TradCoord kezeli a Discord-belépést, a szabályokat, a nyelvi szerepeket és a tömeges vagy automatikus szerepkiosztást a Premium szervereken."
+    },
+    "privacy-policy": {
+      "title": "Adatvédelmi szabályzat | TradLinker Suite",
+      "description": "A TLK Forge által működtetett TradLinker, TradAssist és TradCoord szolgáltatások adatvédelmi szabályzata."
+    },
+    "terms-of-service": {
+      "title": "Szolgáltatási feltételek | TradLinker Suite",
+      "description": "A TLK Forge által működtetett TradLinker, TradAssist és TradCoord szolgáltatások szolgáltatási feltételei."
+    }
+  },
+  "legal": {
+    "back": "Vissza a TradLinkerhez",
+    "updated": "Jogi információk"
+  }
+}

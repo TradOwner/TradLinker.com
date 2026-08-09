@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Discord translation bot",
+  "chooseLanguage": "Choose language",
+  "menuLabel": "Open menu",
+  "nav": {
+    "overview": "Overview",
+    "plans": "Plans",
+    "faq": "FAQ",
+    "add": "Add TradLinker Suite",
+    "support": "Support"
+  },
+  "footer": {
+    "brandSubtitle": "Discord translation & organization",
+    "description": "Discord translation bot for multilingual communities: linked channels, onboarding, coordination, role assignment, and on-demand translation.",
+    "linksTitle": "Useful links",
+    "discordSupport": "Discord support",
+    "donate": "Donate",
+    "legalTitle": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright": "TradLinker Suite — Not affiliated with Discord Inc."
+  },
+  "pages": {
+    "home": {
+      "title": "Discord Translation Bot for Multilingual Servers | TradLinker",
+      "description": "Discord translation bot with linked channels, automatic and on-demand translation, polls, onboarding, and automatic role assignment."
+    },
+    "tradlinker": {
+      "title": "TradLinker Discord Translation Bot | Linked Multilingual Channels",
+      "description": "TradLinker connects Discord channels by language and automatically translates messages so multilingual communities can share one conversation."
+    },
+    "tradassist": {
+      "title": "TradAssist Discord Translation Assistant | On-Demand Translation",
+      "description": "TradAssist adds on-demand Discord translation, flag reactions, personal DM translation, and advanced translation actions for multilingual servers."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Onboarding, Rules and Automatic Roles",
+      "description": "TradCoord manages Discord onboarding, rules, language roles, and bulk or automatic role assignment for Premium servers."
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy | TradLinker Suite",
+      "description": "Privacy Policy for TradLinker, TradAssist, and TradCoord services operated by TLK Forge."
+    },
+    "terms-of-service": {
+      "title": "Terms of Service | TradLinker Suite",
+      "description": "Terms of Service for TradLinker, TradAssist, and TradCoord services operated by TLK Forge."
+    }
+  },
+  "legal": {
+    "back": "Back to TradLinker",
+    "updated": "Legal information"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Překladový bot pro Discord",
+  "chooseLanguage": "Vyberte jazyk",
+  "menuLabel": "Otevřít nabídku",
+  "nav": {
+    "overview": "Přehled",
+    "plans": "Tarify",
+    "faq": "FAQ",
+    "add": "Přidat TradLinker Suite",
+    "support": "Podpora"
+  },
+  "footer": {
+    "brandSubtitle": "Překlad a organizace na Discordu",
+    "description": "Překladový bot pro vícejazyčné komunity na Discordu: propojené kanály, onboarding, koordinace, přidělování rolí a překlad na vyžádání.",
+    "linksTitle": "Užitečné odkazy",
+    "discordSupport": "Podpora na Discordu",
+    "donate": "Podpořit projekt",
+    "legalTitle": "Právní informace",
+    "terms": "Podmínky služby",
+    "privacy": "Zásady ochrany osobních údajů",
+    "copyright": "TradLinker Suite — Není spojeno se společností Discord Inc."
+  },
+  "pages": {
+    "home": {
+      "title": "Překladový bot pro vícejazyčné Discord servery | TradLinker",
+      "description": "Překladový bot pro Discord s propojenými kanály, automatickým překladem i překladem na vyžádání, anketami, onboardingem a automatickým přidělováním rolí."
+    },
+    "tradlinker": {
+      "title": "Překladový bot TradLinker pro Discord | Propojené vícejazyčné kanály",
+      "description": "TradLinker propojuje Discord kanály podle jazyka a automaticky překládá zprávy, aby vícejazyčné komunity mohly sdílet jednu konverzaci."
+    },
+    "tradassist": {
+      "title": "Překladový asistent TradAssist pro Discord | Překlad na vyžádání",
+      "description": "TradAssist přidává překlad na vyžádání, reakce vlajkami, osobní překlad v DM a pokročilé překladové akce pro vícejazyčné servery."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Onboarding, pravidla a automatické role",
+      "description": "TradCoord spravuje onboarding na Discordu, pravidla, jazykové role a hromadné nebo automatické přidělování rolí na Premium serverech."
+    },
+    "privacy-policy": {
+      "title": "Zásady ochrany osobních údajů | TradLinker Suite",
+      "description": "Zásady ochrany osobních údajů pro služby TradLinker, TradAssist a TradCoord provozované společností TLK Forge."
+    },
+    "terms-of-service": {
+      "title": "Podmínky služby | TradLinker Suite",
+      "description": "Podmínky služby pro služby TradLinker, TradAssist a TradCoord provozované společností TLK Forge."
+    }
+  },
+  "legal": {
+    "back": "Zpět na TradLinker",
+    "updated": "Právní informace"
+  }
+}

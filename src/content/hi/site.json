@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Discord अनुवाद बॉट",
+  "chooseLanguage": "भाषा चुनें",
+  "menuLabel": "मेनू खोलें",
+  "nav": {
+    "overview": "अवलोकन",
+    "plans": "प्लान",
+    "faq": "FAQ",
+    "add": "TradLinker Suite जोड़ें",
+    "support": "सहायता"
+  },
+  "footer": {
+    "brandSubtitle": "Discord अनुवाद और संगठन",
+    "description": "बहुभाषी समुदायों के लिए Discord अनुवाद बॉट: जुड़े हुए चैनल, ऑनबोर्डिंग, समन्वय, भूमिका असाइनमेंट और मांग पर अनुवाद।",
+    "linksTitle": "उपयोगी लिंक",
+    "discordSupport": "Discord सहायता",
+    "donate": "दान करें",
+    "legalTitle": "कानूनी",
+    "terms": "सेवा की शर्तें",
+    "privacy": "गोपनीयता नीति",
+    "copyright": "TradLinker Suite — Discord Inc. से संबद्ध नहीं है।"
+  },
+  "pages": {
+    "home": {
+      "title": "बहुभाषी सर्वरों के लिए Discord अनुवाद बॉट | TradLinker",
+      "description": "जुड़े चैनलों, स्वचालित और मांग पर अनुवाद, पोल, ऑनबोर्डिंग और स्वचालित भूमिका असाइनमेंट वाला Discord अनुवाद बॉट।"
+    },
+    "tradlinker": {
+      "title": "TradLinker Discord अनुवाद बॉट | जुड़े बहुभाषी चैनल",
+      "description": "TradLinker भाषा के अनुसार Discord चैनलों को जोड़ता है और संदेशों का स्वचालित अनुवाद करता है, ताकि बहुभाषी समुदाय एक ही बातचीत साझा कर सकें।"
+    },
+    "tradassist": {
+      "title": "TradAssist Discord अनुवाद सहायक | मांग पर अनुवाद",
+      "description": "TradAssist बहुभाषी सर्वरों के लिए मांग पर Discord अनुवाद, झंडा प्रतिक्रियाएँ, निजी DM अनुवाद और उन्नत अनुवाद क्रियाएँ जोड़ता है।"
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | ऑनबोर्डिंग, नियम और स्वचालित भूमिकाएँ",
+      "description": "TradCoord Premium सर्वरों के लिए Discord ऑनबोर्डिंग, नियम, भाषा भूमिकाएँ और सामूहिक या स्वचालित भूमिका असाइनमेंट प्रबंधित करता है।"
+    },
+    "privacy-policy": {
+      "title": "गोपनीयता नीति | TradLinker Suite",
+      "description": "TLK Forge द्वारा संचालित TradLinker, TradAssist और TradCoord सेवाओं की गोपनीयता नीति।"
+    },
+    "terms-of-service": {
+      "title": "सेवा की शर्तें | TradLinker Suite",
+      "description": "TLK Forge द्वारा संचालित TradLinker, TradAssist और TradCoord सेवाओं की सेवा की शर्तें।"
+    }
+  },
+  "legal": {
+    "back": "TradLinker पर वापस जाएँ",
+    "updated": "कानूनी जानकारी"
+  }
+}

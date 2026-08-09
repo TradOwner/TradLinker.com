@@ -1,0 +1,129 @@
+<div class="page-panel is-active" data-page="tradlinker" id="tradlinker">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal">
+<div class="bot-page-top">
+<img alt="TradLinker" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Linker%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Hauptbot</p>
+<h1>TradLinker</h1>
+<p class="bot-page-sub">Das Herzstück mehrsprachiger Unterhaltungen auf Discord: Es verknüpft Kanäle nach Sprache und veröffentlicht übersetzte Nachrichten automatisch in jedem verknüpften Kanal erneut.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Automatische Übersetzung</span><span>Verknüpfte Kanäle</span><span>Mehrsprachige Umfragen</span><span>Synchronisierte Reaktionen</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&amp;scope=bot" rel="noopener noreferrer" target="_blank">TradLinker hinzufügen</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Premium-Tarif ansehen</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Was TradLinker macht</p>
+<h2>Eine Unterhaltung, mehrere Sprachen</h2>
+<p class="section-sub">TradLinker ist darauf ausgelegt, fragmentierte Diskussionen zu vermeiden. Statt deine Community aufzuteilen, erstellst du eine Kanalgruppe (FR, EN, ES usw.) und der Bot leitet jede Nachricht mit Übersetzung in die anderen Kanäle der Gruppe weiter.</p>
+</div>
+<div class="cards-3">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Gruppen verknüpfter Kanäle</h3>
+<p>Du erstellst Gruppen (z. B. <em>Allgemein</em>) und fügst dann pro Sprache einen Kanal hinzu. TradLinker weiß anschließend, wo jede Nachricht erneut veröffentlicht werden soll.</p>
+<ul>
+<li>Gruppenbasierte Organisation (z. B. Allgemein, Support, Recruiting)</li>
+<li>Ein Kanal = eine Sprache in der Gruppe</li>
+<li>Die Konfiguration bleibt jederzeit sichtbar und bearbeitbar</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Automatische Weiterleitung + Übersetzung</h3>
+<p>Wenn ein Mitglied in einem verknüpften Kanal schreibt, wird die Nachricht in den anderen Kanälen derselben Gruppe mit einer an die jeweilige Sprache angepassten Übersetzung erneut veröffentlicht.</p>
+<ul>
+<li>Reibungslose Erfahrung für Mitglieder</li>
+<li>Eine einheitliche Unterhaltung über Sprachgrenzen hinweg</li>
+<li>Automatische Synchronisierung von Reaktionen, Discord-Antworten und direkten Bearbeitungen weitergeleiteter Nachrichten</li>
+<li>Reaktionen über den Reaktions-Viewer sichtbar</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Integrierte mehrsprachige Umfragen</h3>
+<p>Du kannst in einem verknüpften Kanal eine Umfrage starten; der Bot verteilt sie mit übersetzten Antwortoptionen an jeden Kanal der Gruppe.</p>
+<ul>
+<li>Fragen + Optionen nach Sprache übersetzt</li>
+<li>Synchronisierte Verteilung über verknüpfte Kanäle</li>
+<li>Unterstütztes Löschen der Umfrage durch den Ersteller (oder einen Admin)</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Befehle</p>
+<h2>Alles, was Admins / Moderatoren täglich nutzen</h2>
+<p class="section-sub">Unten: die für Nutzer/Admins sichtbaren Befehle und Aktionen.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>🧭 Erste Schritte</h3>
+<ul class="feature-list compact">
+<li><code>/help</code> — TradLinker-Schnelleinrichtung (Gruppen, Kanäle, Premium, Support)</li>
+<li><strong>Gut zu wissen:</strong> Der Bot führt dich Schritt für Schritt durch die Einrichtungslogik, damit du schnell starten kannst</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🛠️ Gruppenkonfiguration (Server-Admin)</h3>
+<ul class="feature-list compact">
+<li><code>/2-create_group</code> — erstellt eine Gruppe verknüpfter Kanäle</li>
+<li><code>/3-add_channel</code> — fügt einen Kanal zu einer Gruppe hinzu und fordert danach zur Sprachauswahl auf</li>
+<li><code>/4-remove_channel</code> — entfernt einen Kanal aus einer Gruppe</li>
+<li><code>/5-delete_group</code> — löscht eine vollständige Gruppe</li>
+<li><code>/6-show_groups</code> — zeigt die aktuelle Konfiguration (Gruppen + Kanäle + Sprachen)</li>
+</ul>
+<p class="detail-note">Wird hauptsächlich auf Servern verwendet • die Berechtigung <em>Manage Channels</em> ist für Konfigurationsbefehle erforderlich.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📊 Mehrsprachige Umfragen</h3>
+<ul class="feature-list compact">
+<li><code>/1-create_poll</code> — erstellt eine Umfrage in einem verknüpften Kanal und verteilt sie an die verknüpften Kanäle der Gruppe</li>
+<li><code>/1-delete_poll</code> — löscht eine von dir erstellte Umfrage (Admins können alle Umfragen löschen)</li>
+<li>Integrierte Zeitvorgaben (von 15 Min. bis 3 Tage)</li>
+<li>Textoptionen (und optional Bilder pro Antwort bei vollständiger Nutzung)</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💬 Reaktions-Viewer</h3>
+<ul class="feature-list compact">
+<li><strong>Kontextmenü</strong> <code>Show reactions</code> — zeigt die Reaktionen einer Nachricht in zusammengefasster Form an</li>
+<li>Sehr nützlich in einem System mit weitergeleiteten / übersetzten Nachrichten</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💎 Support &amp; Server-Abonnement</h3>
+<ul class="feature-list compact">
+<li><code>/7-donate</code> — das Projekt unterstützen</li>
+<li><code>/8-buy_premium</code> — Premium-Abonnement für den aktuellen Server</li>
+</ul>
+<p class="detail-note">Premium erhöht die Gruppen- und Kanallimits, schaltet TradCoord frei (Onboarding, Regeln, Koordination und Rollenzuweisung) und ermöglicht die unbegrenzte Nutzung von TradAssist auf diesem Server.</p>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Für welche Nutzung geeignet?</h3>
+<ul class="feature-list compact">
+<li>Internationale Communities (Gaming, Creator, Support, Open Source)</li>
+<li>Server, die <strong>eine einzige Community</strong> ohne Aufteilung nach Sprache behalten möchten</li>
+<li>Teams, die eine einfache, zuverlässige und leicht administrierbare Konfiguration benötigen</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Free- vs. Premium-Tarif:</strong> TradLinker enthält bereits das zentrale mehrsprachige Chatsystem. Premium erhöht die Konfigurationslimits (Gruppen/Kanäle), ergänzt TradCoord-Onboarding, Koordination und Rollenzuweisung und macht unterstützte TradAssist-Funktionen auf dem Server unbegrenzt.
+        </div>
+</div>
+</section>
+</div>
