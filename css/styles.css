@@ -109,10 +109,11 @@ code {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-width: 52px;
-  max-width: 52px;
+  min-width: 0;
+  max-width: none;
   padding-block: 9px;
-  padding-inline: 12px 34px 12px;
+  padding-inline-start: 12px;
+  padding-inline-end: 34px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,.14);
   background: rgba(255,255,255,.03);
@@ -154,9 +155,6 @@ code {
   white-space: nowrap;
 }
 
-.lang-current-label {
-  display: none;
-}
 
 .lang-flag {
   flex-shrink: 0;
@@ -879,6 +877,27 @@ html[dir="rtl"] code { direction: ltr; unicode-bidi: isolate; }
 }
 .legal-card blockquote p { margin: 0; }
 
+@media (min-width: 1181px) {
+  .lang-current {
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
+    justify-content: flex-start;
+    gap: 0;
+    padding-block: 9px;
+    padding-inline-start: 12px;
+    padding-inline-end: 30px;
+  }
+
+  .lang-current-label {
+    display: none !important;
+  }
+
+  .lang-dropdown::after {
+    inset-inline-end: 10px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 1080px) {
   .hero-grid { grid-template-columns: 1fr; }
@@ -915,9 +934,6 @@ html[dir="rtl"] code { direction: ltr; unicode-bidi: isolate; }
     min-width: 0;
     max-width: none;
     justify-content: flex-start;
-  }
-  .lang-current-label {
-    display: inline;
   }
   .lang-dropdown-panel {
     position: static;
