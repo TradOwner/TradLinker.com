@@ -1,0 +1,129 @@
+<div class="page-panel is-active" data-page="tradlinker" id="tradlinker">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal">
+<div class="bot-page-top">
+<img alt="TradLinker" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Linker%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Bot principal</p>
+<h1>TradLinker</h1>
+<p class="bot-page-sub">Le cœur de la conversation multilingue sur Discord : il relie des salons par langue et republie automatiquement les messages traduits dans chaque salon lié.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Traduction automatique</span><span>Salons liés</span><span>Sondages multilingues</span><span>Réactions synchronisées</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&amp;scope=bot" rel="noopener noreferrer" target="_blank">Ajouter TradLinker</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Voir l’offre Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Ce que fait TradLinker</p>
+<h2>Un seul fil de discussion, dans plusieurs langues</h2>
+<p class="section-sub">TradLinker est conçu pour éviter la fragmentation des échanges. Au lieu d’avoir des communautés séparées, vous créez un groupe de salons (FR, EN, ES, etc.) et le bot se charge de relayer chaque message dans les autres salons du groupe avec traduction.</p>
+</div>
+<div class="cards-3">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Groupes de salons liés</h3>
+<p>Vous créez des groupes (ex. <em>General</em>) puis vous y ajoutez un salon par langue. TradLinker sait ainsi où republier chaque message.</p>
+<ul>
+<li>Organisation par groupe (ex : Général, Support, Recrutement)</li>
+<li>Un salon = une langue dans le groupe</li>
+<li>Configuration visible et modifiable à tout moment</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Relais + traduction automatiques</h3>
+<p>Quand un membre écrit dans un salon lié, le message est republié dans les autres salons du même groupe avec traduction adaptée à chaque langue.</p>
+<ul>
+<li>Expérience fluide côté membres</li>
+<li>Conversation unifiée entre langues</li>
+<li>Synchronisation automatique des réactions, des réponses Discord (système de reply) et des modifications en place des messages relayés</li>
+<li>Réactions visibles via l’outil de lecture des réactions</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Sondages multilingues intégrés</h3>
+<p>Vous pouvez lancer un sondage depuis un salon lié et le bot le diffuse dans tous les salons du groupe avec options traduites.</p>
+<ul>
+<li>Questions + options traduites par langue</li>
+<li>Diffusion synchronisée sur les salons liés</li>
+<li>Suppression assistée du sondage par son créateur (ou admin)</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Commandes</p>
+<h2>Tout ce qu’un admin / modérateur utilise au quotidien</h2>
+<p class="section-sub">Ci-dessous : les commandes et actions visibles côté utilisateurs et admins.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>🧭 Mise en route</h3>
+<ul class="feature-list compact">
+<li><code>/help</code> — guide d’installation rapide TradLinker (groupes, salons, premium, support)</li>
+<li><strong>Bon à savoir :</strong> le bot présente la logique de configuration étape par étape pour démarrer rapidement</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🛠️ Configuration des groupes (admin serveur)</h3>
+<ul class="feature-list compact">
+<li><code>/2-create_group</code> — crée un groupe de salons liés</li>
+<li><code>/3-add_channel</code> — ajoute un salon à un groupe puis propose la sélection de langue</li>
+<li><code>/4-remove_channel</code> — retire un salon d’un groupe</li>
+<li><code>/5-delete_group</code> — supprime un groupe entier</li>
+<li><code>/6-show_groups</code> — affiche la configuration actuelle (groupes + salons + langues)</li>
+</ul>
+<p class="detail-note">Usage principal en serveur • permissions de gestion des salons requises pour les commandes de configuration.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📊 Sondages multilingues</h3>
+<ul class="feature-list compact">
+<li><code>/1-create_poll</code> — crée un sondage dans un salon lié et le diffuse dans les salons liés du groupe</li>
+<li><code>/1-delete_poll</code> — supprime un sondage que vous avez créé (les admin peuvent supprimer tous les sondages)</li>
+<li>Durées proposées intégrées (de 15 min à 3 jours)</li>
+<li>Options texte (et images optionnelles par réponse si utilisées de façon complète)</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💬 Outil de lecture des réactions</h3>
+<ul class="feature-list compact">
+<li><strong>Menu contextuel</strong> <code>Show reactions</code> — affiche les réactions d’un message de façon agrégée</li>
+<li>Très utile dans un système de messages relayés / traduits</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💎 Soutien &amp; abonnement serveur</h3>
+<ul class="feature-list compact">
+<li><code>/7-donate</code> — soutien au projet</li>
+<li><code>/8-buy_premium</code> — abonnement Premium pour le serveur en cours</li>
+</ul>
+<p class="detail-note">Premium augmente les limites de groupes et de salons, ouvre l’accès à TradCoord (accueil, règles, coordination et attribution de rôles) et permet d’utiliser TradAssist en illimité sur le serveur.</p>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Pour quel usage ?</h3>
+<ul class="feature-list compact">
+<li>Communautés internationales (gaming, créateurs, support, open source)</li>
+<li>Serveurs qui veulent garder <strong>une seule communauté</strong> sans séparer par langue</li>
+<li>Équipes qui ont besoin d’une configuration simple, fiable et facile à administrer</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Plan gratuit vs Premium :</strong> TradLinker inclut déjà la base du chat multilingue. Le Premium augmente les limites de configuration (groupes/salons), ajoute l’accueil, la coordination et l’attribution de rôles de TradCoord, puis rend les fonctions TradAssist supportées illimitées sur le serveur.
+        </div>
+</div>
+</section>
+</div>

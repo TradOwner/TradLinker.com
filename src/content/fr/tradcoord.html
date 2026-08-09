@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Extension Premium</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Le bot d’accueil et de coordination des serveurs Premium : messages de bienvenue, acceptation des règles, rôles de langue, accès par périmètre et attribution globale ou automatique de rôles.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Welcome</span><span>Règles</span><span>Rôles/langue</span><span>Coordination interactive</span><span>Attribution automatique</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Ajouter TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Voir l’offre Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Rôle dans la suite</p>
+<h2>TradCoord prend le relais après la traduction</h2>
+<p class="section-sub">TradCoord guide les nouveaux membres jusqu’au choix de leur langue, attribue les bons accès et limite les notifications inutiles. Il peut aussi distribuer un rôle existant à tous les membres actuels, puis automatiser son attribution à l’arrivée ou lors du premier rôle.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Accueil personnalisé</h3>
+<p>Configurez un message de bienvenue personnalisé pour orienter immédiatement les membres vers le bon salon (règles / choix de langue), sans envoyer de notifications inutiles à tout le serveur.</p>
+<ul>
+<li>Texte libre (via modal)</li>
+<li>Variables simples <code>{user}</code> et <code>{channel}</code></li>
+<li>Bouton pour aller directement vers le salon de règles ou de choix de langue</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Acceptation des règles</h3>
+<p>Publie un message de règles avec bouton d’acceptation, attribue un rôle à l’utilisateur puis redirige vers le choix de langue pour que chaque membre configure son accès lui-même.</p>
+<ul>
+<li>Flux simple pour les nouveaux membres</li>
+<li>Traçabilité côté modération</li>
+<li>Redirection explicite vers le salon de choix de langue (autonome pour les membres)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Coordination par périmètre</h3>
+<p>Crée des messages interactifs de rôles/langues pour un groupe, plusieurs groupes ou tous les groupes TradLinker afin que les membres choisissent leur langue et ne reçoivent que les notifications utiles.</p>
+<ul>
+<li>Sélection d’un ou plusieurs groupes TradLinker</li>
+<li>Mise à jour / suppression sécurisées des coordinations</li>
+<li>Rôles par langue pour limiter les notifications inutiles</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Attribution massive et automatique</h3>
+<p>Sélectionnez un rôle existant, attribuez-le aux membres actuels éligibles, puis choisissez au besoin une règle automatique pour la suite.</p>
+<ul>
+<li>Attribution en masse des membres humains, dans le respect de la hiérarchie Discord</li>
+<li>Automatisation au choix : à l’arrivée ou lors du premier rôle reçu</li>
+<li>Arrêt de l’automatisation sans retrait des rôles déjà attribués</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Commandes</p>
+<h2>Fonctions visibles côté admins (Premium)</h2>
+<p class="section-sub">Toutes les commandes ci-dessous sont des commandes d’administration. TradCoord est destiné aux serveurs Premium.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Welcome</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — configure le message de bienvenue (choix du salon d’envoi + texte via modal)</li>
+<li><code>/1-clear_welcome</code> — désactive et supprime la configuration de bienvenue du serveur</li>
+</ul>
+<p class="detail-note">Permissions : gestion des messages. Réservé aux serveurs Premium.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Règles + validation</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — envoie un message d’acceptation des règles avec bouton</li>
+<li>Paramètres publics : salon du message, salon de logs, salon de langue, rôle à attribuer</li>
+<li>Au clic : attribution du rôle + message de confirmation + lien vers le salon de choix de langue</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Coordination interactive (création)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — crée un message interactif de gestion de rôles dans un salon donné</li>
+<li>Permet de cibler un groupe, plusieurs groupes ou tous les groupes TradLinker</li>
+<li>Crée/associe les rôles par langue pour le périmètre choisi</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Maintenance de la coordination</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — met à jour un message de coordination existant (utile après changement de groupes/salons)</li>
+<li><code>/3-delete_coordination</code> — supprime un périmètre de coordination avec confirmation</li>
+<li>Nettoyage sécurisé des permissions/roles inutilisés si possible</li>
+</ul>
+<p class="detail-note">Suppression : permissions <em>Manage Messages</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Attribution globale de rôles</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — sélectionne un rôle existant attribuable et le distribue aux membres actuels que le bot peut gérer</li>
+<li>Au choix : attribution automatique aux nouveaux membres ou lorsqu’un membre reçoit son premier rôle</li>
+<li><code>/4-stop_role_assignment</code> — désactive l’attribution automatique pour un rôle configuré</li>
+<li>L’arrêt de l’automatisation ne retire pas les rôles déjà attribués</li>
+</ul>
+<p class="detail-note">Serveur Premium et permission <em>Manage Roles</em> requise. L’attribution initiale en masse ignore les bots, et les hiérarchies de rôles de l’administrateur et du bot sont respectées.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Ce que cela change pour vos membres</h3>
+<ul class="feature-list compact">
+<li>Arrivée plus claire (welcome + règles + choix de langue)</li>
+<li>Moins de friction pour accéder au bon contenu</li>
+<li>Attribution cohérente d’un rôle commun sans traitement manuel membre par membre</li>
+<li>Meilleure lisibilité d’un serveur multilingue à grande échelle</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Pour quel type de serveur ?</h3>
+<ul class="feature-list compact">
+<li>Communautés avec parcours d’accueil structuré (créateurs, jeux, support, écoles)</li>
+<li>Serveurs avec beaucoup de salons/langues et besoin de structure</li>
+<li>Équipes de modération qui veulent gagner du temps sur l’accueil et les rôles communs</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Important :</strong> TradCoord est un <strong>complément Premium</strong> de TradLinker. La coordination linguistique utilise les groupes/langues TradLinker ; l’attribution globale ou automatique peut, elle, utiliser tout rôle existant que l’administrateur et le bot sont autorisés à gérer.
+        </div>
+</div>
+</section>
+</div>

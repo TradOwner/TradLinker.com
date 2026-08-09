@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Bot de traduction Discord",
+  "chooseLanguage": "Choisir la langue",
+  "menuLabel": "Ouvrir le menu",
+  "nav": {
+    "overview": "Présentation",
+    "plans": "Offres",
+    "faq": "FAQ",
+    "add": "Ajouter TradLinker Suite",
+    "support": "Support"
+  },
+  "footer": {
+    "brandSubtitle": "Traduction & organisation Discord",
+    "description": "Bot de traduction Discord pour communautés multilingues : salons liés, accueil, coordination, attribution de rôles et traduction à la demande.",
+    "linksTitle": "Liens utiles",
+    "discordSupport": "Support Discord",
+    "donate": "Faire un don",
+    "legalTitle": "Légal",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "copyright": "TradLinker Suite — Non affilié à Discord Inc."
+  },
+  "pages": {
+    "home": {
+      "title": "Bot de traduction Discord pour serveurs multilingues | TradLinker",
+      "description": "Bot de traduction Discord : salons liés, traduction automatique et à la demande, sondages, onboarding et attribution automatique de rôles."
+    },
+    "tradlinker": {
+      "title": "TradLinker, bot de traduction Discord | Salons multilingues liés",
+      "description": "TradLinker relie les salons Discord par langue et traduit automatiquement les messages pour garder une conversation multilingue commune."
+    },
+    "tradassist": {
+      "title": "TradAssist, assistant de traduction Discord | Traduction à la demande",
+      "description": "TradAssist ajoute la traduction Discord à la demande, les réactions drapeau, la traduction en DM et des actions utiles pour serveurs multilingues."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Accueil, règles et rôles automatiques",
+      "description": "TradCoord gère l’accueil Discord, les règles, les rôles de langue et l’attribution globale ou automatique de rôles sur les serveurs Premium."
+    },
+    "privacy-policy": {
+      "title": "Politique de confidentialité | TradLinker Suite",
+      "description": "Politique de confidentialité des services TradLinker, TradAssist et TradCoord exploités par TLK Forge."
+    },
+    "terms-of-service": {
+      "title": "Conditions d’utilisation | TradLinker Suite",
+      "description": "Conditions d’utilisation des services TradLinker, TradAssist et TradCoord exploités par TLK Forge."
+    }
+  },
+  "legal": {
+    "back": "Retour à TradLinker",
+    "updated": "Informations légales"
+  }
+}
