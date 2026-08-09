@@ -1,0 +1,129 @@
+<div class="page-panel is-active" data-page="tradlinker" id="tradlinker">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal">
+<div class="bot-page-top">
+<img alt="TradLinker" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Linker%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Головний бот</p>
+<h1>TradLinker</h1>
+<p class="bot-page-sub">Серце багатомовної розмови в Discord: пов’язує канали за мовами й автоматично повторно публікує перекладені повідомлення в кожному пов’язаному каналі.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Автоматичний переклад</span><span>Пов’язані канали</span><span>Багатомовні опитування</span><span>Синхронізовані реакції</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1323028790770798673&amp;scope=bot" rel="noopener noreferrer" target="_blank">Додати TradLinker</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Переглянути тариф Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Що робить TradLinker</p>
+<h2>Одна гілка розмови кількома мовами</h2>
+<p class="section-sub">TradLinker створений для уникнення фрагментованих дискусій. Замість поділу спільноти ви створюєте групу каналів (FR, EN, ES тощо), а бот ретранслює кожне повідомлення в інші канали групи з перекладом.</p>
+</div>
+<div class="cards-3">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Групи пов’язаних каналів</h3>
+<p>Ви створюєте групи (наприклад, <em>Загальний</em>), а потім додаєте один канал на кожну мову. TradLinker після цього знає, куди повторно публікувати кожне повідомлення.</p>
+<ul>
+<li>Організація за групами (наприклад, Загальний, Підтримка, Набір)</li>
+<li>Один канал = одна мова в групі</li>
+<li>Конфігурація завжди видима й доступна для редагування</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Автоматична ретрансляція + переклад</h3>
+<p>Коли учасник пише в пов’язаному каналі, повідомлення повторно публікується в інших каналах тієї самої групи з перекладом для кожної мови.</p>
+<ul>
+<li>Зручний досвід для учасників</li>
+<li>Одна об’єднана розмова різними мовами</li>
+<li>Автоматична синхронізація реакцій, відповідей Discord і редагувань на місці в ретрансльованих повідомленнях</li>
+<li>Реакції видно через переглядач реакцій</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Вбудовані багатомовні опитування</h3>
+<p>Ви можете запустити опитування з пов’язаного каналу, і бот розішле його в усі канали групи з перекладеними варіантами.</p>
+<ul>
+<li>Запитання + варіанти перекладаються за мовою</li>
+<li>Синхронізована публікація в пов’язаних каналах</li>
+<li>Допоміжне видалення опитування його автором (або адміністратором)</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Команди</p>
+<h2>Усе, чим адміністратор / модератор користується щодня</h2>
+<p class="section-sub">Нижче: команди й дії, видимі користувачам/адміністраторам.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>🧭 Початок роботи</h3>
+<ul class="feature-list compact">
+<li><code>/help</code> — короткий посібник із налаштування TradLinker (групи, канали, premium, підтримка)</li>
+<li><strong>Корисно знати:</strong> бот крок за кроком проводить вас через логіку налаштування, щоб ви могли швидко почати</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🛠️ Налаштування груп (адміністратор сервера)</h3>
+<ul class="feature-list compact">
+<li><code>/2-create_group</code> — створює групу пов’язаних каналів</li>
+<li><code>/3-add_channel</code> — додає канал до групи, а потім пропонує вибрати мову</li>
+<li><code>/4-remove_channel</code> — видаляє канал із групи</li>
+<li><code>/5-delete_group</code> — видаляє всю групу</li>
+<li><code>/6-show_groups</code> — показує поточну конфігурацію (групи + канали + мови)</li>
+</ul>
+<p class="detail-note">Переважно використовується на серверах • для команд налаштування потрібен <em>Manage Channels</em> дозвіл.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📊 Багатомовні опитування</h3>
+<ul class="feature-list compact">
+<li><code>/1-create_poll</code> — створює опитування в пов’язаному каналі та розсилає його в пов’язані канали групи</li>
+<li><code>/1-delete_poll</code> — видаляє створене вами опитування (адміністратори можуть видаляти всі опитування)</li>
+<li>Вбудовані шаблони тривалості (від 15 хв до 3 днів)</li>
+<li>Текстові варіанти (і необов’язкові зображення для кожної відповіді при повному використанні)</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💬 Переглядач реакцій</h3>
+<ul class="feature-list compact">
+<li><strong>Контекстне меню</strong> <code>Show reactions</code> — показує реакції на повідомлення в агрегованому вигляді</li>
+<li>Дуже корисно в системі ретрансльованих / перекладених повідомлень</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>💎 Підтримка та підписка сервера</h3>
+<ul class="feature-list compact">
+<li><code>/7-donate</code> — підтримати проєкт</li>
+<li><code>/8-buy_premium</code> — Premium-підписка для поточного сервера</li>
+</ul>
+<p class="detail-note">Premium збільшує ліміти груп і каналів, відкриває доступ до TradCoord (онбординг, правила, координація та призначення ролей) і дозволяє використовувати TradAssist без обмежень на цьому сервері.</p>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Для якого використання це найкраще?</h3>
+<ul class="feature-list compact">
+<li>Міжнародні спільноти (ігри, автори, підтримка, open source)</li>
+<li>Сервери, які хочуть зберегти <strong>одну єдину спільноту</strong> без поділу за мовами</li>
+<li>Команди, яким потрібна проста й надійна конфігурація для адміністрування</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Тариф Free проти Premium:</strong> TradLinker уже містить основну багатомовну систему чату. Premium підвищує ліміти конфігурації (групи/канали), додає онбординг, координацію та призначення ролей TradCoord, а потім робить підтримувані функції TradAssist необмеженими на сервері.
+        </div>
+</div>
+</section>
+</div>

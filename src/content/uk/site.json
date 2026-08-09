@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Бот-перекладач для Discord",
+  "chooseLanguage": "Вибрати мову",
+  "menuLabel": "Відкрити меню",
+  "nav": {
+    "overview": "Огляд",
+    "plans": "Тарифи",
+    "faq": "FAQ",
+    "add": "Додати TradLinker Suite",
+    "support": "Підтримка"
+  },
+  "footer": {
+    "brandSubtitle": "Переклад і організація Discord",
+    "description": "Бот-перекладач Discord для багатомовних спільнот: пов’язані канали, онбординг, координація, призначення ролей і переклад на вимогу.",
+    "linksTitle": "Корисні посилання",
+    "discordSupport": "Підтримка в Discord",
+    "donate": "Підтримати",
+    "legalTitle": "Правова інформація",
+    "terms": "Умови використання",
+    "privacy": "Політика конфіденційності",
+    "copyright": "TradLinker Suite — Не пов’язано з Discord Inc."
+  },
+  "pages": {
+    "home": {
+      "title": "Бот-перекладач Discord для багатомовних серверів | TradLinker",
+      "description": "Бот-перекладач Discord із пов’язаними каналами, автоматичним перекладом і перекладом на вимогу, опитуваннями, онбордингом та автоматичним призначенням ролей."
+    },
+    "tradlinker": {
+      "title": "Бот-перекладач TradLinker для Discord | Пов’язані багатомовні канали",
+      "description": "TradLinker пов’язує канали Discord за мовами та автоматично перекладає повідомлення, щоб багатомовні спільноти могли вести одну спільну розмову."
+    },
+    "tradassist": {
+      "title": "Помічник-перекладач TradAssist для Discord | Переклад на вимогу",
+      "description": "TradAssist додає переклад Discord на вимогу, реакції прапорцями, особистий переклад у DM і розширені дії перекладу для багатомовних серверів."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Онбординг, правила та автоматичні ролі",
+      "description": "TradCoord керує онбордингом Discord, правилами, мовними ролями та масовим або автоматичним призначенням ролей на Premium-серверах."
+    },
+    "privacy-policy": {
+      "title": "Політика конфіденційності | TradLinker Suite",
+      "description": "Політика конфіденційності для сервісів TradLinker, TradAssist і TradCoord, які керуються TLK Forge."
+    },
+    "terms-of-service": {
+      "title": "Умови використання | TradLinker Suite",
+      "description": "Умови використання для сервісів TradLinker, TradAssist і TradCoord, які керуються TLK Forge."
+    }
+  },
+  "legal": {
+    "back": "Назад до TradLinker",
+    "updated": "Правова інформація"
+  }
+}

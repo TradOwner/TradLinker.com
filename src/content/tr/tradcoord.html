@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Premium uzantı</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Premium sunucular için onboarding ve koordinasyon botu: karşılama akışları, kural kabulü, dil rolleri, kapsamlı erişim ve toplu veya otomatik rol atama.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Karşılama</span><span>Kurallar</span><span>Dil rolleri</span><span>Etkileşimli koordinasyon</span><span>Otomatik atama</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">TradCoord'u ekle</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Premium planını gör</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Suite içindeki rolü</p>
+<h2>Çeviriden sonra TradCoord devralır</h2>
+<p class="section-sub">TradCoord yeni üyeleri dil seçimi boyunca yönlendirir, doğru erişimi atar ve gereksiz bildirimleri azaltır. Ayrıca mevcut bir rolü tüm mevcut üyelere dağıtabilir ve ardından yeni üyeler veya ilk rolünü alan üyeler için otomatikleştirebilir.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Özel karşılama</h3>
+<p>Tüm sunucuya gereksiz bildirimler göndermeden üyeleri doğru kanala (kurallar / dil seçimi) yönlendirmek için özel bir karşılama mesajı ayarlayın.</p>
+<ul>
+<li>Serbest metin (modal ile)</li>
+<li>Basit değişkenler <code>{user}</code> and <code>{channel}</code></li>
+<li>Kullanıcıları doğrudan kurallar veya dil seçimi kanalına gönderen düğme</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Kuralları kabul etme</h3>
+<p>Kabul düğmeli bir kural mesajı yayımlar, kullanıcıya rol atar ve ardından her üyenin kendi erişimini yapılandırabilmesi için dil seçimine yönlendirir.</p>
+<ul>
+<li>Yeni üyeler için basit akış</li>
+<li>Moderasyon tarafında izlenebilirlik</li>
+<li>Dil seçimi kanalına açık yönlendirme (üyeler için self-servis)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Kapsamlı koordinasyon</h3>
+<p>Bir, birkaç veya tüm TradLinker grupları için etkileşimli rol/dil mesajları oluşturur; üyeler dillerini seçer ve yalnızca faydalı bildirimleri alır.</p>
+<ul>
+<li>Bir veya birden fazla TradLinker grubu seçin</li>
+<li>Koordinasyon alanlarını güvenle güncelleyin veya silin</li>
+<li>Dil rolleri gereksiz bildirimleri azaltır</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Toplu ve otomatik rol atama</h3>
+<p>Mevcut bir rol seçin, uygun mevcut üyelere atayın ve ardından isteğe bağlı olarak gelecekteki üyeler için otomatik bir kural seçin.</p>
+<ul>
+<li>Discord rol hiyerarşisine uyarak gerçek kullanıcılara toplu atama</li>
+<li>Bir otomasyon modu seçin: katıldığında veya ilk rol alındığında</li>
+<li>Önceden atanmış rolleri kaldırmadan otomasyonu durdurun</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Komutlar</p>
+<h2>Yöneticiye yönelik özellikler (Premium)</h2>
+<p class="section-sub">Aşağıdaki tüm komutlar yönetici komutlarıdır. TradCoord Premium sunucular için tasarlanmıştır.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Karşılama</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — karşılama mesajını yapılandırır (hedef kanal + modal metin)</li>
+<li><code>/1-clear_welcome</code> — sunucu karşılama yapılandırmasını devre dışı bırakır ve kaldırır</li>
+</ul>
+<p class="detail-note">İzinler: mesajları yönet. Premium sunucular için ayrılmıştır.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Kurallar + doğrulama</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — düğmeli bir kural kabul mesajı gönderir</li>
+<li>Genel ayarlar: mesaj kanalı, kayıt kanalı, dil kanalı, atanacak rol</li>
+<li>Tıklamada: rol ata + onay mesajı + dil seçimi kanalına bağlantı</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Etkileşimli koordinasyon (oluşturma)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — seçilen kanalda etkileşimli bir rol yönetim mesajı oluşturur</li>
+<li>Bir, birkaç veya tüm TradLinker gruplarını hedeflemenizi sağlar</li>
+<li>Seçilen koordinasyon alanı için dil rolleri oluşturur/bağlar</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Koordinasyon bakımı</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — mevcut bir koordinasyon mesajını günceller (grup/kanal değişikliklerinden sonra faydalı)</li>
+<li><code>/3-delete_coordination</code> — onayla bir koordinasyon alanını siler</li>
+<li>Mümkün olduğunda kullanılmayan izinleri/rolleri güvenle temizler</li>
+</ul>
+<p class="detail-note">Silme: izinler <em>Mesajları yönet</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Toplu rol atama</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — atanabilir mevcut bir rol seçer ve botun yönetebildiği mevcut üyelere dağıtır</li>
+<li>Yeni üyeler veya bir üye ilk rolünü aldığında otomatik atamayı seçin</li>
+<li><code>/4-stop_role_assignment</code> — yapılandırılmış bir rol için otomatik atamayı devre dışı bırakır</li>
+<li>Otomasyonu durdurmak önceden atanmış rolleri kaldırmaz</li>
+</ul>
+<p class="detail-note">Premium sunucu ve <em>Manage Roles</em> gerekli izin. İlk toplu atama botları atlar ve hem yöneticinin hem botun rol hiyerarşisine uyar.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Bu, üyeleriniz için neyi değiştirir</h3>
+<ul class="feature-list compact">
+<li>Daha net katılım akışı (karşılama + kurallar + dil seçimi)</li>
+<li>Doğru içeriğe ulaşmak için daha az sürtünme</li>
+<li>Üyeleri tek tek işlemeye gerek kalmadan ortak rolün tutarlı atanması</li>
+<li>Büyük çok dilli sunucularda daha iyi okunabilirlik</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Hangi sunucu türü için en uygun?</h3>
+<ul class="feature-list compact">
+<li>Yoğun onboarding ihtiyacı olan topluluklar (içerik üreticileri, oyun, destek, okullar)</li>
+<li>Çok sayıda kanal/dili olan ve yapıya ihtiyaç duyan sunucular</li>
+<li>Onboarding ve ortak rollerde zaman kazanmak isteyen moderasyon ekipleri</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Önemli:</strong> TradCoord bir <strong>Premium eklentidir</strong> ve TradLinker için kullanılır. Dil koordinasyonu TradLinker gruplarını ve dillerini kullanır; toplu veya otomatik atama, hem yöneticinin hem botun yönetmesine izin verilen mevcut herhangi bir rolü kullanabilir.
+        </div>
+</div>
+</section>
+</div>

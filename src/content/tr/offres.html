@@ -1,0 +1,141 @@
+<div class="page-panel panel-hidden" data-page="offres" id="offres">
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Premium / Platinium</p>
+<h2>Premium ve Platinium planları</h2>
+<p class="section-sub">
+            Kullanımınıza uygun planı seçin: <strong>Premium</strong> tüm bir sunucuya uygulanır (TradLinker, TradCoord onboarding, koordinasyon ve rol atama; ayrıca o sunucunun üyeleri için sınırsız TradAssist), buna karşılık <strong>Platinium</strong> bir kullanıcı için TradAssist erişimini açar.
+          </p>
+</div>
+<div class="pricing-grid">
+<article class="price-card reveal">
+<p class="plan-badge">Free</p>
+<h3>Starter</h3>
+<div class="price">0€</div>
+<ul>
+<li>TradLinker: 1 grup (en fazla 5 kanal)</li>
+<li>TradAssist: aylık kotalar</li>
+<li>TradCoord: kullanılamaz</li>
+</ul>
+<button class="btn btn-secondary full" data-offer-toggle="quotas-tradassist" type="button">TradAssist kotaları</button>
+</article>
+<article class="price-card highlight reveal">
+<p class="plan-badge premium">Server</p>
+<h3>Premium</h3>
+<div class="price">€6.99 <small>/month</small></div>
+<ul>
+<li>TradLinker: en fazla 10 grup (grup başına en fazla 15 kanal)</li>
+<li><strong>TradCoord dahil</strong> (karşılama, kurallar, koordinasyon, toplu ve otomatik rol atama)</li>
+<li>TradAssist: sunucu taraflı çeviri uzantısı</li>
+<li>Temel TradAssist özellikleri <strong>herkes için sınırsız</strong> o sunucuda (desteklenen özellikler)</li>
+</ul>
+<button class="btn btn-primary full" data-offer-toggle="premium-server" type="button">Sunucunuzu Premium'a yükseltin</button>
+</article>
+<article class="price-card reveal">
+<p class="plan-badge platinum">User</p>
+<h3>Platinium</h3>
+<div class="price">€3.49 <small>/month</small></div>
+<ul>
+<li>DM'lerde sınırsız kişisel TradAssist (desteklenen özellikler)</li>
+<li>Kullanıcı için sunucu kotalarını aşma (desteklenen özellikler)</li>
+<li>Sunucu Premium olmasa bile faydalı</li>
+</ul>
+<button class="btn btn-platinum full" data-offer-toggle="platinum-user" type="button">Platinium kullanıcısı olun</button>
+</article>
+</div>
+<div class="compare-wrap reveal">
+<table aria-label="Free Premium Platinium karşılaştırması" class="compare-table">
+<thead>
+<tr>
+<th>Özellik / avantaj</th>
+<th>Free</th>
+<th>Premium (sunucu)</th>
+<th>Platinium (kullanıcı)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TradLinker — gruplar ve bağlantılı kanallar</td>
+<td>1 grup • en fazla 5 kanal</td>
+<td class="yes">En fazla 10 grup • 15 kanal/grup</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TradCoord (karşılama + kurallar + koordinasyon + rol atama)</td>
+<td class="no">No</td>
+<td class="yes">Yes</td>
+<td class="no">No</td>
+</tr>
+<tr>
+<td>Sunucularda TradAssist</td>
+<td class="no">Kotalar</td>
+<td class="yes">O sunucuda sınırsız (desteklenen özellikler)</td>
+<td class="warn">Kullanıcı için sınırsız (desteklenen özellikler)</td>
+</tr>
+<tr>
+<td>DM'lerde TradAssist</td>
+<td class="no">Kotalar</td>
+<td>—</td>
+<td class="yes">Sınırsız (desteklenen özellikler)</td>
+</tr>
+<tr>
+<td>En uygun…</td>
+<td>Test</td>
+<td>Tüm bir topluluk</td>
+<td>İleri düzey kullanıcı / moderatör</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div aria-live="polite" class="offer-info-area" id="offresInfos">
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="premium-server">
+<h3>🚀 Bir sunucu Premium'a nasıl yükseltilir</h3>
+<ol class="feature-list compact">
+<li>Premium'a yükseltmek istediğiniz <strong>sunucudan</strong>komutu çalıştırın <code>/8-buy_premium</code>.</li>
+<li>Bot bir <strong>Stripe ödeme bağlantısı</strong> (güvenli ödeme sağlayıcısı) oluşturur ve sunucu Premium planına abone olmanız için gönderir.</li>
+<li>Ödeme alınıp doğrulandığında sunucu <strong>otomatik olarak Premium olarak kaydedilir</strong>.</li>
+</ol>
+<p class="detail-note">Premium abonelik ilgili sunucuya bağlı olduğu için komut hedef sunucuda çalıştırılmalıdır.</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="platinum-user">
+<h3>💎 Platinium kullanıcısı nasıl olunur</h3>
+<ol class="feature-list compact">
+<li>Komutu çalıştırın <code>/6-buy_platinium</code> (sunucu, DM veya özel kanal).</li>
+<li>Bot, Platinium kaydını tamamlamak için güvenli abonelik bağlantısını oluşturur/gösterir.</li>
+<li>Ödeme doğrulandığında kullanıcı hesabı <strong>otomatik olarak Platinium olarak kaydedilir</strong>.</li>
+</ol>
+<p class="detail-note">Bu abonelik kullanıcıya bağlıdır (tüm bir sunucuya değil).</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="quotas-tradassist">
+<h3>📊 TradAssist kotaları (ücretsiz kullanım)</h3>
+<div class="detail-grid offer-quota-grid">
+<div>
+<h4>Sunucularda (aylık / sunucu başına)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>20</strong></li>
+<li><code>translate_and_send</code> : <strong>10</strong></li>
+<li><code>translate_channel</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>5</strong></li>
+<li><code>translate_flag</code> : <strong>20</strong> (çevrilmiş tepkiler)</li>
+</ul>
+</div>
+<div>
+<h4>DM'lerde (aylık / kullanıcı başına)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>5</strong></li>
+<li><code>translate_and_send</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>2</strong></li>
+</ul>
+<h4 style="margin-top:12px;">Eğitim “Translate” düğmesi</h4>
+<ul class="feature-list compact">
+<li><strong>20 tıklama / ay / düğme</strong></li>
+</ul>
+</div>
+</div>
+<p class="detail-note">Ücretsiz kotaların sıfırlanması: <strong>her ayın 1'inde 00:00 UTC</strong>.</p>
+</article>
+</div>
+</div>
+</section>
+</div>
