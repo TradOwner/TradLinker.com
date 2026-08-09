@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Discord çeviri botu",
+  "chooseLanguage": "Dil seç",
+  "menuLabel": "Menüyü aç",
+  "nav": {
+    "overview": "Genel bakış",
+    "plans": "Planlar",
+    "faq": "FAQ",
+    "add": "TradLinker Suite'i ekle",
+    "support": "Destek"
+  },
+  "footer": {
+    "brandSubtitle": "Discord çeviri ve organizasyon",
+    "description": "Çok dilli topluluklar için Discord çeviri botu: bağlantılı kanallar, onboarding, koordinasyon, rol atama ve isteğe bağlı çeviri.",
+    "linksTitle": "Faydalı bağlantılar",
+    "discordSupport": "Discord desteği",
+    "donate": "Bağış yap",
+    "legalTitle": "Yasal",
+    "terms": "Hizmet Şartları",
+    "privacy": "Gizlilik Politikası",
+    "copyright": "TradLinker Suite — Discord Inc. ile bağlantılı değildir."
+  },
+  "pages": {
+    "home": {
+      "title": "Çok Dilli Sunucular için Discord Çeviri Botu | TradLinker",
+      "description": "Bağlantılı kanallar, otomatik ve isteğe bağlı çeviri, anketler, onboarding ve otomatik rol atama özelliklerine sahip Discord çeviri botu."
+    },
+    "tradlinker": {
+      "title": "TradLinker Discord Çeviri Botu | Bağlantılı Çok Dilli Kanallar",
+      "description": "TradLinker, Discord kanallarını dile göre bağlar ve mesajları otomatik çevirerek çok dilli toplulukların tek bir konuşmayı paylaşmasını sağlar."
+    },
+    "tradassist": {
+      "title": "TradAssist Discord Çeviri Asistanı | İsteğe Bağlı Çeviri",
+      "description": "TradAssist, isteğe bağlı Discord çevirisi, bayrak tepkileri, DM'de kişisel çeviri ve çok dilli sunucular için gelişmiş çeviri işlemleri ekler."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | Onboarding, Kurallar ve Otomatik Roller",
+      "description": "TradCoord, Premium sunucular için Discord onboarding sürecini, kuralları, dil rollerini ve toplu veya otomatik rol atamayı yönetir."
+    },
+    "privacy-policy": {
+      "title": "Gizlilik Politikası | TradLinker Suite",
+      "description": "TLK Forge tarafından işletilen TradLinker, TradAssist ve TradCoord hizmetleri için Gizlilik Politikası."
+    },
+    "terms-of-service": {
+      "title": "Hizmet Şartları | TradLinker Suite",
+      "description": "TLK Forge tarafından işletilen TradLinker, TradAssist ve TradCoord hizmetleri için Hizmet Şartları."
+    }
+  },
+  "legal": {
+    "back": "TradLinker'a dön",
+    "updated": "Yasal bilgiler"
+  }
+}

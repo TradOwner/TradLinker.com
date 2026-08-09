@@ -1,0 +1,141 @@
+<div class="page-panel panel-hidden" data-page="offres" id="offres">
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Premium / Platinium</p>
+<h2>Premium- en Platinium-abonnementen</h2>
+<p class="section-sub">
+            Kies het abonnement dat bij je gebruik past: <strong>Premium</strong> geldt voor een volledige server (TradLinker, TradCoord-onboarding, coördinatie en roltoewijzing, plus onbeperkt TradAssist voor leden van die server), terwijl <strong>Platinium</strong> TradAssist-toegang opent voor één gebruiker.
+          </p>
+</div>
+<div class="pricing-grid">
+<article class="price-card reveal">
+<p class="plan-badge">Free</p>
+<h3>Starter</h3>
+<div class="price">0€</div>
+<ul>
+<li>TradLinker: 1 groep (max. 5 kanalen)</li>
+<li>TradAssist: maandelijkse quota</li>
+<li>TradCoord: niet beschikbaar</li>
+</ul>
+<button class="btn btn-secondary full" data-offer-toggle="quotas-tradassist" type="button">TradAssist-quota</button>
+</article>
+<article class="price-card highlight reveal">
+<p class="plan-badge premium">Server</p>
+<h3>Premium</h3>
+<div class="price">€6.99 <small>/month</small></div>
+<ul>
+<li>TradLinker: tot 10 groepen (max. 15 kanalen per groep)</li>
+<li><strong>TradCoord inbegrepen</strong> (welkom, regels, coördinatie, bulk- en automatische roltoewijzing)</li>
+<li>TradAssist: serverextensie voor vertaling</li>
+<li>Belangrijkste TradAssist-functies <strong>onbeperkt voor iedereen</strong> op die server (ondersteunde functies)</li>
+</ul>
+<button class="btn btn-primary full" data-offer-toggle="premium-server" type="button">Upgrade je server naar Premium</button>
+</article>
+<article class="price-card reveal">
+<p class="plan-badge platinum">User</p>
+<h3>Platinium</h3>
+<div class="price">€3.49 <small>/month</small></div>
+<ul>
+<li>Onbeperkt persoonlijk TradAssist in DM's (ondersteunde functies)</li>
+<li>Serverquota omzeilen voor de gebruiker (ondersteunde functies)</li>
+<li>Ook nuttig als de server niet Premium is</li>
+</ul>
+<button class="btn btn-platinum full" data-offer-toggle="platinum-user" type="button">Word Platinium-gebruiker</button>
+</article>
+</div>
+<div class="compare-wrap reveal">
+<table aria-label="Vergelijking Free Premium Platinium" class="compare-table">
+<thead>
+<tr>
+<th>Functie / voordeel</th>
+<th>Free</th>
+<th>Premium (server)</th>
+<th>Platinium (gebruiker)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TradLinker — groepen &amp; gekoppelde kanalen</td>
+<td>1 groep • max. 5 kanalen</td>
+<td class="yes">Tot 10 groepen • 15 kanalen/groep</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TradCoord (welkom + regels + coördinatie + roltoewijzing)</td>
+<td class="no">No</td>
+<td class="yes">Yes</td>
+<td class="no">No</td>
+</tr>
+<tr>
+<td>TradAssist op servers</td>
+<td class="no">Quota</td>
+<td class="yes">Onbeperkt op die server (ondersteunde functies)</td>
+<td class="warn">Onbeperkt voor de gebruiker (ondersteunde functies)</td>
+</tr>
+<tr>
+<td>TradAssist in DM's</td>
+<td class="no">Quota</td>
+<td>—</td>
+<td class="yes">Onbeperkt (ondersteunde functies)</td>
+</tr>
+<tr>
+<td>Ideaal voor…</td>
+<td>Testen</td>
+<td>Een hele community</td>
+<td>Een power user / moderator</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div aria-live="polite" class="offer-info-area" id="offresInfos">
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="premium-server">
+<h3>🚀 Een server upgraden naar Premium</h3>
+<ol class="feature-list compact">
+<li>Voer op <strong>de server die je naar Premium wilt upgraden</strong>de opdracht uit <code>/8-buy_premium</code>.</li>
+<li>De bot genereert en verzendt een <strong>Stripe-betaallink</strong> (veilige betalingsprovider) om je te abonneren op het Premium-abonnement van de server.</li>
+<li>Zodra de betaling is ontvangen en bevestigd, wordt de server <strong>automatisch als Premium geregistreerd</strong>.</li>
+</ol>
+<p class="detail-note">De opdracht moet op de doelserver worden uitgevoerd, omdat het Premium-abonnement aan die server is gekoppeld.</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="platinum-user">
+<h3>💎 Platinium-gebruiker worden</h3>
+<ol class="feature-list compact">
+<li>Voer de opdracht uit <code>/6-buy_platinium</code> (server, DM of privékanaal).</li>
+<li>De bot maakt/toont de beveiligde abonnementslink om de Platinium-aanmelding te voltooien.</li>
+<li>Zodra de betaling is bevestigd, wordt het gebruikersaccount <strong>automatisch als Platinium geregistreerd</strong>.</li>
+</ol>
+<p class="detail-note">Dit abonnement is gekoppeld aan de gebruiker (niet aan een volledige server).</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="quotas-tradassist">
+<h3>📊 TradAssist-quota (gratis gebruik)</h3>
+<div class="detail-grid offer-quota-grid">
+<div>
+<h4>Op servers (per maand / per server)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>20</strong></li>
+<li><code>translate_and_send</code> : <strong>10</strong></li>
+<li><code>translate_channel</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>5</strong></li>
+<li><code>translate_flag</code> : <strong>20</strong> (vertaalde reacties)</li>
+</ul>
+</div>
+<div>
+<h4>In DM's (per maand / per gebruiker)</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>5</strong></li>
+<li><code>translate_and_send</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>2</strong></li>
+</ul>
+<h4 style="margin-top:12px;">Tutorialknop “Translate”</h4>
+<ul class="feature-list compact">
+<li><strong>20 klikken / maand / knop</strong></li>
+</ul>
+</div>
+</div>
+<p class="detail-note">Gratis quota worden gereset: <strong>op de 1e van elke maand om 00:00 UTC</strong>.</p>
+</article>
+</div>
+</div>
+</section>
+</div>

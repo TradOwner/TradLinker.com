@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Rozszerzenie Premium</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Bot onboardingu i koordynacji dla serwerów Premium: proces powitalny, akceptacja zasad, role językowe, dostęp według zakresu oraz masowe lub automatyczne przypisywanie ról.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Powitanie</span><span>Zasady</span><span>Role językowe</span><span>Interaktywna koordynacja</span><span>Automatyczne przypisywanie</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Dodaj TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Zobacz plan Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Rola w Suite</p>
+<h2>TradCoord przejmuje działania po tłumaczeniu</h2>
+<p class="section-sub">TradCoord prowadzi nowych członków przez wybór języka, przypisuje właściwy dostęp i ogranicza zbędne powiadomienia. Może też rozdzielić istniejącą rolę wszystkim obecnym członkom, a następnie zautomatyzować ją dla nowych członków lub przy otrzymaniu pierwszej roli.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Niestandardowe powitanie</h3>
+<p>Ustaw niestandardową wiadomość powitalną, która skieruje członków do właściwego kanału (zasady / wybór języka) bez wysyłania zbędnych powiadomień całemu serwerowi.</p>
+<ul>
+<li>Dowolny tekst (przez modal)</li>
+<li>Proste zmienne <code>{user}</code> and <code>{channel}</code></li>
+<li>Przycisk kierujący użytkowników bezpośrednio do kanału zasad lub wyboru języka</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Akceptacja zasad</h3>
+<p>Publikuje wiadomość z zasadami i przyciskiem akceptacji, przypisuje użytkownikowi rolę, a następnie przekierowuje do wyboru języka, aby każdy członek mógł sam skonfigurować dostęp.</p>
+<ul>
+<li>Prosty proces dla nowych członków</li>
+<li>Możliwość śledzenia po stronie moderacji</li>
+<li>Wyraźne przekierowanie do kanału wyboru języka (samoobsługa członków)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Koordynacja według zakresu</h3>
+<p>Tworzy interaktywne wiadomości ról/języków dla jednej, kilku lub wszystkich grup TradLinker, aby członkowie wybrali język i otrzymywali tylko potrzebne powiadomienia.</p>
+<ul>
+<li>Wybierz jedną lub kilka grup TradLinker</li>
+<li>Bezpiecznie aktualizuj lub usuwaj obszary koordynacji</li>
+<li>Role językowe ograniczają niepotrzebne powiadomienia</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Masowe i automatyczne przypisywanie ról</h3>
+<p>Wybierz istniejącą rolę, przypisz ją uprawnionym obecnym członkom, a następnie opcjonalnie wybierz automatyczną regułę dla przyszłych członków.</p>
+<ul>
+<li>Masowe przypisywanie członkom będącym ludźmi z poszanowaniem hierarchii ról Discord</li>
+<li>Wybierz tryb automatyzacji: przy dołączeniu lub przy otrzymaniu pierwszej roli</li>
+<li>Zatrzymaj automatyzację bez usuwania już przypisanych ról</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Polecenia</p>
+<h2>Funkcje dla administratorów (Premium)</h2>
+<p class="section-sub">Wszystkie poniższe polecenia są administracyjne. TradCoord jest przeznaczony dla serwerów Premium.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Powitanie</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — konfiguruje wiadomość powitalną (kanał docelowy + tekst modalny)</li>
+<li><code>/1-clear_welcome</code> — wyłącza i usuwa konfigurację powitalną serwera</li>
+</ul>
+<p class="detail-note">Uprawnienia: zarządzanie wiadomościami. Tylko dla serwerów Premium.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Zasady + weryfikacja</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — wysyła wiadomość akceptacji zasad z przyciskiem</li>
+<li>Ustawienia publiczne: kanał wiadomości, kanał logów, kanał językowy, rola do przypisania</li>
+<li>Po kliknięciu: przypisanie roli + wiadomość potwierdzająca + link do kanału wyboru języka</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Interaktywna koordynacja (tworzenie)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — tworzy interaktywną wiadomość zarządzania rolami w wybranym kanale</li>
+<li>Pozwala wybrać jedną, kilka lub wszystkie grupy TradLinker</li>
+<li>Tworzy/łączy role językowe dla wybranego obszaru koordynacji</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Utrzymanie koordynacji</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — aktualizuje istniejącą wiadomość koordynacji (przydatne po zmianie grup/kanałów)</li>
+<li><code>/3-delete_coordination</code> — usuwa obszar koordynacji z potwierdzeniem</li>
+<li>W miarę możliwości bezpiecznie usuwa nieużywane uprawnienia/role</li>
+</ul>
+<p class="detail-note">Usuwanie: uprawnienia <em>Zarządzaj wiadomościami</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Masowe przypisywanie ról</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — wybiera możliwą do przypisania istniejącą rolę i rozdziela ją obecnym członkom, którymi bot może zarządzać</li>
+<li>Wybierz automatyczne przypisywanie dla nowych członków lub gdy członek otrzyma pierwszą rolę</li>
+<li><code>/4-stop_role_assignment</code> — wyłącza automatyczne przypisywanie skonfigurowanej roli</li>
+<li>Zatrzymanie automatyzacji nie usuwa już przypisanych ról</li>
+</ul>
+<p class="detail-note">Serwer Premium i <em>Manage Roles</em> wymagane uprawnienie. Początkowe masowe przypisanie pomija boty i respektuje hierarchie ról administratora oraz bota.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Co to zmienia dla Twoich członków</h3>
+<ul class="feature-list compact">
+<li>Czytelniejszy proces wejścia (powitanie + zasady + wybór języka)</li>
+<li>Mniej przeszkód w dotarciu do właściwej treści</li>
+<li>Spójne przypisywanie wspólnej roli bez obsługi członków pojedynczo</li>
+<li>Lepsza czytelność dużych wielojęzycznych serwerów</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Dla jakiego typu serwera jest to najlepsze?</h3>
+<ul class="feature-list compact">
+<li>Społeczności z dużymi potrzebami onboardingu (twórcy, gaming, wsparcie, szkoły)</li>
+<li>Serwery z wieloma kanałami/językami i potrzebą uporządkowania</li>
+<li>Zespoły moderacyjne, które chcą oszczędzić czas na onboardingu i wspólnych rolach</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Ważne:</strong> TradCoord to <strong>dodatek Premium</strong> do TradLinker. Koordynacja językowa korzysta z grup i języków TradLinker; masowe lub automatyczne przypisywanie może używać dowolnej istniejącej roli, którą zarówno administrator, jak i bot mogą zarządzać.
+        </div>
+</div>
+</section>
+</div>

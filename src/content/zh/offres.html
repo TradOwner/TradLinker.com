@@ -1,0 +1,141 @@
+<div class="page-panel panel-hidden" data-page="offres" id="offres">
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Premium / Platinium</p>
+<h2>Premium 和 Platinium 套餐</h2>
+<p class="section-sub">
+            选择适合你使用场景的套餐： <strong>Premium</strong> 适用于整个服务器（TradLinker、TradCoord 成员引导、协调和身份组分配，以及该服务器成员无限使用 TradAssist），而 <strong>Platinium</strong> 则为一名用户开放 TradAssist 访问权限。
+          </p>
+</div>
+<div class="pricing-grid">
+<article class="price-card reveal">
+<p class="plan-badge">Free</p>
+<h3>Starter</h3>
+<div class="price">0€</div>
+<ul>
+<li>TradLinker：1 个组（最多 5 个频道）</li>
+<li>TradAssist：每月配额</li>
+<li>TradCoord：不可用</li>
+</ul>
+<button class="btn btn-secondary full" data-offer-toggle="quotas-tradassist" type="button">TradAssist 配额</button>
+</article>
+<article class="price-card highlight reveal">
+<p class="plan-badge premium">Server</p>
+<h3>Premium</h3>
+<div class="price">€6.99 <small>/month</small></div>
+<ul>
+<li>TradLinker：最多 10 个组（每组最多 15 个频道）</li>
+<li><strong>包含 TradCoord</strong> （欢迎、规则、协调、批量和自动身份组分配）</li>
+<li>TradAssist：服务器端翻译扩展</li>
+<li>TradAssist 核心功能 <strong>所有人无限使用</strong> 在该服务器上（支持的功能）</li>
+</ul>
+<button class="btn btn-primary full" data-offer-toggle="premium-server" type="button">将服务器升级到 Premium</button>
+</article>
+<article class="price-card reveal">
+<p class="plan-badge platinum">User</p>
+<h3>Platinium</h3>
+<div class="price">€3.49 <small>/month</small></div>
+<ul>
+<li>DM 中无限使用个人 TradAssist（支持的功能）</li>
+<li>用户可绕过服务器配额（支持的功能）</li>
+<li>即使服务器不是 Premium 也有用</li>
+</ul>
+<button class="btn btn-platinum full" data-offer-toggle="platinum-user" type="button">成为 Platinium 用户</button>
+</article>
+</div>
+<div class="compare-wrap reveal">
+<table aria-label="Free Premium Platinium 对比" class="compare-table">
+<thead>
+<tr>
+<th>功能 / 优势</th>
+<th>Free</th>
+<th>Premium（服务器）</th>
+<th>Platinium（用户）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TradLinker — 组与关联频道</td>
+<td>1 个组 • 最多 5 个频道</td>
+<td class="yes">最多 10 个组 • 每组 15 个频道</td>
+<td>—</td>
+</tr>
+<tr>
+<td>TradCoord（欢迎 + 规则 + 协调 + 身份组分配）</td>
+<td class="no">No</td>
+<td class="yes">Yes</td>
+<td class="no">No</td>
+</tr>
+<tr>
+<td>服务器上的 TradAssist</td>
+<td class="no">配额</td>
+<td class="yes">该服务器上无限使用（支持的功能）</td>
+<td class="warn">该用户无限使用（支持的功能）</td>
+</tr>
+<tr>
+<td>DM 中的 TradAssist</td>
+<td class="no">配额</td>
+<td>—</td>
+<td class="yes">无限使用（支持的功能）</td>
+</tr>
+<tr>
+<td>最适合…</td>
+<td>测试</td>
+<td>整个社区</td>
+<td>高级用户 / 管理员</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div aria-live="polite" class="offer-info-area" id="offresInfos">
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="premium-server">
+<h3>🚀 如何将服务器升级到 Premium</h3>
+<ol class="feature-list compact">
+<li>在 <strong>你要升级到 Premium 的服务器中</strong>运行命令 <code>/8-buy_premium</code>.</li>
+<li>机器人会生成并发送一个 <strong>Stripe 支付链接</strong> （安全支付服务商），用于订阅服务器 Premium 套餐。</li>
+<li>付款收到并确认后，服务器会 <strong>自动注册为 Premium</strong>.</li>
+</ol>
+<p class="detail-note">该命令必须在目标服务器中运行，因为 Premium 订阅与该服务器绑定。</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="platinum-user">
+<h3>💎 如何成为 Platinium 用户</h3>
+<ol class="feature-list compact">
+<li>运行命令 <code>/6-buy_platinium</code> （服务器、DM 或私密频道）。</li>
+<li>机器人会创建/显示安全的订阅链接，以完成 Platinium 注册。</li>
+<li>付款确认后，用户账户会 <strong>自动注册为 Platinium</strong>.</li>
+</ol>
+<p class="detail-note">此订阅与用户绑定（而不是整个服务器）。</p>
+</article>
+<article class="detail-card offer-info-panel offer-panel-hidden" data-offer-panel="quotas-tradassist">
+<h3>📊 TradAssist 配额（免费使用）</h3>
+<div class="detail-grid offer-quota-grid">
+<div>
+<h4>服务器中（每月 / 每服务器）</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>20</strong></li>
+<li><code>translate_and_send</code> : <strong>10</strong></li>
+<li><code>translate_channel</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>5</strong></li>
+<li><code>translate_flag</code> : <strong>20</strong> （翻译后的表情反应）</li>
+</ul>
+</div>
+<div>
+<h4>DM 中（每月 / 每用户）</h4>
+<ul class="feature-list compact">
+<li><code>translate_message</code> : <strong>5</strong></li>
+<li><code>translate_and_send</code> : <strong>5</strong></li>
+<li><code>tutorial_post</code> : <strong>2</strong></li>
+</ul>
+<h4 style="margin-top:12px;">教程“Translate”按钮</h4>
+<ul class="feature-list compact">
+<li><strong>20 次点击 / 月 / 按钮</strong></li>
+</ul>
+</div>
+</div>
+<p class="detail-note">免费配额重置时间： <strong>每月 1 日 00:00 UTC</strong>.</p>
+</article>
+</div>
+</div>
+</section>
+</div>

@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Premium-розширення</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Бот онбордингу та координації для Premium-серверів: привітання, прийняття правил, мовні ролі, керований доступ і масове або автоматичне призначення ролей.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Привітання</span><span>Правила</span><span>Мовні ролі</span><span>Інтерактивна координація</span><span>Автоматичне призначення</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Додати TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Переглянути тариф Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Роль у наборі</p>
+<h2>TradCoord бере роботу на себе після перекладу</h2>
+<p class="section-sub">TradCoord проводить нових учасників через вибір мови, призначає правильний доступ і обмежує непотрібні сповіщення. Він також може роздати наявну роль усім поточним учасникам, а потім автоматизувати її для нових учасників або коли вони отримують першу роль.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Власне привітання</h3>
+<p>Налаштуйте власне привітання, щоб направляти учасників у правильний канал (правила / вибір мови) без непотрібних сповіщень для всього сервера.</p>
+<ul>
+<li>Довільний текст (через модальне вікно)</li>
+<li>Прості змінні <code>{user}</code> and <code>{channel}</code></li>
+<li>Кнопка, що одразу направляє користувачів до каналу правил або вибору мови</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Прийняття правил</h3>
+<p>Публікує повідомлення з правилами та кнопкою прийняття, призначає користувачеві роль, а потім перенаправляє до вибору мови, щоб кожен учасник міг налаштувати власний доступ.</p>
+<ul>
+<li>Простий процес для нових учасників</li>
+<li>Відстежуваність для модерації</li>
+<li>Явне перенаправлення до каналу вибору мови (самообслуговування для учасників)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Координація за областю</h3>
+<p>Створює інтерактивні повідомлення ролей/мов для однієї, кількох або всіх груп TradLinker, щоб учасники обирали свою мову й отримували лише корисні сповіщення.</p>
+<ul>
+<li>Виберіть одну або кілька груп TradLinker</li>
+<li>Безпечно оновлюйте або видаляйте області координації</li>
+<li>Мовні ролі зменшують непотрібні сповіщення</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Масове й автоматичне призначення ролей</h3>
+<p>Виберіть наявну роль, призначте її відповідним поточним учасникам, а потім за бажанням оберіть автоматичне правило для майбутніх учасників.</p>
+<ul>
+<li>Масове призначення реальним учасникам із дотриманням ієрархії ролей Discord</li>
+<li>Виберіть один режим автоматизації: при вході або при отриманні першої ролі</li>
+<li>Зупиніть автоматизацію без видалення вже призначених ролей</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Команди</p>
+<h2>Функції для адміністраторів (Premium)</h2>
+<p class="section-sub">Усі команди нижче є адміністративними. TradCoord призначений для Premium-серверів.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Привітання</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — налаштовує привітання (цільовий канал + текст модального вікна)</li>
+<li><code>/1-clear_welcome</code> — вимикає та видаляє серверну конфігурацію привітання</li>
+</ul>
+<p class="detail-note">Дозволи: керування повідомленнями. Лише для Premium-серверів.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Правила + підтвердження</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — надсилає повідомлення про прийняття правил із кнопкою</li>
+<li>Публічні налаштування: канал повідомлення, канал журналів, мовний канал, роль для призначення</li>
+<li>Після натискання: призначення ролі + підтвердження + посилання на канал вибору мови</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Інтерактивна координація (створення)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — створює інтерактивне повідомлення керування ролями у вибраному каналі</li>
+<li>Дозволяє вибрати одну, кілька або всі групи TradLinker</li>
+<li>Створює/пов’язує мовні ролі для вибраної області координації</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Обслуговування координації</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — оновлює наявне повідомлення координації (корисно після зміни груп/каналів)</li>
+<li><code>/3-delete_coordination</code> — видаляє область координації з підтвердженням</li>
+<li>За можливості безпечно очищує невикористані дозволи/ролі</li>
+</ul>
+<p class="detail-note">Видалення: дозволи <em>Керування повідомленнями</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Масове призначення ролей</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — вибирає наявну роль, яку можна призначити, і роздає її поточним учасникам, якими бот може керувати</li>
+<li>Виберіть автоматичне призначення новим учасникам або коли учасник отримує свою першу роль</li>
+<li><code>/4-stop_role_assignment</code> — вимикає автоматичне призначення для налаштованої ролі</li>
+<li>Зупинка автоматизації не видаляє вже призначені ролі</li>
+</ul>
+<p class="detail-note">Premium-сервер і <em>Manage Roles</em> потрібний дозвіл. Початкове масове призначення пропускає ботів і дотримується ієрархій ролей адміністратора та бота.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Що це змінює для ваших учасників</h3>
+<ul class="feature-list compact">
+<li>Зрозуміліший процес входу (привітання + правила + вибір мови)</li>
+<li>Менше перешкод для переходу до потрібного контенту</li>
+<li>Послідовне призначення спільної ролі без обробки учасників по одному</li>
+<li>Краща читабельність для великих багатомовних серверів</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Для якого типу сервера це найкраще?</h3>
+<ul class="feature-list compact">
+<li>Спільноти зі значними потребами в онбордингу (автори, ігри, підтримка, школи)</li>
+<li>Сервери з великою кількістю каналів/мов і потребою в структурі</li>
+<li>Команди модерації, які хочуть економити час на онбордингу та спільних ролях</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Важливо:</strong> TradCoord — це <strong>Premium-доповнення</strong> для TradLinker. Мовна координація використовує групи й мови TradLinker; масове або автоматичне призначення може використовувати будь-яку наявну роль, якою дозволено керувати і адміністратору, і боту.
+        </div>
+</div>
+</section>
+</div>

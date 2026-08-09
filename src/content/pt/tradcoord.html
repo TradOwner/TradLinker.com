@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Extensão Premium</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">O bot de integração e coordenação para servidores Premium: fluxos de boas-vindas, aceitação de regras, cargos de idioma, acessos por âmbito e atribuição em massa ou automática de cargos.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Boas-vindas</span><span>Regras</span><span>Cargos de idioma</span><span>Coordenação interativa</span><span>Atribuição automática</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Adicionar TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Ver o plano Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Papel na suite</p>
+<h2>O TradCoord assume após a tradução</h2>
+<p class="section-sub">O TradCoord orienta novos membros na seleção do idioma, atribui o acesso correto e limita notificações desnecessárias. Também pode distribuir um cargo existente a todos os membros atuais e depois automatizá-lo para novos membros ou quando recebem o primeiro cargo.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Boas-vindas personalizadas</h3>
+<p>Configure uma mensagem de boas-vindas personalizada para orientar os membros para o canal correto (regras / escolha de idioma), sem enviar notificações desnecessárias a todo o servidor.</p>
+<ul>
+<li>Texto livre (via modal)</li>
+<li>Variáveis simples <code>{user}</code> and <code>{channel}</code></li>
+<li>Botão que envia os utilizadores diretamente para o canal de regras ou seleção de idioma</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Aceitação das regras</h3>
+<p>Publica uma mensagem de regras com botão de aceitação, atribui um cargo ao utilizador e depois redireciona-o para a seleção de idioma para que cada membro possa configurar o próprio acesso.</p>
+<ul>
+<li>Fluxo simples para novos membros</li>
+<li>Rastreabilidade para a moderação</li>
+<li>Redirecionamento explícito para o canal de seleção de idioma (autosserviço para membros)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Coordenação por âmbito</h3>
+<p>Cria mensagens interativas de cargos/idiomas para um grupo, vários grupos ou todos os grupos TradLinker, para que os membros escolham o idioma e recebam apenas notificações úteis.</p>
+<ul>
+<li>Selecionar um ou vários grupos TradLinker</li>
+<li>Atualizar ou eliminar áreas de coordenação com segurança</li>
+<li>Os cargos de idioma reduzem notificações desnecessárias</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Atribuição em massa e automática de cargos</h3>
+<p>Selecione um cargo existente, atribua-o aos membros atuais elegíveis e, opcionalmente, escolha uma regra automática para futuros membros.</p>
+<ul>
+<li>Atribuição em massa a membros humanos respeitando a hierarquia de cargos do Discord</li>
+<li>Escolha um modo de automatização: ao entrar ou ao receber o primeiro cargo</li>
+<li>Interrompa a automatização sem remover cargos já atribuídos</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Comandos</p>
+<h2>Funcionalidades para administradores (Premium)</h2>
+<p class="section-sub">Todos os comandos abaixo são comandos de administração. O TradCoord destina-se a servidores Premium.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Boas-vindas</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — configura a mensagem de boas-vindas (canal de destino + texto modal)</li>
+<li><code>/1-clear_welcome</code> — desativa e remove a configuração de boas-vindas do servidor</li>
+</ul>
+<p class="detail-note">Permissões: gerir mensagens. Reservado para servidores Premium.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Regras + validação</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — envia uma mensagem de aceitação das regras com um botão</li>
+<li>Definições públicas: canal da mensagem, canal de registos, canal de idioma, cargo a atribuir</li>
+<li>Ao clicar: atribuir cargo + mensagem de confirmação + ligação para o canal de seleção de idioma</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Coordenação interativa (criação)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — cria uma mensagem interativa de gestão de cargos num canal escolhido</li>
+<li>Permite direcionar um grupo, vários grupos ou todos os grupos TradLinker</li>
+<li>Cria/liga cargos de idioma para a área de coordenação selecionada</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Manutenção da coordenação</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — atualiza uma mensagem de coordenação existente (útil após alterar grupos/canais)</li>
+<li><code>/3-delete_coordination</code> — elimina uma área de coordenação com confirmação</li>
+<li>Limpa em segurança permissões/cargos não utilizados quando possível</li>
+</ul>
+<p class="detail-note">Eliminação: permissões <em>Gerir mensagens</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Atribuição em massa de cargos</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — seleciona um cargo existente atribuível e distribui-o pelos membros atuais que o bot consegue gerir</li>
+<li>Escolha atribuição automática para novos membros ou quando um membro recebe o primeiro cargo</li>
+<li><code>/4-stop_role_assignment</code> — desativa a atribuição automática para um cargo configurado</li>
+<li>Interromper a automatização não remove os cargos já atribuídos</li>
+</ul>
+<p class="detail-note">Servidor Premium e <em>Manage Roles</em> permissão necessária. A atribuição inicial em massa ignora bots e respeita as hierarquias de cargos do administrador e do bot.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ O que isto muda para os seus membros</h3>
+<ul class="feature-list compact">
+<li>Fluxo de entrada mais claro (boas-vindas + regras + escolha de idioma)</li>
+<li>Menos fricção para chegar ao conteúdo correto</li>
+<li>Atribuição consistente de um cargo partilhado sem processar membros um a um</li>
+<li>Melhor legibilidade para grandes servidores multilingues</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Para que tipo de servidor é mais indicado?</h3>
+<ul class="feature-list compact">
+<li>Comunidades com grandes necessidades de integração (criadores, gaming, suporte, escolas)</li>
+<li>Servidores com muitos canais/idiomas e necessidade de estrutura</li>
+<li>Equipas de moderação que querem poupar tempo na integração e em cargos partilhados</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Importante:</strong> O TradCoord é um <strong>complemento Premium</strong> para o TradLinker. A coordenação de idiomas utiliza grupos e idiomas do TradLinker; a atribuição em massa ou automática pode utilizar qualquer cargo existente que o administrador e o bot tenham permissão para gerir.
+        </div>
+</div>
+</section>
+</div>

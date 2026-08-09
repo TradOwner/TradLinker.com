@@ -1,0 +1,270 @@
+<div class="page-panel panel-hidden" data-page="presentation" id="presentation">
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Зачем нужна эта Suite?</p>
+<h2>Понятная архитектура: 1 основной бот + 2 дополняющих расширения</h2>
+<p class="section-sub">
+            Вот как три бота работают вместе: <strong>TradLinker</strong> — основной бот, <strong>TradCoord</strong> — Premium-дополнение для онбординга, координации и управления ролями, а <strong>TradAssist</strong> работает и как персональный ассистент, и как серверное расширение перевода.
+          </p>
+</div>
+<div class="cards-3">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Начните с TradLinker</h3>
+<p>Создавайте группы связанных каналов (FR / EN / ES…) и позволяйте боту ретранслировать/переводить сообщения, сохраняя один разговор без фрагментации.</p>
+<ul>
+<li>Автоматический перевод между каналами</li>
+<li>Синхронизированные реакции</li>
+<li>Многоязычные опросы</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Добавьте TradAssist для повседневного использования</h3>
+<p>Переводы по запросу, перевод канала и многоязычные публикации с <em>Translate</em> кнопкой, а также перевод по реакции флагом. На Premium ключевые функции доступны всем на этом сервере без ограничений.</p>
+<ul>
+<li>Персональный ассистент в ЛС</li>
+<li>Инструменты перевода для серверов</li>
+<li>Без ограничений на Premium-серверах (поддерживаемые функции)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>С Premium откройте TradCoord</h3>
+<p>Удобный и безопасный онбординг: приветственное сообщение, принятие правил, выбор языка, координация нескольких групп и назначение ролей текущим или будущим участникам.</p>
+<ul>
+<li>Приветствие и правила</li>
+<li>Языковые роли и координация</li>
+<li>Массовое или автоматическое назначение</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Три бота</p>
+<h2>Обзор ботов</h2>
+<p class="section-sub">Каждый блок описывает роль продукта, ключевые функции и основные сценарии использования.</p>
+</div>
+<div class="bot-grid">
+<article class="bot-card reveal">
+<div class="bot-top">
+<img alt="TradLinker" class="bot-avatar" decoding="async" height="256" loading="lazy" src="/image/Avatar%20Linker%20rond.webp" width="256"/>
+<div>
+<p class="bot-role">Основной бот</p>
+<h3>TradLinker</h3>
+</div>
+</div>
+<p class="bot-lead"><strong>Сердце многоязычного сервера.</strong> Связывает несколько каналов по языкам и повторно публикует каждое переведённое сообщение в связанных каналах.</p>
+<div class="tag-row">
+<span>Связанные каналы</span><span>Автоперевод</span><span>Опросы</span><span>Синхронизация реакций</span>
+</div>
+<details>
+<summary>Ключевые функции / команды</summary>
+<ul class="feature-list">
+<li><code>/2-create_group</code>, <code>/3-add_channel</code>, <code>/6-show_groups</code></li>
+<li><code>/1-create_poll</code> and <code>/1-delete_poll</code></li>
+<li>Контекстное меню <code>Show reactions</code> (объединение реакций)</li>
+<li><code>/8-buy_premium</code> для Premium-сервера</li>
+</ul>
+</details>
+</article>
+<article class="bot-card reveal">
+<div class="bot-top">
+<img alt="TradAssist" class="bot-avatar" decoding="async" height="256" loading="lazy" src="/image/Avatar%20Assistant%20rond.webp" width="256"/>
+<div>
+<p class="bot-role">Ассистент и расширение</p>
+<h3>TradAssist</h3>
+</div>
+</div>
+<p class="bot-lead"><strong>Персональный ассистент-переводчик… и серверное расширение TradLinker.</strong> Расширенные инструменты перевода для ЛС и серверов.</p>
+<div class="tag-row">
+<span>Перевод сообщений</span><span>Перевод каналов</span><span>Многоязычные публикации</span><span>Реакции флагами</span>
+</div>
+<details>
+<summary>Ключевые функции / команды</summary>
+<ul class="feature-list">
+<li><code>/1-translate_and_send</code> • <code>/4-translate_message</code></li>
+<li><code>/3-translate_channel</code> + контекстное меню <code>Translate channel</code></li>
+<li><code>/2-multilang_post_create</code> / <code>edit</code> с <em>Translate</em> кнопкой</li>
+<li><code>/5-flagreact</code> группа команд (флаги + задержка)</li>
+<li><code>/6-buy_platinium</code> — пользовательский тариф Platinium</li>
+</ul>
+</details>
+</article>
+<article class="bot-card reveal premium">
+<div class="bot-top">
+<img alt="TradCoord" class="bot-avatar" decoding="async" height="256" loading="lazy" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="bot-role">Premium-расширение</p>
+<h3>TradCoord</h3>
+</div>
+</div>
+<p class="bot-lead"><strong>Умный онбординг для Premium-серверов.</strong> Приветствует участников, управляет правилами и языковыми ролями, координирует доступ и автоматизирует назначение ролей.</p>
+<div class="tag-row">
+<span>Приветствие</span><span>Правила</span><span>Языковые роли</span><span>Координация</span><span>Автоматические роли</span>
+</div>
+<details>
+<summary>Ключевые функции / команды</summary>
+<ul class="feature-list">
+<li><code>/1-set_welcome</code> • <code>/1-clear_welcome</code></li>
+<li><code>/2-set_rules_message</code> (кнопка принятия + логи)</li>
+<li><code>/3-coordination</code>, <code>/3-edit_coordination</code>, <code>/3-delete_coordination</code></li>
+<li><code>/4-role_assignment</code> • <code>/4-stop_role_assignment</code> (массовое и автоматическое назначение)</li>
+<li>Доступно для <strong>Premium</strong></li>
+</ul>
+</details>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container workflow-grid">
+<div class="section-head reveal">
+<p class="eyebrow">Рабочий процесс</p>
+<h2>Как 3 бота дополняют друг друга</h2>
+</div>
+<div class="cards-3">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>TradLinker структурирует разговоры</h3>
+<p>Группы связанных каналов по языкам, автоматическая ретрансляция и перевод: разговор остаётся живым и единым.</p>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>TradAssist добавляет расширенные инструменты</h3>
+<p>Переводы по запросу, перевод каналов, многоязычные публикации и реакции флагами — в ЛС и/или на серверах.</p>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>TradCoord организует Premium-онбординг и роли</h3>
+<p>Правила, языки, роли и доступ: понятный процесс, интерактивный выбор языка и автоматизированное назначение ролей текущим или будущим участникам.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Доступные языки</p>
+<h2>110+ поддерживаемых языков, доступных постоянно</h2>
+<p class="section-sub">Каталог языков, доступных в функциях перевода Suite.</p>
+</div>
+<div aria-label="Доступные языки" class="lang-cloud reveal">
+<span class="lang-chip" title="африкаанс (af)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_za_af.png"/></span><span class="lang-name">африкаанс</span><code>af</code></span>
+<span class="lang-chip" title="албанский (sq)"><span aria-hidden="true" class="flag">🇦🇱</span><span class="lang-name">албанский</span><code>sq</code></span>
+<span class="lang-chip" title="амхарский (am)"><span aria-hidden="true" class="flag">🇪🇹</span><span class="lang-name">амхарский</span><code>am</code></span>
+<span class="lang-chip" title="арабский (ar)"><span aria-hidden="true" class="flag">🇸🇦</span><span class="lang-name">арабский</span><code>ar</code></span>
+<span class="lang-chip" title="армянский (hy)"><span aria-hidden="true" class="flag">🇦🇲</span><span class="lang-name">армянский</span><code>hy</code></span>
+<span class="lang-chip" title="азербайджанский (az)"><span aria-hidden="true" class="flag">🇦🇿</span><span class="lang-name">азербайджанский</span><code>az</code></span>
+<span class="lang-chip" title="баскский (eu)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_es_eu.png"/></span><span class="lang-name">баскский</span><code>eu</code></span>
+<span class="lang-chip" title="белорусский (be)"><span aria-hidden="true" class="flag">🇧🇾</span><span class="lang-name">белорусский</span><code>be</code></span>
+<span class="lang-chip" title="бенгальский (bn)"><span aria-hidden="true" class="flag">🇧🇩</span><span class="lang-name">бенгальский</span><code>bn</code></span>
+<span class="lang-chip" title="боснийский (bs)"><span aria-hidden="true" class="flag">🇧🇦</span><span class="lang-name">боснийский</span><code>bs</code></span>
+<span class="lang-chip" title="болгарский (bg)"><span aria-hidden="true" class="flag">🇧🇬</span><span class="lang-name">болгарский</span><code>bg</code></span>
+<span class="lang-chip" title="каталанский (ca)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_es_ca.png"/></span><span class="lang-name">каталанский</span><code>ca</code></span>
+<span class="lang-chip" title="себуано (ceb)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_ph_ceb.png"/></span><span class="lang-name">себуано</span><code>ceb</code></span>
+<span class="lang-chip" title="ньянджа (ny)"><span aria-hidden="true" class="flag">🇲🇼</span><span class="lang-name">ньянджа</span><code>ny</code></span>
+<span class="lang-chip" title="китайский, упрощенное письмо (zh-cn)"><span aria-hidden="true" class="flag">🇨🇳</span><span class="lang-name">китайский, упрощенное письмо</span><code>zh-cn</code></span>
+<span class="lang-chip" title="китайский, традиционное письмо (zh-tw)"><span aria-hidden="true" class="flag">🇹🇼</span><span class="lang-name">китайский, традиционное письмо</span><code>zh-tw</code></span>
+<span class="lang-chip" title="корсиканский (co)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_fr_co.png"/></span><span class="lang-name">корсиканский</span><code>co</code></span>
+<span class="lang-chip" title="хорватский (hr)"><span aria-hidden="true" class="flag">🇭🇷</span><span class="lang-name">хорватский</span><code>hr</code></span>
+<span class="lang-chip" title="чешский (cs)"><span aria-hidden="true" class="flag">🇨🇿</span><span class="lang-name">чешский</span><code>cs</code></span>
+<span class="lang-chip" title="датский (da)"><span aria-hidden="true" class="flag">🇩🇰</span><span class="lang-name">датский</span><code>da</code></span>
+<span class="lang-chip" title="нидерландский (nl)"><span aria-hidden="true" class="flag">🇳🇱</span><span class="lang-name">нидерландский</span><code>nl</code></span>
+<span class="lang-chip" title="английский (en)"><span aria-hidden="true" class="flag">🇬🇧</span><span class="lang-name">английский</span><code>en</code></span>
+<span class="lang-chip" title="эсперанто (eo)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_eo.png"/></span><span class="lang-name">эсперанто</span><code>eo</code></span>
+<span class="lang-chip" title="эстонский (et)"><span aria-hidden="true" class="flag">🇪🇪</span><span class="lang-name">эстонский</span><code>et</code></span>
+<span class="lang-chip" title="тагалог (tl)"><span aria-hidden="true" class="flag">🇵🇭</span><span class="lang-name">тагалог</span><code>tl</code></span>
+<span class="lang-chip" title="финский (fi)"><span aria-hidden="true" class="flag">🇫🇮</span><span class="lang-name">финский</span><code>fi</code></span>
+<span class="lang-chip" title="французский (fr)"><span aria-hidden="true" class="flag">🇫🇷</span><span class="lang-name">французский</span><code>fr</code></span>
+<span class="lang-chip" title="западнофризский (fy)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_nl_fy.png"/></span><span class="lang-name">западнофризский</span><code>fy</code></span>
+<span class="lang-chip" title="галисийский (gl)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_es_gl.png"/></span><span class="lang-name">галисийский</span><code>gl</code></span>
+<span class="lang-chip" title="грузинский (ka)"><span aria-hidden="true" class="flag">🇬🇪</span><span class="lang-name">грузинский</span><code>ka</code></span>
+<span class="lang-chip" title="немецкий (de)"><span aria-hidden="true" class="flag">🇩🇪</span><span class="lang-name">немецкий</span><code>de</code></span>
+<span class="lang-chip" title="греческий (el)"><span aria-hidden="true" class="flag">🇬🇷</span><span class="lang-name">греческий</span><code>el</code></span>
+<span class="lang-chip" title="гуджарати (gu)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_gu.png"/></span><span class="lang-name">гуджарати</span><code>gu</code></span>
+<span class="lang-chip" title="гаитянский (ht)"><span aria-hidden="true" class="flag">🇭🇹</span><span class="lang-name">гаитянский</span><code>ht</code></span>
+<span class="lang-chip" title="хауса (ha)"><span aria-hidden="true" class="flag">🇳🇬</span><span class="lang-name">хауса</span><code>ha</code></span>
+<span class="lang-chip" title="гавайский (haw)"><span aria-hidden="true" class="flag">🇺🇸</span><span class="lang-name">гавайский</span><code>haw</code></span>
+<span class="lang-chip" title="иврит (he)"><span aria-hidden="true" class="flag">🇮🇱</span><span class="lang-name">иврит</span><code>he</code></span>
+<span class="lang-chip" title="хинди (hi)"><span aria-hidden="true" class="flag">🇮🇳</span><span class="lang-name">хинди</span><code>hi</code></span>
+<span class="lang-chip" title="хмонг (hmn)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_cn_hmn.png"/></span><span class="lang-name">хмонг</span><code>hmn</code></span>
+<span class="lang-chip" title="венгерский (hu)"><span aria-hidden="true" class="flag">🇭🇺</span><span class="lang-name">венгерский</span><code>hu</code></span>
+<span class="lang-chip" title="исландский (is)"><span aria-hidden="true" class="flag">🇮🇸</span><span class="lang-name">исландский</span><code>is</code></span>
+<span class="lang-chip" title="игбо (ig)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_ng_ig.png"/></span><span class="lang-name">игбо</span><code>ig</code></span>
+<span class="lang-chip" title="индонезийский (id)"><span aria-hidden="true" class="flag">🇮🇩</span><span class="lang-name">индонезийский</span><code>id</code></span>
+<span class="lang-chip" title="ирландский (ga)"><span aria-hidden="true" class="flag">🇮🇪</span><span class="lang-name">ирландский</span><code>ga</code></span>
+<span class="lang-chip" title="итальянский (it)"><span aria-hidden="true" class="flag">🇮🇹</span><span class="lang-name">итальянский</span><code>it</code></span>
+<span class="lang-chip" title="японский (ja)"><span aria-hidden="true" class="flag">🇯🇵</span><span class="lang-name">японский</span><code>ja</code></span>
+<span class="lang-chip" title="яванский (jw)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_id_jw.png"/></span><span class="lang-name">яванский</span><code>jw</code></span>
+<span class="lang-chip" title="каннада (kn)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_kn.png"/></span><span class="lang-name">каннада</span><code>kn</code></span>
+<span class="lang-chip" title="казахский (kk)"><span aria-hidden="true" class="flag">🇰🇿</span><span class="lang-name">казахский</span><code>kk</code></span>
+<span class="lang-chip" title="кхмерский (km)"><span aria-hidden="true" class="flag">🇰🇭</span><span class="lang-name">кхмерский</span><code>km</code></span>
+<span class="lang-chip" title="киньяруанда (rw)"><span aria-hidden="true" class="flag">🇷🇼</span><span class="lang-name">киньяруанда</span><code>rw</code></span>
+<span class="lang-chip" title="корейский (ko)"><span aria-hidden="true" class="flag">🇰🇷</span><span class="lang-name">корейский</span><code>ko</code></span>
+<span class="lang-chip" title="курдский (ku)"><span aria-hidden="true" class="flag">🇮🇶</span><span class="lang-name">курдский</span><code>ku</code></span>
+<span class="lang-chip" title="киргизский (ky)"><span aria-hidden="true" class="flag">🇰🇬</span><span class="lang-name">киргизский</span><code>ky</code></span>
+<span class="lang-chip" title="лаосский (lo)"><span aria-hidden="true" class="flag">🇱🇦</span><span class="lang-name">лаосский</span><code>lo</code></span>
+<span class="lang-chip" title="латинский (la)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_la.png"/></span><span class="lang-name">латинский</span><code>la</code></span>
+<span class="lang-chip" title="латышский (lv)"><span aria-hidden="true" class="flag">🇱🇻</span><span class="lang-name">латышский</span><code>lv</code></span>
+<span class="lang-chip" title="литовский (lt)"><span aria-hidden="true" class="flag">🇱🇹</span><span class="lang-name">литовский</span><code>lt</code></span>
+<span class="lang-chip" title="люксембургский (lb)"><span aria-hidden="true" class="flag">🇱🇺</span><span class="lang-name">люксембургский</span><code>lb</code></span>
+<span class="lang-chip" title="македонский (mk)"><span aria-hidden="true" class="flag">🇲🇰</span><span class="lang-name">македонский</span><code>mk</code></span>
+<span class="lang-chip" title="малагасийский (mg)"><span aria-hidden="true" class="flag">🇲🇬</span><span class="lang-name">малагасийский</span><code>mg</code></span>
+<span class="lang-chip" title="малайский (ms)"><span aria-hidden="true" class="flag">🇲🇾</span><span class="lang-name">малайский</span><code>ms</code></span>
+<span class="lang-chip" title="малаялам (ml)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_ml.png"/></span><span class="lang-name">малаялам</span><code>ml</code></span>
+<span class="lang-chip" title="мальтийский (mt)"><span aria-hidden="true" class="flag">🇲🇹</span><span class="lang-name">мальтийский</span><code>mt</code></span>
+<span class="lang-chip" title="маори (mi)"><span aria-hidden="true" class="flag">🇳🇿</span><span class="lang-name">маори</span><code>mi</code></span>
+<span class="lang-chip" title="маратхи (mr)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_mr.png"/></span><span class="lang-name">маратхи</span><code>mr</code></span>
+<span class="lang-chip" title="монгольский (mn)"><span aria-hidden="true" class="flag">🇲🇳</span><span class="lang-name">монгольский</span><code>mn</code></span>
+<span class="lang-chip" title="бирманский (my)"><span aria-hidden="true" class="flag">🇲🇲</span><span class="lang-name">бирманский</span><code>my</code></span>
+<span class="lang-chip" title="непальский (ne)"><span aria-hidden="true" class="flag">🇳🇵</span><span class="lang-name">непальский</span><code>ne</code></span>
+<span class="lang-chip" title="норвежский (no)"><span aria-hidden="true" class="flag">🇳🇴</span><span class="lang-name">норвежский</span><code>no</code></span>
+<span class="lang-chip" title="ория (or)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_or.png"/></span><span class="lang-name">ория</span><code>or</code></span>
+<span class="lang-chip" title="пушту (ps)"><span aria-hidden="true" class="flag">🇦🇫</span><span class="lang-name">пушту</span><code>ps</code></span>
+<span class="lang-chip" title="персидский (fa)"><span aria-hidden="true" class="flag">🇮🇷</span><span class="lang-name">персидский</span><code>fa</code></span>
+<span class="lang-chip" title="польский (pl)"><span aria-hidden="true" class="flag">🇵🇱</span><span class="lang-name">польский</span><code>pl</code></span>
+<span class="lang-chip" title="португальский (pt)"><span aria-hidden="true" class="flag">🇵🇹</span><span class="lang-name">португальский</span><code>pt</code></span>
+<span class="lang-chip" title="португальский (pt-br)"><span aria-hidden="true" class="flag">🇧🇷</span><span class="lang-name">португальский</span><code>pt-br</code></span>
+<span class="lang-chip" title="панджаби (pa)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_pa.png"/></span><span class="lang-name">панджаби</span><code>pa</code></span>
+<span class="lang-chip" title="румынский (ro)"><span aria-hidden="true" class="flag">🇷🇴</span><span class="lang-name">румынский</span><code>ro</code></span>
+<span class="lang-chip" title="русский (ru)"><span aria-hidden="true" class="flag">🇷🇺</span><span class="lang-name">русский</span><code>ru</code></span>
+<span class="lang-chip" title="самоанский (sm)"><span aria-hidden="true" class="flag">🇼🇸</span><span class="lang-name">самоанский</span><code>sm</code></span>
+<span class="lang-chip" title="гэльский (gd)"><span aria-hidden="true" class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><span class="lang-name">гэльский</span><code>gd</code></span>
+<span class="lang-chip" title="сербский (sr)"><span aria-hidden="true" class="flag">🇷🇸</span><span class="lang-name">сербский</span><code>sr</code></span>
+<span class="lang-chip" title="южный сото (st)"><span aria-hidden="true" class="flag">🇱🇸</span><span class="lang-name">южный сото</span><code>st</code></span>
+<span class="lang-chip" title="шона (sn)"><span aria-hidden="true" class="flag">🇿🇼</span><span class="lang-name">шона</span><code>sn</code></span>
+<span class="lang-chip" title="синдхи (sd)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_pk_sd.png"/></span><span class="lang-name">синдхи</span><code>sd</code></span>
+<span class="lang-chip" title="сингальский (si)"><span aria-hidden="true" class="flag">🇱🇰</span><span class="lang-name">сингальский</span><code>si</code></span>
+<span class="lang-chip" title="словацкий (sk)"><span aria-hidden="true" class="flag">🇸🇰</span><span class="lang-name">словацкий</span><code>sk</code></span>
+<span class="lang-chip" title="словенский (sl)"><span aria-hidden="true" class="flag">🇸🇮</span><span class="lang-name">словенский</span><code>sl</code></span>
+<span class="lang-chip" title="сомали (so)"><span aria-hidden="true" class="flag">🇸🇴</span><span class="lang-name">сомали</span><code>so</code></span>
+<span class="lang-chip" title="испанский (es)"><span aria-hidden="true" class="flag">🇪🇸</span><span class="lang-name">испанский</span><code>es</code></span>
+<span class="lang-chip" title="сунданский (su)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_id_su.png"/></span><span class="lang-name">сунданский</span><code>su</code></span>
+<span class="lang-chip" title="суахили (sw)"><span aria-hidden="true" class="flag">🇰🇪</span><span class="lang-name">суахили</span><code>sw</code></span>
+<span class="lang-chip" title="шведский (sv)"><span aria-hidden="true" class="flag">🇸🇪</span><span class="lang-name">шведский</span><code>sv</code></span>
+<span class="lang-chip" title="таджикский (tg)"><span aria-hidden="true" class="flag">🇹🇯</span><span class="lang-name">таджикский</span><code>tg</code></span>
+<span class="lang-chip" title="тамильский (ta)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_ta.png"/></span><span class="lang-name">тамильский</span><code>ta</code></span>
+<span class="lang-chip" title="татарский (tt)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_ru_tt.png"/></span><span class="lang-name">татарский</span><code>tt</code></span>
+<span class="lang-chip" title="телугу (te)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_in_te.png"/></span><span class="lang-name">телугу</span><code>te</code></span>
+<span class="lang-chip" title="тайский (th)"><span aria-hidden="true" class="flag">🇹🇭</span><span class="lang-name">тайский</span><code>th</code></span>
+<span class="lang-chip" title="турецкий (tr)"><span aria-hidden="true" class="flag">🇹🇷</span><span class="lang-name">турецкий</span><code>tr</code></span>
+<span class="lang-chip" title="туркменский (tk)"><span aria-hidden="true" class="flag">🇹🇲</span><span class="lang-name">туркменский</span><code>tk</code></span>
+<span class="lang-chip" title="украинский (uk)"><span aria-hidden="true" class="flag">🇺🇦</span><span class="lang-name">украинский</span><code>uk</code></span>
+<span class="lang-chip" title="урду (ur)"><span aria-hidden="true" class="flag">🇵🇰</span><span class="lang-name">урду</span><code>ur</code></span>
+<span class="lang-chip" title="уйгурский (ug)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_cn_ug.png"/></span><span class="lang-name">уйгурский</span><code>ug</code></span>
+<span class="lang-chip" title="узбекский (uz)"><span aria-hidden="true" class="flag">🇺🇿</span><span class="lang-name">узбекский</span><code>uz</code></span>
+<span class="lang-chip" title="вьетнамский (vi)"><span aria-hidden="true" class="flag">🇻🇳</span><span class="lang-name">вьетнамский</span><code>vi</code></span>
+<span class="lang-chip" title="валлийский (cy)"><span aria-hidden="true" class="flag">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span><span class="lang-name">валлийский</span><code>cy</code></span>
+<span class="lang-chip" title="коса (xh)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_za_xh.png"/></span><span class="lang-name">коса</span><code>xh</code></span>
+<span class="lang-chip" title="идиш (yi)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_il_yi.png"/></span><span class="lang-name">идиш</span><code>yi</code></span>
+<span class="lang-chip" title="йоруба (yo)"><span aria-hidden="true" class="flag"><img alt="" class="flag-image" loading="lazy" src="/image/flags/flag_ng_yo.png"/></span><span class="lang-name">йоруба</span><code>yo</code></span>
+<span class="lang-chip" title="зулу (zu)"><span aria-hidden="true" class="flag">🇿🇦</span><span class="lang-name">зулу</span><code>zu</code></span>
+</div>
+</div>
+</section>
+</div>
