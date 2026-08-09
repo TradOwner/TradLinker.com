@@ -1,0 +1,212 @@
+[
+  {
+    "code": "en",
+    "englishName": "English",
+    "nativeName": "English",
+    "hreflang": "en",
+    "dir": "ltr",
+    "ogLocale": "en_US",
+    "published": true,
+    "legalPublished": true
+  },
+  {
+    "code": "es",
+    "englishName": "Spanish",
+    "nativeName": "Español",
+    "hreflang": "es",
+    "dir": "ltr",
+    "ogLocale": "es_ES",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "de",
+    "englishName": "German",
+    "nativeName": "Deutsch",
+    "hreflang": "de",
+    "dir": "ltr",
+    "ogLocale": "de_DE",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "ja",
+    "englishName": "Japanese",
+    "nativeName": "日本語",
+    "hreflang": "ja",
+    "dir": "ltr",
+    "ogLocale": "ja_JP",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "fr",
+    "englishName": "French",
+    "nativeName": "Français",
+    "hreflang": "fr",
+    "dir": "ltr",
+    "ogLocale": "fr_FR",
+    "published": true,
+    "legalPublished": true
+  },
+  {
+    "code": "pt",
+    "englishName": "Portuguese",
+    "nativeName": "Português",
+    "hreflang": "pt",
+    "dir": "ltr",
+    "ogLocale": "pt_PT",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "ru",
+    "englishName": "Russian",
+    "nativeName": "Русский",
+    "hreflang": "ru",
+    "dir": "ltr",
+    "ogLocale": "ru_RU",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "it",
+    "englishName": "Italian",
+    "nativeName": "Italiano",
+    "hreflang": "it",
+    "dir": "ltr",
+    "ogLocale": "it_IT",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "nl",
+    "englishName": "Dutch",
+    "nativeName": "Nederlands",
+    "hreflang": "nl",
+    "dir": "ltr",
+    "ogLocale": "nl_NL",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "pl",
+    "englishName": "Polish",
+    "nativeName": "Polski",
+    "hreflang": "pl",
+    "dir": "ltr",
+    "ogLocale": "pl_PL",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "tr",
+    "englishName": "Turkish",
+    "nativeName": "Türkçe",
+    "hreflang": "tr",
+    "dir": "ltr",
+    "ogLocale": "tr_TR",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "zh",
+    "englishName": "Chinese (Simplified)",
+    "nativeName": "简体中文",
+    "hreflang": "zh-Hans",
+    "dir": "ltr",
+    "ogLocale": "zh_CN",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "fa",
+    "englishName": "Persian",
+    "nativeName": "فارسی",
+    "hreflang": "fa",
+    "dir": "rtl",
+    "ogLocale": "fa_IR",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "vi",
+    "englishName": "Vietnamese",
+    "nativeName": "Tiếng Việt",
+    "hreflang": "vi",
+    "dir": "ltr",
+    "ogLocale": "vi_VN",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "cs",
+    "englishName": "Czech",
+    "nativeName": "Čeština",
+    "hreflang": "cs",
+    "dir": "ltr",
+    "ogLocale": "cs_CZ",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "id",
+    "englishName": "Indonesian",
+    "nativeName": "Bahasa Indonesia",
+    "hreflang": "id",
+    "dir": "ltr",
+    "ogLocale": "id_ID",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "ko",
+    "englishName": "Korean",
+    "nativeName": "한국어",
+    "hreflang": "ko",
+    "dir": "ltr",
+    "ogLocale": "ko_KR",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "uk",
+    "englishName": "Ukrainian",
+    "nativeName": "Українська",
+    "hreflang": "uk",
+    "dir": "ltr",
+    "ogLocale": "uk_UA",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "hi",
+    "englishName": "Hindi",
+    "nativeName": "हिन्दी",
+    "hreflang": "hi",
+    "dir": "ltr",
+    "ogLocale": "hi_IN",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "ar",
+    "englishName": "Arabic",
+    "nativeName": "العربية",
+    "hreflang": "ar",
+    "dir": "rtl",
+    "ogLocale": "ar_SA",
+    "published": true,
+    "legalPublished": false
+  },
+  {
+    "code": "hu",
+    "englishName": "Hungarian",
+    "nativeName": "Magyar",
+    "hreflang": "hu",
+    "dir": "ltr",
+    "ogLocale": "hu_HU",
+    "published": true,
+    "legalPublished": false
+  }
+]
