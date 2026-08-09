@@ -7,7 +7,8 @@
     "dir": "ltr",
     "ogLocale": "en_US",
     "published": true,
-    "legalPublished": true
+    "legalPublished": true,
+    "flag": "🇬🇧"
   },
   {
     "code": "es",
@@ -17,7 +18,8 @@
     "dir": "ltr",
     "ogLocale": "es_ES",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇪🇸"
   },
   {
     "code": "de",
@@ -27,7 +29,8 @@
     "dir": "ltr",
     "ogLocale": "de_DE",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇩🇪"
   },
   {
     "code": "ja",
@@ -37,7 +40,8 @@
     "dir": "ltr",
     "ogLocale": "ja_JP",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇯🇵"
   },
   {
     "code": "fr",
@@ -47,7 +51,8 @@
     "dir": "ltr",
     "ogLocale": "fr_FR",
     "published": true,
-    "legalPublished": true
+    "legalPublished": true,
+    "flag": "🇫🇷"
   },
   {
     "code": "pt",
@@ -57,7 +62,8 @@
     "dir": "ltr",
     "ogLocale": "pt_PT",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇵🇹"
   },
   {
     "code": "ru",
@@ -67,7 +73,8 @@
     "dir": "ltr",
     "ogLocale": "ru_RU",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇷🇺"
   },
   {
     "code": "it",
@@ -77,7 +84,8 @@
     "dir": "ltr",
     "ogLocale": "it_IT",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇮🇹"
   },
   {
     "code": "nl",
@@ -87,7 +95,8 @@
     "dir": "ltr",
     "ogLocale": "nl_NL",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇳🇱"
   },
   {
     "code": "pl",
@@ -97,7 +106,8 @@
     "dir": "ltr",
     "ogLocale": "pl_PL",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇵🇱"
   },
   {
     "code": "tr",
@@ -107,7 +117,8 @@
     "dir": "ltr",
     "ogLocale": "tr_TR",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇹🇷"
   },
   {
     "code": "zh",
@@ -117,7 +128,8 @@
     "dir": "ltr",
     "ogLocale": "zh_CN",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇨🇳"
   },
   {
     "code": "fa",
@@ -127,7 +139,8 @@
     "dir": "rtl",
     "ogLocale": "fa_IR",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇮🇷"
   },
   {
     "code": "vi",
@@ -137,7 +150,8 @@
     "dir": "ltr",
     "ogLocale": "vi_VN",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇻🇳"
   },
   {
     "code": "cs",
@@ -147,7 +161,8 @@
     "dir": "ltr",
     "ogLocale": "cs_CZ",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇨🇿"
   },
   {
     "code": "id",
@@ -157,7 +172,8 @@
     "dir": "ltr",
     "ogLocale": "id_ID",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇮🇩"
   },
   {
     "code": "ko",
@@ -167,7 +183,8 @@
     "dir": "ltr",
     "ogLocale": "ko_KR",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇰🇷"
   },
   {
     "code": "uk",
@@ -177,7 +194,8 @@
     "dir": "ltr",
     "ogLocale": "uk_UA",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇺🇦"
   },
   {
     "code": "hi",
@@ -187,7 +205,8 @@
     "dir": "ltr",
     "ogLocale": "hi_IN",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇮🇳"
   },
   {
     "code": "ar",
@@ -197,7 +216,8 @@
     "dir": "rtl",
     "ogLocale": "ar_SA",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇸🇦"
   },
   {
     "code": "hu",
@@ -207,6 +227,7 @@
     "dir": "ltr",
     "ogLocale": "hu_HU",
     "published": true,
-    "legalPublished": false
+    "legalPublished": false,
+    "flag": "🇭🇺"
   }
 ]
