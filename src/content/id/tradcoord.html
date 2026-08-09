@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Ekstensi Premium</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Bot onboarding dan koordinasi untuk server Premium: alur sambutan, penerimaan aturan, peran bahasa, akses terarah, serta penetapan peran massal atau otomatis.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Sambutan</span><span>Aturan</span><span>Peran bahasa</span><span>Koordinasi interaktif</span><span>Penetapan otomatis</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Tambahkan TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Lihat paket Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Peran dalam suite</p>
+<h2>TradCoord mengambil alih setelah penerjemahan</h2>
+<p class="section-sub">TradCoord memandu anggota baru melalui pemilihan bahasa, menetapkan akses yang tepat, dan membatasi notifikasi yang tidak perlu. TradCoord juga dapat membagikan peran yang sudah ada kepada semua anggota saat ini, lalu mengotomatiskannya untuk anggota baru atau saat mereka menerima peran pertama.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Sambutan kustom</h3>
+<p>Atur pesan sambutan kustom untuk mengarahkan anggota ke kanal yang tepat (aturan / pilihan bahasa), tanpa mengirim notifikasi yang tidak perlu ke seluruh server.</p>
+<ul>
+<li>Teks bebas (melalui modal)</li>
+<li>Variabel sederhana <code>{user}</code> and <code>{channel}</code></li>
+<li>Tombol yang mengirim pengguna langsung ke kanal aturan atau pilihan bahasa</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Penerimaan aturan</h3>
+<p>Menerbitkan pesan aturan dengan tombol terima, menetapkan peran kepada pengguna, lalu mengarahkan mereka ke pilihan bahasa agar setiap anggota dapat mengatur aksesnya sendiri.</p>
+<ul>
+<li>Alur sederhana untuk anggota baru</li>
+<li>Keterlacakan dari sisi moderasi</li>
+<li>Pengalihan eksplisit ke kanal pilihan bahasa (layanan mandiri bagi anggota)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Koordinasi terarah</h3>
+<p>Membuat pesan peran/bahasa interaktif untuk satu grup, beberapa grup, atau semua grup TradLinker agar anggota memilih bahasa dan hanya menerima notifikasi yang berguna.</p>
+<ul>
+<li>Pilih satu atau beberapa grup TradLinker</li>
+<li>Perbarui atau hapus area koordinasi dengan aman</li>
+<li>Peran bahasa mengurangi notifikasi yang tidak perlu</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Penetapan peran massal dan otomatis</h3>
+<p>Pilih peran yang sudah ada, tetapkan kepada anggota saat ini yang memenuhi syarat, lalu secara opsional pilih aturan otomatis untuk anggota mendatang.</p>
+<ul>
+<li>Penetapan massal untuk anggota manusia sambil menghormati hierarki peran Discord</li>
+<li>Pilih satu mode otomatisasi: saat bergabung atau saat peran pertama diterima</li>
+<li>Hentikan otomatisasi tanpa menghapus peran yang sudah ditetapkan</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Perintah</p>
+<h2>Fitur untuk administrator (Premium)</h2>
+<p class="section-sub">Semua perintah di bawah adalah perintah admin. TradCoord ditujukan untuk server Premium.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Sambutan</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — mengatur pesan sambutan (kanal tujuan + teks modal)</li>
+<li><code>/1-clear_welcome</code> — menonaktifkan dan menghapus konfigurasi sambutan server</li>
+</ul>
+<p class="detail-note">Izin: kelola pesan. Khusus untuk server Premium.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Aturan + validasi</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — mengirim pesan penerimaan aturan dengan tombol</li>
+<li>Pengaturan publik: kanal pesan, kanal log, kanal bahasa, peran yang akan ditetapkan</li>
+<li>Saat diklik: tetapkan peran + pesan konfirmasi + tautan ke kanal pilihan bahasa</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Koordinasi interaktif (pembuatan)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — membuat pesan pengelolaan peran interaktif di kanal yang dipilih</li>
+<li>Memungkinkan Anda menargetkan satu grup, beberapa grup, atau semua grup TradLinker</li>
+<li>Membuat/menghubungkan peran bahasa untuk area koordinasi yang dipilih</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Pemeliharaan koordinasi</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — memperbarui pesan koordinasi yang sudah ada (berguna setelah mengubah grup/kanal)</li>
+<li><code>/3-delete_coordination</code> — menghapus area koordinasi dengan konfirmasi</li>
+<li>Membersihkan izin/peran yang tidak terpakai dengan aman jika memungkinkan</li>
+</ul>
+<p class="detail-note">Penghapusan: izin <em>Kelola Pesan</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Penetapan peran massal</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — memilih peran yang sudah ada dan dapat ditetapkan, lalu membagikannya kepada anggota saat ini yang dapat dikelola bot</li>
+<li>Pilih penetapan otomatis untuk anggota baru atau saat seorang anggota menerima peran pertamanya</li>
+<li><code>/4-stop_role_assignment</code> — menonaktifkan penetapan otomatis untuk peran yang dikonfigurasi</li>
+<li>Menghentikan otomatisasi tidak menghapus peran yang sudah ditetapkan</li>
+</ul>
+<p class="detail-note">Server Premium dan <em>Manage Roles</em> izin diperlukan. Penetapan massal awal melewati bot, dan hierarki peran administrator maupun bot tetap dihormati.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Apa yang berubah bagi anggota Anda</h3>
+<ul class="feature-list compact">
+<li>Alur kedatangan lebih jelas (sambutan + aturan + pilihan bahasa)</li>
+<li>Lebih sedikit hambatan untuk mencapai konten yang tepat</li>
+<li>Penetapan peran bersama yang konsisten tanpa memproses anggota satu per satu</li>
+<li>Keterbacaan lebih baik untuk server multibahasa besar</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Paling cocok untuk jenis server apa?</h3>
+<ul class="feature-list compact">
+<li>Komunitas dengan kebutuhan onboarding besar (kreator, gaming, dukungan, sekolah)</li>
+<li>Server dengan banyak kanal/bahasa dan membutuhkan struktur</li>
+<li>Tim moderasi yang ingin menghemat waktu untuk onboarding dan peran bersama</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Penting:</strong> TradCoord adalah <strong>add-on Premium</strong> untuk TradLinker. Koordinasi bahasa menggunakan grup dan bahasa TradLinker; penetapan massal atau otomatis dapat menggunakan peran apa pun yang sudah ada selama administrator dan bot diizinkan mengelolanya.
+        </div>
+</div>
+</section>
+</div>

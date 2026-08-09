@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Premium 확장 기능</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Premium 서버용 온보딩 및 조정 봇: 환영 흐름, 규칙 동의, 언어 역할, 범위 기반 접근 권한, 일괄 또는 자동 역할 부여.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>환영</span><span>규칙</span><span>언어 역할</span><span>대화형 조정</span><span>자동 부여</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">TradCoord 추가</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Premium 요금제 보기</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">제품군에서의 역할</p>
+<h2>TradCoord는 번역 이후를 담당합니다</h2>
+<p class="section-sub">TradCoord는 신규 멤버의 언어 선택을 안내하고, 적절한 접근 권한을 부여하며, 불필요한 알림을 줄입니다. 또한 기존 역할을 현재 모든 멤버에게 배포한 뒤 신규 멤버나 첫 역할을 받는 멤버에게 자동으로 부여할 수 있습니다.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>맞춤 환영</h3>
+<p>전체 서버에 불필요한 알림을 보내지 않고 멤버를 올바른 채널(규칙 / 언어 선택)로 안내하는 맞춤 환영 메시지를 설정하세요.</p>
+<ul>
+<li>자유 텍스트(모달 사용)</li>
+<li>간단한 변수 <code>{user}</code> and <code>{channel}</code></li>
+<li>사용자를 규칙 또는 언어 선택 채널로 바로 보내는 버튼</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>규칙 동의</h3>
+<p>동의 버튼이 있는 규칙 메시지를 게시하고 사용자에게 역할을 부여한 다음 언어 선택으로 리디렉션하여 각 멤버가 자신의 접근 권한을 구성할 수 있게 합니다.</p>
+<ul>
+<li>신규 멤버를 위한 간단한 흐름</li>
+<li>관리자 측 추적성</li>
+<li>언어 선택 채널로 명시적 리디렉션(멤버 셀프서비스)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>범위 기반 조정</h3>
+<p>하나의 그룹, 여러 그룹 또는 모든 TradLinker 그룹에 대해 대화형 역할/언어 메시지를 만들어 멤버가 언어를 선택하고 유용한 알림만 받도록 합니다.</p>
+<ul>
+<li>하나 이상의 TradLinker 그룹 선택</li>
+<li>조정 영역을 안전하게 업데이트 또는 삭제</li>
+<li>언어 역할로 불필요한 알림 감소</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>일괄 및 자동 역할 부여</h3>
+<p>기존 역할을 선택하고 적격 현재 멤버에게 부여한 다음, 선택적으로 향후 멤버를 위한 자동 규칙을 선택합니다.</p>
+<ul>
+<li>Discord 역할 계층을 준수하면서 실제 멤버에게 일괄 부여</li>
+<li>자동화 모드 하나 선택: 가입 시 또는 첫 역할을 받을 때</li>
+<li>이미 부여된 역할을 제거하지 않고 자동화 중지</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">명령</p>
+<h2>관리자용 기능(Premium)</h2>
+<p class="section-sub">아래 모든 명령은 관리자 명령입니다. TradCoord는 Premium 서버용입니다.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 환영</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — 환영 메시지 설정(대상 채널 + 모달 텍스트)</li>
+<li><code>/1-clear_welcome</code> — 서버 환영 설정 비활성화 및 제거</li>
+</ul>
+<p class="detail-note">권한: 메시지 관리. Premium 서버 전용.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 규칙 + 확인</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — 버튼이 있는 규칙 동의 메시지 전송</li>
+<li>공개 설정: 메시지 채널, 로그 채널, 언어 채널, 부여할 역할</li>
+<li>클릭 시: 역할 부여 + 확인 메시지 + 언어 선택 채널 링크</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 대화형 조정(생성)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — 선택한 채널에 대화형 역할 관리 메시지 생성</li>
+<li>하나의 그룹, 여러 그룹 또는 모든 TradLinker 그룹을 대상으로 설정 가능</li>
+<li>선택한 조정 영역의 언어 역할 생성/연결</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ 조정 유지 관리</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — 기존 조정 메시지 업데이트(그룹/채널 변경 후 유용)</li>
+<li><code>/3-delete_coordination</code> — 확인 후 조정 영역 삭제</li>
+<li>가능한 경우 사용하지 않는 권한/역할을 안전하게 정리</li>
+</ul>
+<p class="detail-note">삭제: 권한 <em>메시지 관리</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 일괄 역할 부여</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — 부여 가능한 기존 역할을 선택하고 봇이 관리할 수 있는 현재 멤버에게 배포</li>
+<li>신규 멤버 또는 멤버가 첫 역할을 받을 때 자동 부여 선택</li>
+<li><code>/4-stop_role_assignment</code> — 설정된 역할의 자동 부여 비활성화</li>
+<li>자동화를 중지해도 이미 부여된 역할은 제거되지 않습니다</li>
+</ul>
+<p class="detail-note">Premium 서버 및 <em>Manage Roles</em> 권한이 필요합니다. 초기 일괄 부여는 봇을 건너뛰며 관리자와 봇의 역할 계층을 모두 준수합니다.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ 멤버에게 달라지는 점</h3>
+<ul class="feature-list compact">
+<li>더 명확한 가입 흐름(환영 + 규칙 + 언어 선택)</li>
+<li>올바른 콘텐츠에 도달하기 위한 마찰 감소</li>
+<li>멤버를 한 명씩 처리하지 않고 공통 역할을 일관되게 부여</li>
+<li>대규모 다국어 서버의 가독성 향상</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 어떤 유형의 서버에 가장 적합한가요?</h3>
+<ul class="feature-list compact">
+<li>온보딩 요구가 큰 커뮤니티(크리에이터, 게임, 지원, 학교)</li>
+<li>채널/언어가 많고 구조가 필요한 서버</li>
+<li>온보딩과 공통 역할 관리 시간을 줄이고 싶은 모더레이션 팀</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>중요:</strong> TradCoord는 <strong>Premium 추가 기능</strong> 입니다. TradLinker의 언어 조정은 TradLinker 그룹과 언어를 사용하며, 일괄 또는 자동 부여에는 관리자와 봇 모두 관리 권한이 있는 기존 역할을 사용할 수 있습니다.
+        </div>
+</div>
+</section>
+</div>

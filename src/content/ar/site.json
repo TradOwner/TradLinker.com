@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "بوت ترجمة Discord",
+  "chooseLanguage": "اختر اللغة",
+  "menuLabel": "فتح القائمة",
+  "nav": {
+    "overview": "نظرة عامة",
+    "plans": "الخطط",
+    "faq": "FAQ",
+    "add": "إضافة TradLinker Suite",
+    "support": "الدعم"
+  },
+  "footer": {
+    "brandSubtitle": "الترجمة وتنظيم Discord",
+    "description": "بوت ترجمة Discord للمجتمعات متعددة اللغات: قنوات مترابطة، إعداد الأعضاء الجدد، التنسيق، إسناد الأدوار، والترجمة عند الطلب.",
+    "linksTitle": "روابط مفيدة",
+    "discordSupport": "دعم Discord",
+    "donate": "تبرع",
+    "legalTitle": "قانوني",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "copyright": "TradLinker Suite — غير تابع لشركة Discord Inc."
+  },
+  "pages": {
+    "home": {
+      "title": "بوت ترجمة Discord للخوادم متعددة اللغات | TradLinker",
+      "description": "بوت ترجمة Discord مع قنوات مترابطة، وترجمة تلقائية وعند الطلب، واستطلاعات، وإعداد للأعضاء الجدد، وإسناد تلقائي للأدوار."
+    },
+    "tradlinker": {
+      "title": "بوت ترجمة Discord TradLinker | قنوات متعددة اللغات مترابطة",
+      "description": "يربط TradLinker قنوات Discord حسب اللغة ويترجم الرسائل تلقائيًا حتى تتمكن المجتمعات متعددة اللغات من مشاركة محادثة واحدة."
+    },
+    "tradassist": {
+      "title": "مساعد ترجمة Discord TradAssist | ترجمة عند الطلب",
+      "description": "يضيف TradAssist ترجمة Discord عند الطلب، وتفاعلات الأعلام، وترجمة الرسائل الخاصة، وإجراءات ترجمة متقدمة للخوادم متعددة اللغات."
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | الإعداد، القواعد والأدوار التلقائية",
+      "description": "يدير TradCoord إعداد الأعضاء الجدد في Discord والقواعد وأدوار اللغة والإسناد الجماعي أو التلقائي للأدوار في خوادم Premium."
+    },
+    "privacy-policy": {
+      "title": "سياسة الخصوصية | TradLinker Suite",
+      "description": "سياسة الخصوصية لخدمات TradLinker وTradAssist وTradCoord التي تديرها TLK Forge."
+    },
+    "terms-of-service": {
+      "title": "شروط الخدمة | TradLinker Suite",
+      "description": "شروط الخدمة لخدمات TradLinker وTradAssist وTradCoord التي تديرها TLK Forge."
+    }
+  },
+  "legal": {
+    "back": "العودة إلى TradLinker",
+    "updated": "معلومات قانونية"
+  }
+}

@@ -1,0 +1,148 @@
+<div class="page-panel is-active" data-page="tradcoord" id="tradcoord">
+<section class="section bot-page-hero">
+<div class="container">
+<div class="bot-page-card reveal premium-glow">
+<div class="bot-page-top">
+<img alt="TradCoord" class="bot-page-avatar" decoding="async" height="256" src="/image/Avatar%20Orga%20rond.webp" width="256"/>
+<div>
+<p class="eyebrow">Premium rozšíření</p>
+<h1>TradCoord</h1>
+<p class="bot-page-sub">Bot pro onboarding a koordinaci Premium serverů: uvítací postupy, přijetí pravidel, jazykové role, řízený přístup a hromadné či automatické přidělování rolí.</p>
+</div>
+</div>
+<div class="tag-row">
+<span>Uvítání</span><span>Pravidla</span><span>Jazykové role</span><span>Interaktivní koordinace</span><span>Automatické přidělování</span>
+</div>
+<div class="hero-actions" style="margin-top:14px">
+<a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1326539242590961746&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" rel="noopener noreferrer" target="_blank">Přidat TradCoord</a>
+<a class="btn btn-secondary" data-page-link="offres" href="#offres">Zobrazit tarif Premium</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Role v sadě</p>
+<h2>TradCoord přebírá práci po překladu</h2>
+<p class="section-sub">TradCoord provádí nové členy výběrem jazyka, přiděluje správný přístup a omezuje zbytečná oznámení. Může také rozdělit existující roli všem současným členům a následně ji automaticky přidělovat novým členům nebo při získání jejich první role.</p>
+</div>
+<div class="cards-3 cards-4">
+<article class="info-card reveal">
+<div class="card-icon cyan">1</div>
+<h3>Vlastní uvítání</h3>
+<p>Nastavte vlastní uvítací zprávu, která členy nasměruje do správného kanálu (pravidla / volba jazyka), aniž by posílala zbytečná oznámení celému serveru.</p>
+<ul>
+<li>Volný text (přes modal)</li>
+<li>Jednoduché proměnné <code>{user}</code> and <code>{channel}</code></li>
+<li>Tlačítko, které uživatele pošle přímo do kanálu pravidel nebo výběru jazyka</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon blue">2</div>
+<h3>Přijetí pravidel</h3>
+<p>Publikuje zprávu s pravidly a tlačítkem pro přijetí, přidělí uživateli roli a poté jej přesměruje k výběru jazyka, aby si každý člen mohl nastavit vlastní přístup.</p>
+<ul>
+<li>Jednoduchý postup pro nové členy</li>
+<li>Dohledatelnost pro moderátory</li>
+<li>Výslovné přesměrování do kanálu výběru jazyka (samoobsluha pro členy)</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon red">3</div>
+<h3>Koordinace podle rozsahu</h3>
+<p>Vytváří interaktivní zprávy rolí/jazyků pro jednu skupinu, několik skupin nebo všechny skupiny TradLinker, takže si členové zvolí jazyk a dostávají jen užitečná oznámení.</p>
+<ul>
+<li>Vyberte jednu nebo více skupin TradLinker</li>
+<li>Bezpečně aktualizovat nebo odstranit koordinační oblasti</li>
+<li>Jazykové role omezují zbytečná oznámení</li>
+</ul>
+</article>
+<article class="info-card reveal">
+<div class="card-icon cyan">4</div>
+<h3>Hromadné a automatické přidělování rolí</h3>
+<p>Vyberte existující roli, přiřaďte ji způsobilým současným členům a případně zvolte automatické pravidlo pro budoucí členy.</p>
+<ul>
+<li>Hromadné přidělení lidským členům s respektováním hierarchie rolí Discordu</li>
+<li>Zvolte jeden režim automatizace: při vstupu nebo při získání první role</li>
+<li>Zastavte automatizaci bez odebrání již přidělených rolí</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head reveal">
+<p class="eyebrow">Příkazy</p>
+<h2>Funkce pro administrátory (Premium)</h2>
+<p class="section-sub">Všechny níže uvedené příkazy jsou administrátorské. TradCoord je určen pro Premium servery.</p>
+</div>
+<div class="detail-grid">
+<article class="detail-card reveal">
+<h3>👋 Uvítání</h3>
+<ul class="feature-list compact">
+<li><code>/1-set_welcome</code> — nastaví uvítací zprávu (cílový kanál + text modalu)</li>
+<li><code>/1-clear_welcome</code> — vypne a odstraní konfiguraci uvítání serveru</li>
+</ul>
+<p class="detail-note">Oprávnění: správa zpráv. Vyhrazeno pro Premium servery.</p>
+</article>
+<article class="detail-card reveal">
+<h3>📜 Pravidla + ověření</h3>
+<ul class="feature-list compact">
+<li><code>/2-set_rules_message</code> — odešle zprávu pro přijetí pravidel s tlačítkem</li>
+<li>Veřejná nastavení: kanál zprávy, kanál protokolů, jazykový kanál, role k přidělení</li>
+<li>Po kliknutí: přidělení role + potvrzovací zpráva + odkaz na kanál výběru jazyka</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🧩 Interaktivní koordinace (vytvoření)</h3>
+<ul class="feature-list compact">
+<li><code>/3-coordination</code> — vytvoří interaktivní zprávu pro správu rolí ve zvoleném kanálu</li>
+<li>Umožňuje cílit na jednu skupinu, více skupin nebo všechny skupiny TradLinker</li>
+<li>Vytváří/propojuje jazykové role pro vybranou koordinační oblast</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>✏️ Údržba koordinace</h3>
+<ul class="feature-list compact">
+<li><code>/3-edit_coordination</code> — aktualizuje existující koordinační zprávu (užitečné po změně skupin/kanálů)</li>
+<li><code>/3-delete_coordination</code> — odstraní koordinační oblast s potvrzením</li>
+<li>Pokud je to možné, bezpečně vyčistí nepoužívaná oprávnění/role</li>
+</ul>
+<p class="detail-note">Odstranění: oprávnění <em>Správa zpráv</em> + <em>Manage Roles</em>.</p>
+</article>
+<article class="detail-card reveal">
+<h3>👥 Hromadné přidělování rolí</h3>
+<ul class="feature-list compact">
+<li><code>/4-role_assignment</code> — vybere přidělitelnou existující roli a rozdělí ji současným členům, které bot může spravovat</li>
+<li>Zvolte automatické přidělování novým členům nebo při získání jejich první role</li>
+<li><code>/4-stop_role_assignment</code> — vypne automatické přidělování pro nastavenou roli</li>
+<li>Zastavení automatizace neodebere již přidělené role</li>
+</ul>
+<p class="detail-note">Premium server a <em>Manage Roles</em> vyžadované oprávnění. Počáteční hromadné přidělení přeskočí boty a respektuje hierarchii rolí administrátora i bota.</p>
+</article>
+<article class="detail-card reveal">
+<h3>✅ Co se tím změní pro vaše členy</h3>
+<ul class="feature-list compact">
+<li>Přehlednější příchod (uvítání + pravidla + volba jazyka)</li>
+<li>Méně překážek při cestě ke správnému obsahu</li>
+<li>Konzistentní přidělení společné role bez zpracovávání členů jednoho po druhém</li>
+<li>Lepší čitelnost pro velké vícejazyčné servery</li>
+</ul>
+</article>
+<article class="detail-card reveal">
+<h3>🎯 Pro jaký typ serveru je to nejlepší?</h3>
+<ul class="feature-list compact">
+<li>Komunity s výraznými potřebami onboardingu (tvůrci, gaming, podpora, školy)</li>
+<li>Servery s mnoha kanály/jazyky a potřebou struktury</li>
+<li>Moderátorské týmy, které chtějí ušetřit čas na onboardingu a společných rolích</li>
+</ul>
+</article>
+</div>
+<div class="notice reveal">
+<strong>Důležité:</strong> TradCoord je <strong>Premium doplněk</strong> pro TradLinker. Jazyková koordinace používá skupiny a jazyky TradLinker; hromadné nebo automatické přidělování může použít jakoukoli existující roli, kterou mají administrátor i bot oprávnění spravovat.
+        </div>
+</div>
+</section>
+</div>

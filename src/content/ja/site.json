@@ -1,0 +1,53 @@
+{
+  "brandSubtitle": "Discord翻訳ボット",
+  "chooseLanguage": "言語を選択",
+  "menuLabel": "メニューを開く",
+  "nav": {
+    "overview": "概要",
+    "plans": "プラン",
+    "faq": "FAQ",
+    "add": "TradLinker Suiteを追加",
+    "support": "サポート"
+  },
+  "footer": {
+    "brandSubtitle": "Discord翻訳・運営支援",
+    "description": "多言語コミュニティ向けDiscord翻訳ボット：連携チャンネル、オンボーディング、調整、ロール付与、オンデマンド翻訳に対応。",
+    "linksTitle": "便利なリンク",
+    "discordSupport": "Discordサポート",
+    "donate": "寄付する",
+    "legalTitle": "法的情報",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "copyright": "TradLinker Suite — Discord Inc.とは提携していません。"
+  },
+  "pages": {
+    "home": {
+      "title": "多言語サーバー向けDiscord翻訳ボット | TradLinker",
+      "description": "連携チャンネル、自動・オンデマンド翻訳、投票、オンボーディング、自動ロール付与を備えたDiscord翻訳ボット。"
+    },
+    "tradlinker": {
+      "title": "TradLinker Discord翻訳ボット | 連携された多言語チャンネル",
+      "description": "TradLinkerはDiscordチャンネルを言語ごとに連携し、メッセージを自動翻訳して、多言語コミュニティが1つの会話を共有できるようにします。"
+    },
+    "tradassist": {
+      "title": "TradAssist Discord翻訳アシスタント | オンデマンド翻訳",
+      "description": "TradAssistは、オンデマンドのDiscord翻訳、国旗リアクション、DMでの個人翻訳、多言語サーバー向けの高度な翻訳操作を追加します。"
+    },
+    "tradcoord": {
+      "title": "TradCoord Discord | オンボーディング、ルール、自動ロール",
+      "description": "TradCoordは、Premiumサーバー向けにDiscordのオンボーディング、ルール、言語ロール、一括または自動ロール付与を管理します。"
+    },
+    "privacy-policy": {
+      "title": "プライバシーポリシー | TradLinker Suite",
+      "description": "TLK Forgeが運営するTradLinker、TradAssist、TradCoordサービスのプライバシーポリシー。"
+    },
+    "terms-of-service": {
+      "title": "利用規約 | TradLinker Suite",
+      "description": "TLK Forgeが運営するTradLinker、TradAssist、TradCoordサービスの利用規約。"
+    }
+  },
+  "legal": {
+    "back": "TradLinkerに戻る",
+    "updated": "法的情報"
+  }
+}
