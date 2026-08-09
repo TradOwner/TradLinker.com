@@ -239,7 +239,7 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
   <link rel="icon" type="image/webp" href="/image/Avatar%20Linker%20rond.webp">
   <link rel="apple-touch-icon" href="/image/apple-touch-icon.png">
   {preload}
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css?v=20260809-2">
   <script defer src="/js/script.js"></script>
   <script type="application/ld+json">{structured_data(lang, page, canonical, meta)}</script>
 </head>
@@ -373,7 +373,7 @@ def build_root(languages: list[dict]):
 
 def build_404(languages: list[dict]):
     links = "".join(f'<li><a href="/{x["code"]}/">{html.escape(x["nativeName"])}</a></li>' for x in languages if x.get("published"))
-    text = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | TradLinker</title><link rel="stylesheet" href="/css/styles.css"></head><body><main class="app-main"><section class="section"><div class="container legal-container"><article class="legal-card"><h1>Page not found</h1><p>This page does not exist. Choose a language to return to TradLinker.</p><ul>{links}</ul></article></div></section></main></body></html>'''
+    text = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | TradLinker</title><link rel="stylesheet" href="/css/styles.css?v=20260809-2"></head><body><main class="app-main"><section class="section"><div class="container legal-container"><article class="legal-card"><h1>Page not found</h1><p>This page does not exist. Choose a language to return to TradLinker.</p><ul>{links}</ul></article></div></section></main></body></html>'''
     write_page(OUT / "404.html", text)
 
 
