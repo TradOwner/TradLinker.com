@@ -213,6 +213,7 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
     )
     preload = '<link rel="preload" as="image" href="/image/Banniere.webp" type="image/webp" fetchpriority="high">' if page == "home" else ""
     body_class = " class=\"legal-body\"" if legal else ""
+    robots = "noindex,follow" if legal else "index,follow,max-image-preview:large"
     css_version = asset_version(ROOT / "css" / "styles.css")
     js_version = asset_version(ROOT / "js" / "script.js")
     return f'''<!doctype html>
@@ -222,7 +223,7 @@ def render_layout(lang: dict, page: str, data: dict, body: str, languages: list[
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{html.escape(meta['title'])}</title>
   <meta name="description" content="{html.escape(meta['description'], quote=True)}">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="{robots}">
   <meta name="theme-color" content="#0ea5e9">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="{canonical}">
@@ -388,6 +389,8 @@ def build_sitemap(languages: list[dict]):
     xmlns = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"'
     rows = []
     for page in PAGE_SLUGS:
+        if page in ("terms-of-service", "privacy-policy"):
+            continue
         langs = published_for_page(languages, page)
         for lang in langs:
             alternates = "".join(
