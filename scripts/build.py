@@ -448,7 +448,49 @@ def main():
     build_root(languages)
     build_404(languages)
     build_sitemap(languages)
-    write_page(OUT / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n")
+    robots_txt = f"""User-agent: *
+    Allow: /
+    
+    User-agent: GPTBot
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    User-agent: OAI-SearchBot
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    User-agent: Google-Extended
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    User-agent: ClaudeBot
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    User-agent: PerplexityBot
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    User-agent: Applebot-Extended
+    Disallow: /fr/privacy-policy/
+    Disallow: /fr/terms-of-service/
+    Disallow: /en/privacy-policy/
+    Disallow: /en/terms-of-service/
+    
+    Sitemap: {BASE_URL}/sitemap.xml
+    """
+    
+    write_page(OUT / "robots.txt", robots_txt)
     print(f"Built {len(published)} published locales into {OUT}")
 
 
