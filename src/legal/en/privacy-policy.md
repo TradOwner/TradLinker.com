@@ -8,7 +8,7 @@ This Policy explains how the Discord bots TradLinker, TradAssist, and TradCoord,
 
 The Services are published and operated by:
 
-**L. CRINON, a French sole trader (entrepreneur individuel) trading as TLK Forge**  
+**CRINON, a French sole trader (entrepreneur individuel) trading as TLK Forge**  
 SIREN: 104 018 775 - RCS Agen  
 Address: 47 bis rue Sainte-Catherine, 47520 Le Passage, France  
 Email: [tradsphere@gmail.com](mailto:tradsphere@gmail.com)  
