@@ -6,7 +6,7 @@
 
 TradLinker, TradAssist et TradCoord sont des bots Discord édités et exploités par :
 
-**L. CRINON, entrepreneur individuel (EI), exerçant sous le nom commercial TLK Forge**  
+**CRINON, entrepreneur individuel (EI), exerçant sous le nom commercial TLK Forge**  
 SIREN : 104 018 775 - RCS Agen  
 Adresse : 47 bis rue Sainte-Catherine, 47520 Le Passage, France  
 Courriel : [tradsphere@gmail.com](mailto:tradsphere@gmail.com)  
